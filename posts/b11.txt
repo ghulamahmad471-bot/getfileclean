@@ -1,0 +1,122 @@
+=== best-metadata-remover
+title: Best Metadata Remover Tools Compared: Free and Paid Options
+cat: Privacy & Security
+kw: best metadata remover, metadata remover tools, free metadata remover, metadata cleaner comparison, exif remover
+desc: The best metadata remover depends on your files and device. An honest comparison of free and paid tools, built-in options, ExifTool, MAT2 and browser cleaners.
+---
+There's no single **best metadata remover** for everyone. The right tool depends on which files you share (photos only, or PDFs and Office files too), which device you use, and whether you're happy to upload files to someone else's server. Below is an honest comparison of the main metadata remover tools, including free options already on your phone and computer.
+
+If you want the checklist behind these comparisons (uploads, formats, quality, limits), see [what to look for in an online metadata remover](online-metadata-removers-compared.html).
+
+## The quick answer
+
+- **Photos on a phone, occasionally:** use your phone's built-in share options first. They're free and need nothing installed, but they only cover location and only in some apps.
+- **Many file types, no installing anything:** a browser-based metadata cleaner that processes files on your device.
+- **Maximum control, technical users:** ExifTool on the command line.
+- **Linux or privacy-focused setups:** MAT2.
+- **PDFs that must be legally clean:** Adobe Acrobat Pro's sanitize and redaction tools (paid).
+- **Word, Excel and PowerPoint:** Microsoft Office's own Document Inspector, plus a cleaner for anything Office misses.
+
+## 1. Built-in tools on your phone and computer (free)
+
+Before installing anything, check what you already have.
+
+**iPhone and iPad.** When you share a photo from the Photos app, the share sheet has an Options button at the top where you can switch off Location for that share. This removes GPS but leaves other details such as the date and device model. The exact layout has changed between iOS versions, so look for "Options" near the top of the share sheet. Our [iPhone photo metadata guide](remove-metadata-iphone-photos.html) covers the steps in detail.
+
+**Android.** Options vary a lot by manufacturer. Some gallery apps offer a "remove location data" switch when sharing, and Google Photos lets you hide or edit an estimated location. Behaviour differs between Samsung, Pixel and other phones, so test with a photo before relying on it.
+
+**Windows.** In File Explorer, right-click a file, choose Properties, open the Details tab and click "Remove Properties and Personal Information". You can create a cleaned copy or remove selected properties. It works for JPEGs and Office files but doesn't reach every field in every format. Full steps are in [how to remove EXIF data on Windows](remove-exif-data-windows.html).
+
+**Mac.** Preview can remove location information from a photo through Tools > Show Inspector, but macOS has no one-click "remove everything" option for all file types.
+
+**Pros:** free, no uploads. **Cons:** usually location only, one file at a time, inconsistent between devices.
+
+## 2. Browser-based metadata cleaners (free)
+
+A browser-based metadata cleaner runs inside a web page, but the cleaning happens on your device. Nothing is installed and, if the tool is built properly, nothing is uploaded.
+
+GetFileClean is one example. It's a [free metadata remover](../index.html) that works on photos (JPG, PNG, HEIC, WebP), Word, Excel and PowerPoint files, PDFs, MP4 and MOV videos, and audio, and it shows what it found in each file before you download the clean copy. We make it, so weigh our view accordingly. The honest limits: very large videos depend on your device's memory, and like any automatic tool it removes metadata rather than redacting visible text in a document.
+
+**How to check that a browser tool really doesn't upload:** load the page, turn off your Wi-Fi, then clean a file. If it still works, processing is local. We explain why this matters in [browser-based metadata removal](browser-based-metadata-removal.html).
+
+**Pros:** many formats, works on any device with a modern browser, no install, batch cleaning.
+**Cons:** depends on the browser; you have to trust the site's code (the offline test helps).
+
+## 3. Upload-based online metadata removers (free with limits)
+
+Many websites remove EXIF data by uploading your file to their server, cleaning it, and letting you download the result. That works against the point: your private file, including the GPS data you wanted to hide, now sits on a server you don't control.
+
+**Pros:** easy, nothing to install.
+**Cons:** your file is uploaded; file size and daily limits are common; many handle only JPG; quality may drop if the image is re-compressed.
+
+If you use one, read its privacy policy for how long files are kept, and avoid it for anything confidential.
+
+## 4. ExifTool (free, open source)
+
+ExifTool by Phil Harvey is the reference tool for reading and writing metadata. It supports a very wide range of file formats and is updated often. One command such as `exiftool -all= photo.jpg` strips most metadata from a file.
+
+**Pros:** extremely thorough, free, scriptable, handles whole folders, works offline.
+**Cons:** command line only (graphical front-ends such as ExifToolGUI exist for Windows), easy to get wrong if you're not used to it, and it keeps an `_original` backup copy by default that you need to delete. Our [ExifTool guide](exiftool-remove-metadata.html) walks through the commands safely.
+
+## 5. MAT2 (free, open source)
+
+MAT2, the Metadata Anonymisation Toolkit, is aimed at privacy and is available in many Linux distributions. It cleans images, PDFs, office documents, audio, video and archives, and it can run from the command line or through a file manager extension on some desktops.
+
+**Pros:** privacy-first design, many formats, offline.
+**Cons:** mainly for Linux; not a natural fit for Windows or phone users. For PDFs it can rebuild the file, which may change how it looks or make text unselectable, so check the result.
+
+## 6. Desktop apps such as ExifCleaner (free)
+
+ExifCleaner is an open-source drag-and-drop app for Windows, Mac and Linux that uses ExifTool underneath. It's simple and works offline. Check its release page to see whether it's still actively updated before you rely on it, as with any small desktop app.
+
+**Pros:** drag and drop, offline, batch.
+**Cons:** another app to install and keep updated; coverage of documents is narrower than ExifTool itself.
+
+On Android, apps such as Scrambled Exif (available on F-Droid) remove metadata from photos when you share them through the app.
+
+## 7. Adobe Acrobat Pro (paid)
+
+For PDFs, Acrobat Pro has a Sanitize Document option and a Remove Hidden Information option in its redaction tools. They can remove metadata, hidden layers, attachments, comments and scripts, and Acrobat's redaction is the right choice when you also need to black out visible text. Adobe moves these menus between versions, so search Acrobat's tools for "Sanitize" or "Redact". See [Acrobat's remove hidden information feature](acrobat-remove-hidden-information.html) for details.
+
+**Pros:** thorough for PDFs, real redaction, used in legal and government work.
+**Cons:** subscription cost, PDF only, more steps than a simple cleaner.
+
+## 8. Microsoft Office Document Inspector (included with Office)
+
+Word, Excel and PowerPoint have a built-in Document Inspector (File > Info > Check for Issues > Inspect Document) that finds comments, tracked changes, document properties, hidden rows and more. It's the best first step for Office files because it also catches content-level leaks, such as hidden sheets, that a plain metadata cleaner won't remove.
+
+**Pros:** free if you already have Office, catches hidden content, not just properties.
+**Cons:** one file at a time, Windows and Mac Office only, and you have to remember to run it.
+
+## Comparison at a glance
+
+- **Free, no upload:** phone share options, Windows Properties, browser-based cleaners, ExifTool, MAT2, ExifCleaner.
+- **Widest format coverage:** ExifTool, then MAT2 and browser-based cleaners.
+- **Easiest for non-technical users:** browser-based cleaners and built-in options.
+- **Best for PDFs that need redaction:** Acrobat Pro (paid).
+- **Uploads your files:** upload-based websites. Avoid them for sensitive files.
+
+## How to choose
+
+1. **List what you actually share.** If it's only phone photos, a built-in option or a simple photo cleaner may be enough. If it's contracts, CVs and invoices, you need document support.
+2. **Decide whether uploading is acceptable.** For anything personal or confidential, choose a tool that works locally.
+3. **Test the result.** Clean one file, then check it with a metadata viewer. Our guide on [how to check file metadata](how-to-check-file-metadata.html) shows several ways.
+4. **Make it a habit.** The best metadata cleaner is the one you'll actually use every time.
+
+## FAQ
+
+### What is the best free metadata remover?
+
+For most people, a browser-based metadata cleaner that works locally is the easiest free option because it covers photos, documents and videos without an install. Technical users who want maximum control should use ExifTool.
+
+### Are online metadata removers safe?
+
+It depends on whether they upload your file. Tools that process files in your browser keep them on your device. Upload-based tools send your file to a server, so avoid them for anything sensitive.
+
+### Does removing metadata reduce quality?
+
+A good metadata remover doesn't change image pixels or video frames. Tools that re-compress images can reduce quality, so test with one file first.
+
+### Is one tool enough for all my files?
+
+Often, yes, but documents are a special case. A metadata cleaner removes properties such as author and dates, while Office's Document Inspector or Acrobat's redaction also handles hidden content like comments, tracked changes and hidden text. For important documents, use both.

@@ -111,10 +111,13 @@ def build():
     posts = parse()
     slugs = [p["slug"] for p in posts]
     errs = []
-    if len(posts) != 100: errs.append(f"expected 100 posts, got {len(posts)}")
+    if len(posts) < 100: errs.append(f"expected at least 100 posts, got {len(posts)}")
     if len(set(slugs)) != len(slugs): errs.append("duplicate slugs: " + str({s for s in slugs if slugs.count(s) > 1}))
     for p in posts:
         for l in re.findall(r"\]\(([^)]+)\)", p["body"]):
+            if l.startswith("../"):
+                if not os.path.exists(os.path.join(ROOT, l[3:].split("#")[0])): errs.append(f"{p['slug']}: broken link {l}")
+                continue
             if l.endswith(".html") and l[:-5] not in slugs: errs.append(f"{p['slug']}: broken link {l}")
         if p["cat"] not in CAT_ORDER: errs.append(f"{p['slug']}: unknown category {p['cat']}")
         if not (110 <= len(p["desc"]) <= 165): errs.append(f"{p['slug']}: description length {len(p['desc'])}")
