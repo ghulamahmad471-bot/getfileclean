@@ -1,0 +1,327 @@
+=== does-facebook-remove-metadata
+title: Does Facebook Remove Photo Metadata? What You Should Know
+cat: Sharing & Social Media
+kw: does facebook remove metadata, facebook photo metadata, facebook exif, facebook location data, social media metadata
+desc: Does Facebook remove metadata from photos? What happens to EXIF and GPS data when you upload, what Facebook may still keep, and how to clean photos first.
+---
+A common question is: **does Facebook remove metadata** from the photos you upload? The answer has two parts: what other people can see, and what the platform itself receives.
+
+## What other people see
+
+Facebook is widely reported to strip EXIF metadata, including GPS coordinates, from the image files it shows publicly. If someone downloads a photo from your post, they generally won't find your camera's location data inside the file.
+
+## What Facebook receives
+
+Stripping metadata from the public copy happens after upload. The original file, with all its metadata, is sent to the platform first. Large platforms can read that information before removing it, according to their own privacy policies. If you'd rather the platform never receives your GPS location, remove it before uploading.
+
+## Where metadata can still slip through
+
+- **Messenger:** files sent as attachments may be handled differently from photos in posts.
+- **Groups and Marketplace:** handling can differ by feature and can change over time.
+- **Visible clues:** street signs, house numbers and landmarks in the photo itself aren't metadata and won't be removed.
+
+## The safe habit
+
+Don't rely on any platform's processing. Platforms change their systems, and you can't easily verify what's kept. Clean photos before uploading:
+
+1. Drop photos into GetFileClean.
+2. Check whether they contained GPS or device data.
+3. Upload the clean copies.
+
+Your files are processed in your browser and never uploaded to GetFileClean.
+
+## Related
+
+- [Does Instagram remove metadata?](does-instagram-remove-metadata.html)
+- [Photo location metadata and your address](hidden-gps-location-in-photos.html)
+
+=== does-instagram-remove-metadata
+title: Does Instagram Remove Metadata from Photos and Videos?
+cat: Sharing & Social Media
+kw: does instagram remove metadata, instagram photo metadata, instagram exif data, instagram location privacy, instagram video metadata
+desc: Does Instagram remove metadata? What happens to EXIF and GPS data in photos and videos you post, the location tags you add yourself, and how to stay safe.
+---
+**Does Instagram remove metadata** from the photos and videos you post? Mostly yes for public copies, but there's more to know.
+
+## Embedded metadata vs location tags
+
+There are two different kinds of location on Instagram:
+
+- **Embedded metadata:** GPS coordinates inside the photo file from your camera. Instagram is widely reported to remove this from the images it serves to viewers.
+- **Location tags:** places you choose to add to a post. These are public by design and are not metadata. Instagram shows them to everyone who can see the post.
+
+## What Instagram may still receive
+
+Like other platforms, Instagram receives your original file during upload, metadata included. What it stores and uses is covered by its privacy policy. If you don't want to hand over precise GPS data, clean files before posting.
+
+## Stories, Reels and DMs
+
+Different features process media differently, and these systems change over time. Don't assume every feature treats files the same way.
+
+## Visual clues still matter
+
+Metadata removal doesn't hide what's in the picture: house numbers, school uniforms, car number plates or a view from your window.
+
+## Clean before you post
+
+Use GetFileClean to remove EXIF, GPS and device data from photos and videos before uploading. It works in your phone's browser with no uploads. See also [remove metadata from iPhone photos](remove-metadata-iphone-photos.html).
+
+=== whatsapp-photo-metadata
+title: Does WhatsApp Remove Metadata from Photos? Photo vs Document
+cat: Sharing & Social Media
+kw: whatsapp photo metadata, does whatsapp remove metadata, whatsapp send as document metadata, whatsapp exif, whatsapp location in photos
+desc: Does WhatsApp remove photo metadata? Learn the difference between sending as a photo and as a document, and how to share full-quality images without metadata.
+---
+WhatsApp handles **photo metadata** differently depending on how you send a picture.
+
+## Sending as a normal photo
+
+When you send an image the usual way, WhatsApp compresses it to save data. This process is widely reported to strip most EXIF metadata, including GPS. The downside is lower image quality.
+
+## Sending as a document
+
+Many people send photos as a **document** to keep full quality. In that case, WhatsApp sends the original file unchanged, and that means **all metadata goes with it**: GPS location, device model, dates and more. The person receiving it can read everything.
+
+## HD photos
+
+Newer versions offer an HD option for photos. Processing still happens, but behaviour can change between app versions, so don't rely on it for privacy.
+
+## How to send full quality without metadata
+
+1. Open GetFileClean in your phone's browser.
+2. Select the photos and download the clean copies.
+3. In WhatsApp, send the clean files as documents.
+
+The receiver gets the full-quality original image with no hidden location or device data.
+
+## Videos and other files
+
+The same rule applies to videos and documents sent as files: they keep their metadata. GetFileClean cleans MP4 and MOV videos as well as PDFs and Word files.
+
+## Related
+
+- [Telegram and file metadata](telegram-file-metadata.html)
+- [Metadata in email attachments](email-attachment-metadata.html)
+
+=== telegram-file-metadata
+title: Telegram Photo Metadata: Compressed vs Uncompressed Files
+cat: Sharing & Social Media
+kw: telegram metadata, telegram photo metadata, telegram send without compression, telegram exif, telegram file privacy
+desc: Telegram photo metadata explained: what happens when you send compressed photos versus uncompressed files, and how to remove metadata before sharing.
+---
+Telegram lets you send photos in two ways, and they handle **metadata** very differently.
+
+## Compressed photos
+
+Sending an image as a regular photo compresses it. Compressed photos are generally reported to lose their EXIF metadata, including GPS. Quality is reduced.
+
+## Uncompressed files
+
+Choosing to send without compression, or attaching an image as a file, sends the original. Everything inside the file, including location, camera model and dates, reaches the recipient. In public groups and channels, that can be a lot of people.
+
+## Why this matters on Telegram
+
+Telegram is popular for large groups and channels where you may not know the members. Photographers and sellers often send uncompressed files to show full detail, without realising the metadata goes too.
+
+## Share full quality, without the metadata
+
+Clean your files first with GetFileClean, then send them uncompressed. You keep full quality and lose only the hidden data. GetFileClean works on desktop and mobile browsers, cleans photos, videos, PDFs and documents, and never uploads your files.
+
+## Also check
+
+- [WhatsApp photo vs document](whatsapp-photo-metadata.html)
+- [Why remove metadata before sharing](why-remove-metadata.html)
+
+=== email-attachment-metadata
+title: Do Email Attachments Keep Metadata? (Yes, Here's What to Do)
+cat: Sharing & Social Media
+kw: email attachment metadata, remove metadata before emailing, gmail attachment metadata, outlook attachment metadata, send files without metadata
+desc: Email attachments keep all their metadata. Learn what recipients can see in attached photos, Word files and PDFs, and how to clean files before emailing.
+---
+When you attach a file to an email, it's sent exactly as it is. Email services don't strip **attachment metadata**, so everything inside the file reaches the recipient.
+
+## What the recipient can see
+
+- **Photos:** GPS location, device model, date and time.
+- **Word, Excel and PowerPoint:** author, last modified by, company, editing time and template.
+- **PDFs:** author, title, creating software and dates.
+- **Videos:** recording date, device and often location.
+
+The email itself also contains technical headers, but those are separate from the file metadata.
+
+## Why this matters
+
+Emails get forwarded, archived and stored for years. An attachment you send to one person can reach many others, metadata included. For job applications, client proposals and legal documents, leftover names and comments can be embarrassing or worse.
+
+## A simple routine before emailing
+
+1. Collect the files you're about to attach.
+2. Drop them into GetFileClean and check the report.
+3. Download the clean copies.
+4. Attach the clean files.
+
+Because GetFileClean runs in your browser, confidential attachments never pass through another server just to be cleaned.
+
+## Don't forget content
+
+Metadata removal doesn't delete comments, tracked changes or hidden text inside documents. See [the risks of track changes and comments](track-changes-and-comments-risk.html).
+
+=== dating-app-photo-privacy
+title: Dating App Safety: Remove Photo Metadata Before You Share
+cat: Sharing & Social Media
+kw: dating app photo privacy, dating safety metadata, remove location from photos dating, online dating photo safety, photo metadata safety
+desc: Sharing photos with someone you met online? Learn how photo metadata can reveal your location and how to remove it to stay safer on dating apps.
+---
+Profile photos on dating apps are usually processed by the app. The risk comes later, when you move to messaging, email or another app and start sending pictures directly. That's when **photo metadata** can reveal more than you planned.
+
+## What a single photo can reveal
+
+- GPS coordinates of where it was taken, which may be your home.
+- The exact date and time.
+- Your phone model.
+
+Someone who has only known you for a few days shouldn't be able to find your street from a selfie.
+
+## Safer photo sharing habits
+
+1. **Turn off camera location** on [iPhone](turn-off-location-iphone-camera.html) or [Android](turn-off-location-android-camera.html).
+2. **Clean photos before sending** with GetFileClean, which removes location, device and date data in your browser.
+3. **Send photos the compressed way** in messaging apps rather than as files or documents, which keep metadata.
+4. **Check the background:** street signs, your building, your car's number plate or your workplace badge.
+
+## Reverse image search
+
+Separately from metadata, photos you use on dating profiles can be found with reverse image search. Consider using photos that don't appear on your other public social accounts.
+
+## Trust your instincts
+
+If someone pushes for personal details or specific photos early on, that's a warning sign. Metadata removal is one small part of staying safe online.
+
+=== selling-online-photo-privacy
+title: Selling Online? Remove Photo Metadata Before You List Items
+cat: Ecommerce & Business
+kw: selling online photo privacy, marketplace photo metadata, remove location from listing photos, classified ads photo gps, sell items safely online
+desc: Photos for online marketplace listings can reveal your home address through GPS metadata. Learn how to remove photo metadata before listing items for sale.
+---
+Most people photograph items for sale at home: the sofa in the living room, the bike in the garage, the car in the driveway. If those photos carry GPS metadata, your listing could reveal exactly where valuable items are kept.
+
+## Where marketplace photos leak metadata
+
+Large marketplaces often process uploaded images, but not every site does. Local classified sites, forums, small marketplaces and buyers who ask you to email extra photos may all receive the original files.
+
+## The risk
+
+A listing for an expensive item plus a precise location is useful information for the wrong person. Even if the site strips metadata, photos you send directly to buyers by email or chat usually aren't cleaned.
+
+## How to list safely
+
+1. Take photos as usual.
+2. Run them through GetFileClean to remove GPS, device and date metadata.
+3. Upload the clean photos to your listing.
+4. Send buyers the same clean photos if they ask for more.
+
+GetFileClean cleans dozens of photos at once and doesn't reduce quality, so your listing still looks sharp.
+
+## Other tips
+
+- Avoid showing your house number, street or car number plate in the background.
+- Meet buyers in public places where possible.
+- Don't share your full address until you need to.
+
+If you sell professionally, see [product photos and metadata for online stores](ecommerce-product-photos-metadata.html).
+
+=== kids-photos-privacy
+title: Protecting Children's Privacy: Remove Metadata from Kids' Photos
+cat: Privacy & Security
+kw: kids photos privacy, children photo metadata, remove location from kids photos, school photo privacy, family photo metadata
+desc: Photos of children can reveal home and school locations through hidden metadata. Learn how to protect kids' privacy by removing photo metadata before sharing.
+---
+Parents share thousands of photos of their children with family, schools, clubs and group chats. Many of those photos carry **location metadata** that points to where a child lives, learns and plays.
+
+## What photo metadata can reveal about a child
+
+- The family home, through GPS coordinates.
+- The school or nursery, from photos taken at drop-off or events.
+- Daily routines, from timestamps over weeks and months.
+
+## Where kids' photos leak
+
+- Photos sent as files to group chats or class groups.
+- Emails to relatives or teachers.
+- Shared cloud albums and links.
+- Photo uploads to club, school or community websites.
+
+## Simple protective steps
+
+1. **Turn off camera location** for everyday photos. See guides for [iPhone](turn-off-location-iphone-camera.html) and [Android](turn-off-location-android-camera.html).
+2. **Clean before sharing** outside your close family. GetFileClean removes location, device and date data in seconds.
+3. **Check what's visible:** school logos, uniforms, name tags and house numbers.
+4. **Ask before others share:** let relatives know you'd prefer photos of your children not to be posted publicly.
+
+## For schools and clubs
+
+If you run a school, nursery, sports club or youth group, add metadata cleaning to your photo publishing process. GetFileClean can clean hundreds of photos at once in a browser, with nothing uploaded to an outside server.
+
+=== travel-photos-location-privacy
+title: Travel Photos and Location Data: Share Without Revealing Where You Are
+cat: Photo Privacy
+kw: travel photos location privacy, travel photo metadata, remove gps from travel photos, vacation photo safety, posting travel photos safely
+desc: Travel photos can reveal where you're staying and that your home is empty. Learn how photo location metadata works and how to share travel photos safely.
+---
+Travel photos are fun to share, but they can reveal two things you may not want to broadcast: where you are right now, and that your home is empty.
+
+## What travel photo metadata contains
+
+Each photo can store GPS coordinates and an exact time. A series of photos can map out your hotel, your daily movements and when you leave each place.
+
+## Keep location for yourself, not for others
+
+Location data is great for your own memories: maps of your trip and photos grouped by city. The solution isn't to turn it off forever, but to remove it from the copies you share.
+
+## A simple travel routine
+
+1. Keep camera location on if you like having a map of your trip.
+2. Before sharing, run photos through GetFileClean to remove GPS and timestamps.
+3. Share the clean copies.
+4. Consider posting after you return home, not in real time.
+
+## Don't forget videos
+
+Phone videos often contain location too. GetFileClean wipes location and creation dates from MP4 and MOV files without changing the video. Read [why iPhone videos store location](iphone-video-location.html).
+
+## Visible clues
+
+Hotel key cards, boarding passes and luggage tags in photos can reveal booking details. Crop or avoid them, even in clean files.
+
+=== cloud-storage-shared-links-metadata
+title: Shared Cloud Links Keep Your File Metadata (Drive, Dropbox, iCloud)
+cat: Sharing & Social Media
+kw: cloud storage metadata, google drive file metadata, dropbox metadata, shared link privacy, icloud shared photo location
+desc: Files shared through Google Drive, Dropbox or iCloud links usually keep their metadata. Learn what's exposed and how to clean files before you share a link.
+---
+Cloud storage is the easiest way to share large files, but it usually shares the **original file**, with all its metadata.
+
+## What happens when you share a link
+
+When someone opens a shared link and downloads a file, they generally get exactly what you uploaded. For photos, that can include GPS location and device details. For documents and PDFs, it includes author names, company fields and editing history.
+
+## Photo services are different from file storage
+
+Photo services such as Google Photos and iCloud Photos have their own sharing settings, including options to leave out location in some cases. Plain file storage such as Drive folders and Dropbox doesn't usually change your files.
+
+## The "set and forget" problem
+
+Shared folders often stay open for months. Files added later inherit the same sharing, and their metadata goes along with them.
+
+## A safer workflow
+
+1. Create a separate "to share" folder.
+2. Clean files with GetFileClean before putting them in that folder.
+3. Share only that folder.
+
+GetFileClean handles photos, Office files, PDFs and videos together, and has no size limits, which is useful for the large files people usually share through cloud links.
+
+## Related
+
+- [Email attachments and metadata](email-attachment-metadata.html)
+- [Metadata checklist before sharing](metadata-checklist-before-sharing.html)

@@ -1,0 +1,367 @@
+=== remove-metadata-iphone-photos
+title: How to Remove Metadata from iPhone Photos (3 Easy Ways)
+cat: Photo Privacy
+kw: remove metadata iphone, iphone photo metadata, remove location from iphone photo, iphone exif remover, delete photo metadata iphone
+desc: How to remove metadata from iPhone photos: turn off location when sharing, remove location in the Photos app, or strip all metadata with a free browser tool.
+---
+iPhone photos store a lot of metadata, including the date, device model, camera settings and often GPS location. Here are three ways to **remove metadata from iPhone photos** before you share them.
+
+## Method 1: Turn off location in the share sheet
+
+When you share from the Photos app, iOS lets you leave out location for that share:
+
+1. Select the photo or photos and tap **Share**.
+2. Tap **Options** at the top of the share sheet.
+3. Turn off **Location**. Some iOS versions also offer **All Photos Data**. Turn that off too if you see it.
+4. Tap **Done** and share as normal.
+
+This only applies to that share. It doesn't change the original photo.
+
+## Method 2: Remove location in the Photos app
+
+You can remove the location from a photo you've already taken:
+
+1. Open the photo and swipe up, or tap the info button.
+2. Tap **Adjust** next to the location.
+3. Choose **No Location**.
+
+This removes GPS from that photo but leaves other metadata such as the date and device model.
+
+## Method 3: Strip all metadata with GetFileClean
+
+For a complete clean, including device, dates, software and location:
+
+1. Open GetFileClean in Safari on your iPhone.
+2. Tap **Choose files** and select photos from your library.
+3. Review the report to see what was found.
+4. Tap **Download** to save the clean copy.
+
+iPhone photos are often saved as HEIC. If you pick them through the browser, iOS usually converts them to JPG automatically, and GetFileClean cleans them without re-compressing. Nothing is uploaded.
+
+## Stop location being saved in the first place
+
+If you don't want new photos to carry GPS data, see [how to turn off location for the iPhone camera](turn-off-location-iphone-camera.html).
+
+## Which method should you use?
+
+- Quick share to a friend: Method 1.
+- Fixing one photo in your library: Method 2.
+- Sending files to strangers, marketplaces or clients: Method 3, because it removes everything, not just location.
+
+=== turn-off-location-iphone-camera
+title: How to Turn Off Location on iPhone Camera (Stop Photo Geotags)
+cat: Photo Privacy
+kw: turn off location iphone camera, stop iphone geotagging, iphone camera location services, disable photo location iphone, iphone gps photos
+desc: Turn off location on your iPhone camera so new photos stop saving GPS metadata. Step-by-step settings, plus how to clean photos you've already taken.
+---
+By default, the iPhone Camera app asks for location access, and many people allow it without thinking. Here's how to **turn off location on the iPhone camera** so new photos stop recording GPS metadata.
+
+## Steps to turn off camera location
+
+1. Open **Settings**.
+2. Tap **Privacy & Security**.
+3. Tap **Location Services**.
+4. Scroll down and tap **Camera**.
+5. Choose **Never**.
+
+From now on, new photos and videos taken with the Camera app won't include GPS coordinates.
+
+## What you lose
+
+Your Photos app won't be able to show new photos on a map or group them by place. Some people turn location on only when travelling and off at home, which is a reasonable compromise.
+
+## What this doesn't fix
+
+- **Old photos:** photos taken before you changed the setting still contain their location.
+- **Other metadata:** date, time, device model and camera settings are still saved.
+- **Other camera apps:** third-party camera apps have their own location permission. Check each one in the same Location Services list.
+
+## Clean photos you've already taken
+
+To remove location and all other metadata from existing photos, use GetFileClean. Select the photos in your browser and download clean copies. It runs on your iPhone in Safari, and photos are never uploaded.
+
+For more options, read [how to remove metadata from iPhone photos](remove-metadata-iphone-photos.html).
+
+=== remove-metadata-android-photos
+title: How to Remove Metadata from Android Photos
+cat: Photo Privacy
+kw: remove metadata android, android photo metadata, remove exif android, remove location from photo android, android exif remover
+desc: How to remove metadata from Android photos, including GPS location and device details, using Google Photos settings or a free browser-based EXIF remover.
+---
+Android phones save EXIF metadata in every photo, often including GPS location. Here's how to **remove metadata from Android photos** before you share them.
+
+## Option 1: Remove location in Google Photos
+
+Google Photos lets you remove or edit an estimated location on a photo:
+
+1. Open the photo and swipe up to see details.
+2. Tap the edit icon next to the location if it's shown.
+3. Choose to remove the location.
+
+Menus vary by version, and this may not remove every metadata field. It's best for quick fixes.
+
+## Option 2: Hide location in shared links
+
+Google Photos has a sharing setting to remove location from items you share by link. Look for it in Google Photos settings under sharing options. This affects link sharing, not files you send in other ways.
+
+## Option 3: Strip all metadata with a browser tool
+
+For a full clean, including device, dates and software:
+
+1. Open GetFileClean in Chrome on your phone.
+2. Tap **Choose files** and pick your photos.
+3. Check the report. GPS location is highlighted.
+4. Tap **Download** for each file, or **Download all** for a ZIP.
+
+GetFileClean removes EXIF, XMP and IPTC metadata without re-compressing your JPG files. Nothing is uploaded.
+
+## Prevent new photos from storing location
+
+Turn off location tagging in your camera app. See [how to turn off location on the Android camera](turn-off-location-android-camera.html).
+
+## Why bother on Android?
+
+Android makes it easy to share original files through Gmail, Google Drive, Bluetooth and messaging apps. Many of those keep the full metadata, so a quick clean is worth it whenever a photo leaves your circle.
+
+=== turn-off-location-android-camera
+title: How to Turn Off Location Tags on Your Android Camera
+cat: Photo Privacy
+kw: turn off location android camera, android camera geotag, disable location tags samsung, stop android photo gps, android camera location setting
+desc: Turn off location tags on your Android camera (Samsung, Pixel and others) so new photos stop saving GPS metadata, and clean photos you've already taken.
+---
+Most Android camera apps can save location in your photos. Here's how to **turn off location on your Android camera** on the most common phones.
+
+## Samsung Galaxy
+
+1. Open the **Camera** app.
+2. Tap the **settings** gear.
+3. Turn off **Location tags**.
+
+## Google Pixel
+
+1. Open the **Camera** app.
+2. Open the settings menu.
+3. Turn off **Save location**.
+
+## Other Android phones
+
+Look for a setting called location, geotag, GPS or save location in your camera app's settings. You can also remove the camera's location permission entirely:
+
+1. Open **Settings > Apps**.
+2. Find your camera app.
+3. Tap **Permissions > Location** and choose **Don't allow**.
+
+## Things to know
+
+- This only stops GPS for new photos. Old photos keep their location.
+- Dates, device model and camera settings are still saved.
+- Other apps that take photos, such as messaging apps, may have their own location permission.
+
+## Clean the photos you already have
+
+Use GetFileClean in your phone's browser to strip location and all other metadata from existing photos. It's free, has no limits, and your photos are never uploaded. See also [how to remove metadata from Android photos](remove-metadata-android-photos.html).
+
+=== remove-exif-data-windows
+title: How to Remove EXIF Data on Windows 10 and 11
+cat: Photo Privacy
+kw: remove exif data windows, remove metadata windows 11, windows remove properties and personal information, delete photo metadata windows, exif remover windows
+desc: How to remove EXIF data on Windows 10 and 11 using "Remove Properties and Personal Information", its limits, and a faster way to clean metadata from many files.
+---
+Windows has a built-in way to remove EXIF data from photos. Here's how to **remove EXIF data on Windows**, plus what the built-in tool misses.
+
+## Use "Remove Properties and Personal Information"
+
+1. In File Explorer, select one or more photos.
+2. Right-click and choose **Properties**.
+3. Open the **Details** tab.
+4. Click **Remove Properties and Personal Information** at the bottom.
+5. Choose **Create a copy with all possible properties removed**, then click **OK**.
+
+Windows creates copies with "Copy" in the name. Alternatively, choose **Remove the following properties from this file** and tick the fields you want to delete.
+
+## Limitations of the Windows method
+
+- It doesn't always remove everything. Some XMP data and app-specific blocks can remain.
+- It works best on JPG. Support for PNG, WebP and other formats is limited.
+- It doesn't show you what was found before removing it.
+- It handles PDFs and videos poorly or not at all.
+
+## A faster way for many files
+
+GetFileClean runs in any browser on Windows, including Edge and Chrome:
+
+1. Open GetFileClean.
+2. Drag a folder's worth of photos onto the drop zone.
+3. See which ones had GPS, device or author data.
+4. Click **Download all (.zip)**.
+
+It removes EXIF, XMP, IPTC and comments, doesn't re-compress your images, and also cleans Word, Excel, PDF and video files.
+
+## Also on Windows: Office documents
+
+To clean Word or Excel files, see [how to remove metadata from Word documents](remove-metadata-word-document.html).
+
+=== remove-exif-data-mac
+title: How to Remove EXIF Data and Location from Photos on Mac
+cat: Photo Privacy
+kw: remove exif data mac, remove metadata mac, preview remove location info, mac photo metadata, delete gps from photo mac
+desc: How to remove EXIF data and GPS location from photos on a Mac using Preview and the Photos app, and how to strip all metadata in one step.
+---
+macOS has a couple of built-in ways to remove location from photos, but neither removes everything. Here's how to **remove EXIF data on a Mac**.
+
+## Remove location with Preview
+
+1. Open the photo in **Preview**.
+2. Choose **Tools > Show Inspector**.
+3. Click the info tab, then the **GPS** tab if it appears.
+4. Click **Remove Location Info**.
+5. Save the file.
+
+This removes GPS coordinates but leaves the device model, dates and other EXIF fields.
+
+## Hide location in the Photos app
+
+1. Select the photo in Photos.
+2. Choose **Image > Location > Hide Location**.
+
+This hides the location within your library and when sharing from Photos, but it doesn't clean files you've already exported elsewhere.
+
+## Export without location from Photos
+
+When exporting with **File > Export**, look for an option to include location information and turn it off. Other metadata may still be included.
+
+## Remove all metadata at once
+
+For a complete clean, open GetFileClean in Safari or Chrome on your Mac, drag in your photos and download clean copies. It removes EXIF, XMP, IPTC, comments and location in one step, without re-compressing JPGs. It also handles HEIC files, which Safari can open, and saves them as clean JPGs.
+
+## Using the command line?
+
+Advanced users can use ExifTool. See our [ExifTool guide](exiftool-remove-metadata.html).
+
+=== remove-metadata-heic
+title: How to Remove Metadata from HEIC Photos
+cat: Photo Privacy
+kw: remove metadata heic, heic metadata, heic exif remover, heic to jpg remove metadata, iphone heic location
+desc: How to remove metadata from HEIC photos taken on iPhone, why HEIC metadata is harder to edit, and how to convert HEIC to a clean JPG in your browser.
+---
+HEIC (High Efficiency Image Container) is the default photo format on modern iPhones. It stores the same kind of metadata as JPG, including GPS location, device model and dates. Here's how to **remove metadata from HEIC** files.
+
+## Why HEIC is trickier
+
+HEIC is newer and less widely supported than JPG. Many tools can't edit HEIC directly, and some can't open it at all. Windows may need an extension to view HEIC files.
+
+## Option 1: Let your iPhone convert to JPG
+
+If you share or pick photos through a browser or certain apps, iOS often converts HEIC to JPG automatically. You can also set your camera to save JPG: **Settings > Camera > Formats > Most Compatible**. You'll still need to remove metadata from the JPG.
+
+## Option 2: Turn off location when sharing
+
+Use the share sheet's **Options** menu and turn off **Location**. See [remove metadata from iPhone photos](remove-metadata-iphone-photos.html).
+
+## Option 3: Convert and clean with GetFileClean
+
+GetFileClean converts HEIC to a clean JPG in browsers that can open HEIC, such as Safari on Mac and iPhone. The new JPG contains no hidden metadata. If your browser can't open HEIC, the tool tells you, and you can convert to JPG first with your phone's settings above.
+
+## Will converting HEIC reduce quality?
+
+Converting to JPG involves compression, but GetFileClean uses high quality settings, so the difference is very hard to see. If you need perfect originals, keep the HEIC for yourself and share the clean JPG.
+
+=== remove-metadata-png
+title: How to Remove Metadata from PNG Files
+cat: Photo Privacy
+kw: remove metadata png, png metadata, png text chunks, png exif, strip png metadata
+desc: PNG files can hide text chunks, EXIF and timestamps. Learn what PNG metadata contains and how to remove metadata from PNG images without losing quality.
+---
+PNG files don't usually come straight from a camera, but they can still carry metadata. Here's how to **remove metadata from PNG** images.
+
+## What metadata can a PNG contain?
+
+PNG stores extra information in sections called chunks:
+
+- **tEXt, zTXt and iTXt:** text fields such as Author, Software, Comment, Copyright and Description.
+- **eXIf:** full EXIF data, including GPS, if the image came from a camera or phone.
+- **tIME:** the last modification time.
+- **XMP:** editing history from apps like Photoshop.
+
+Some image generators and editors also write their settings or prompts into PNG text chunks.
+
+## Does removing PNG metadata reduce quality?
+
+No. PNG is lossless, and removing metadata chunks doesn't touch the image data. GetFileClean removes the text, EXIF, XMP and time chunks and keeps the chunks needed to display your image correctly, including transparency and colour information.
+
+## How to strip PNG metadata
+
+1. Open GetFileClean.
+2. Drop in your PNG files.
+3. Check the report for author names, software or GPS.
+4. Download the clean PNGs.
+
+Windows' built-in **Remove Properties** option often can't edit PNG files, which is why a dedicated tool helps.
+
+## Are screenshots PNG files?
+
+Many screenshots are PNGs. They usually carry less metadata than camera photos, but can still include software and date information. Read [do screenshots have metadata](screenshot-metadata.html).
+
+=== remove-metadata-webp
+title: How to Remove Metadata from WebP Images
+cat: Photo Privacy
+kw: remove metadata webp, webp metadata, webp exif, strip webp metadata, webp xmp
+desc: WebP images can carry EXIF and XMP metadata just like JPGs. Learn how to remove metadata from WebP files without re-compressing them.
+---
+WebP is a modern image format used across the web. Like JPG, it can store EXIF and XMP metadata. Here's how to **remove metadata from WebP** images.
+
+## What metadata is in a WebP file?
+
+WebP files are built from chunks. Two of them hold metadata:
+
+- **EXIF:** device, dates, settings and possibly GPS coordinates.
+- **XMP:** editing history and descriptive fields.
+
+There's also a header that flags whether these chunks are present.
+
+## Remove WebP metadata without losing quality
+
+GetFileClean removes the EXIF and XMP chunks, updates the header flags and file size, and leaves the image data untouched. There's no re-compression, so quality is identical.
+
+1. Open GetFileClean.
+2. Drop in your WebP images.
+3. Download the clean copies individually or as a ZIP.
+
+## Why clean WebP files?
+
+WebP is common on websites and online stores. If you convert phone photos to WebP for your site, the metadata can come along. Cleaning images before publishing keeps location and device details off your pages and makes files slightly smaller.
+
+## Related guides
+
+- [Remove metadata from PNG files](remove-metadata-png.html)
+- [Product photos and metadata for online stores](ecommerce-product-photos-metadata.html)
+
+=== remove-metadata-gif
+title: How to Remove Metadata from GIF Files
+cat: Photo Privacy
+kw: remove metadata gif, gif metadata, gif comment extension, gif xmp, clean gif file
+desc: GIF files can hide comments and XMP metadata. Learn what metadata GIFs contain and how to remove it while keeping animations working.
+---
+GIFs carry less metadata than photos, but they're not always clean. Here's how to **remove metadata from GIF** files.
+
+## What metadata can a GIF contain?
+
+- **Comment extensions:** free text added by the software that made the GIF.
+- **Application extensions:** blocks added by apps, including XMP metadata from Adobe software.
+- **Looping information:** an application block that tells the GIF to repeat. This isn't personal data and is needed for animations.
+
+## Remove GIF metadata safely
+
+GetFileClean removes comments and app data blocks, including XMP, but keeps the looping block so animated GIFs still play and repeat correctly. Frames and colours aren't changed.
+
+1. Drop your GIFs into GetFileClean.
+2. Check the report.
+3. Download the clean files.
+
+## Why bother?
+
+Comments and XMP can contain software names, user names or file paths from the computer that created the GIF. If you make GIFs for clients or publish them widely, a quick clean is a tidy habit.
+
+## Other image formats
+
+See guides for [PNG](remove-metadata-png.html), [WebP](remove-metadata-webp.html) and [HEIC](remove-metadata-heic.html).

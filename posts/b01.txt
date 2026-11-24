@@ -1,0 +1,418 @@
+=== what-is-metadata
+title: What Is Metadata? A Plain-English Guide to File Metadata
+cat: Metadata Basics
+kw: what is metadata, file metadata, metadata meaning, hidden file data, metadata examples
+desc: What is metadata? Learn what file metadata is, what it reveals about you, real examples from photos, documents and videos, and how to remove metadata for free.
+---
+**Metadata** is data about data. Every photo, document, PDF and video you create carries a hidden layer of file metadata that describes the file: who made it, when, on what device, and sometimes exactly where. You don't see it when you open the file, but anyone who receives the file can read it in seconds.
+
+## What does metadata look like?
+
+Think of a file like a letter in an envelope. The letter is the content you see. The metadata is everything written on the envelope: sender, date, postmark, return address. Some common metadata examples:
+
+- **Photos:** camera or phone model, date and time taken, lens settings, editing software and often GPS coordinates.
+- **Word, Excel and PowerPoint files:** author name, company, "last modified by", total editing time and template name.
+- **PDF files:** author, title, the program that created the file and creation dates.
+- **Videos:** recording date, device model and, on many phones, the location where the clip was filmed.
+- **Music and audio:** artist, album, encoder software, comments and cover art.
+
+## Why does file metadata exist?
+
+Metadata is useful. Your phone uses it to sort photos by date and place. Search tools use it to find documents. Photographers use it to record copyright. The problem is that metadata travels with the file when you share it, and most people never think to check it.
+
+## When metadata becomes a privacy risk
+
+A photo of something you're selling online can reveal your home address through its GPS coordinates. A CV can show the name of your current employer in the "Company" field. A report sent to a client can show that it was originally written for a competitor. None of this is visible on screen, which is exactly why it causes problems.
+
+## How to see and remove metadata
+
+You can view metadata in your computer's file properties, but removing it properly across many file types is easier with a dedicated **metadata remover**. GetFileClean removes hidden metadata from photos, Office documents, PDFs, videos and audio directly in your browser. Your files are never uploaded, and there is no limit on file size or the number of files.
+
+## Key takeaways
+
+- Metadata is hidden information stored inside a file.
+- It can include names, devices, dates and exact locations.
+- It travels with the file when you email, upload or share it.
+- Removing metadata before sharing is a simple habit that protects your privacy.
+
+Want to go deeper? Read [what EXIF data reveals](what-is-exif-data.html) or learn the [difference between EXIF, XMP and IPTC](exif-vs-xmp-vs-iptc.html).
+
+=== what-is-exif-data
+title: What Is EXIF Data? What Your Photo Metadata Reveals
+cat: Metadata Basics
+kw: what is exif data, exif metadata, photo metadata, exif remover, image metadata
+desc: What is EXIF data? See what EXIF photo metadata reveals, including GPS location and camera serial numbers, and how to remove EXIF data from images for free.
+---
+**EXIF data** (Exchangeable Image File Format) is the metadata your camera or phone writes into every photo it takes. It's the most common type of photo metadata, and it can reveal far more than most people expect.
+
+## What EXIF metadata contains
+
+A typical photo taken on a smartphone stores dozens of EXIF fields, including:
+
+- **Device make and model**, for example the exact phone you own.
+- **Date and time** the photo was taken, down to the second.
+- **GPS latitude, longitude and altitude** if location services were on.
+- **Camera settings** such as shutter speed, aperture, ISO and focal length.
+- **Software** used to edit or export the image.
+- **Orientation**, which tells viewers how to rotate the image.
+- **Serial numbers** of the camera body or lens on many professional cameras.
+- **A small thumbnail** of the original image.
+
+## Why EXIF data matters for privacy
+
+The GPS fields are the biggest concern. If you take a photo at home and post it or send it as a file, anyone who opens the image metadata can place a pin on a map at your front door. Dates and times reveal routines. Device models and serial numbers can link different photos to the same person.
+
+## Where EXIF data survives and where it doesn't
+
+Some large social networks strip EXIF from images when they display them publicly, but many places keep the original file intact: email attachments, cloud storage links, file-sharing apps, messaging apps when you send a photo as a document, and most websites where you upload original files. You can't rely on every platform to clean files for you.
+
+## How to remove EXIF data
+
+You have a few options:
+
+1. Turn off location tagging in your camera app so new photos don't record GPS.
+2. Use your operating system's built-in tools on [Windows](remove-exif-data-windows.html) or [Mac](remove-exif-data-mac.html).
+3. Use an **EXIF remover** like GetFileClean to strip all EXIF, XMP and IPTC metadata in one step.
+
+GetFileClean removes EXIF data from JPG, PNG, WebP and GIF files without re-compressing them, so image quality stays exactly the same. It runs in your browser, so photos never leave your device.
+
+## Bottom line
+
+EXIF metadata is useful for organising your own photo library, but it rarely needs to go along when you share an image. Strip it before you send.
+
+=== exif-vs-xmp-vs-iptc
+title: EXIF vs XMP vs IPTC: The 3 Types of Image Metadata Explained
+cat: Metadata Basics
+kw: exif vs xmp, iptc metadata, xmp metadata, image metadata types, photo metadata standards
+desc: EXIF vs XMP vs IPTC explained. Learn the three image metadata standards, what each one stores, and how to remove all photo metadata at once.
+---
+When people talk about photo metadata they usually mean EXIF, but images can carry three different metadata standards: **EXIF, XMP and IPTC**. Removing only one of them can leave personal details behind.
+
+## EXIF: written by the camera
+
+EXIF metadata is created automatically when a photo is taken. It records technical facts: device model, exposure settings, date and time, orientation and GPS location. You rarely type EXIF data yourself; your camera fills it in.
+
+## IPTC: written by people
+
+IPTC metadata was designed by news organisations to describe images. It stores fields such as:
+
+- Creator or photographer name
+- Caption and headline
+- Keywords
+- Copyright notice
+- City, state and country
+
+Photo agencies and professional photographers fill in IPTC fields, often with editing software. If you've ever typed your name into a "copyright" box in an editor, it probably went into IPTC.
+
+## XMP: the flexible modern format
+
+XMP (Extensible Metadata Platform) was created by Adobe. It's an XML-based format that can hold almost anything, including copies of EXIF and IPTC values, editing history, ratings, labels and the settings used in programs like Lightroom and Photoshop. XMP can also appear in PDFs, videos and other files, not only images.
+
+## Why the differences matter
+
+Many basic tools only remove EXIF. A photo could have its GPS fields stripped but still carry your name in IPTC, or an editing history in XMP that lists file paths from your computer, which can include your username.
+
+## Comparison at a glance
+
+- **EXIF:** set by the device. Contains device, settings, dates and GPS.
+- **IPTC:** set by people. Contains names, captions, keywords and copyright.
+- **XMP:** set by software. Contains anything, including edit history and copies of other metadata.
+
+## Remove all three at once
+
+GetFileClean removes EXIF, XMP and IPTC metadata together, along with comments and app-specific data blocks. It keeps the colour profile so your image looks identical. Learn more in [what is EXIF data](what-is-exif-data.html) or see our [metadata glossary](metadata-glossary.html).
+
+=== why-remove-metadata
+title: 7 Reasons to Remove Metadata Before Sharing Any File
+cat: Metadata Basics
+kw: why remove metadata, remove metadata, metadata privacy, metadata removal benefits, strip metadata
+desc: Why remove metadata? Seven real reasons to strip metadata from photos, documents and PDFs before you share them, from location privacy to professional reputation.
+---
+Removing metadata takes seconds, but forgetting to do it can expose more than you intended. Here are seven practical reasons to **remove metadata** before you share a file.
+
+## 1. Protect your home location
+
+Phone photos often store GPS coordinates. Share a photo taken at home and you may be sharing your address. See [how your photos can reveal your address](hidden-gps-location-in-photos.html).
+
+## 2. Keep your name off documents
+
+Word, Excel and PDF files store an author name, usually taken from your computer or Office account. Removing metadata keeps your identity out of files you share anonymously or on behalf of someone else.
+
+## 3. Avoid awkward "last edited by" surprises
+
+A proposal edited by five colleagues can list the last person who touched it, or show that it was built from a template made for another client.
+
+## 4. Hide your devices and software
+
+Device models, serial numbers and software versions can link separate files to the same person and give attackers useful details about what you use.
+
+## 5. Protect other people
+
+Photos of children, friends or clients carry the same location and date data. Cleaning them protects people who never agreed to share that information.
+
+## 6. Meet privacy rules at work
+
+Many organisations have policies about sharing personal data. Metadata can contain personal data such as names, and stripping it is a simple step towards following those policies. Read about [metadata and GDPR](metadata-and-gdpr.html).
+
+## 7. Look more professional
+
+Clean files with no leftover author names, internal titles or comments look deliberate and polished. Metadata from old drafts can undermine an otherwise professional deliverable.
+
+## How to strip metadata quickly
+
+You can remove metadata manually with built-in tools, but that means a different method for every file type. GetFileClean handles photos, documents, PDFs, videos and audio in one place. Drop the files in, see a report of what was found, and download clean copies. Nothing is uploaded and there are no limits.
+
+Before you share your next file, run through our [metadata checklist](metadata-checklist-before-sharing.html).
+
+=== hidden-gps-location-in-photos
+title: Photo Location Metadata: How Your Pictures Can Reveal Your Address
+cat: Photo Privacy
+kw: photo location metadata, gps metadata, remove location from photo, geotag privacy, photo gps data
+desc: Photo location metadata can reveal your home address. Learn how GPS metadata gets into pictures, who can read it, and how to remove location from photos.
+---
+Most smartphones can save the exact place where every photo was taken. This **photo location metadata** is stored as GPS coordinates inside the image file, accurate enough to find a specific house.
+
+## How GPS metadata gets into your photos
+
+When location access is turned on for your camera app, the phone writes latitude, longitude and often altitude into the photo's EXIF data. The same happens with many videos. It's convenient for browsing a map of your memories, but the coordinates stay inside the file when it's shared.
+
+## Who can see your photo GPS data?
+
+Anyone who gets the original file. Reading location metadata needs no special skill: many free apps and websites display a map pin as soon as a photo is opened. Common ways the original file gets shared include:
+
+- Emailing photos as attachments
+- Sending photos as "files" or "documents" in messaging apps
+- Sharing cloud storage folders or links
+- Uploading to websites, forums and marketplaces that keep original files
+- Giving files to someone on a USB drive
+
+## Everyday situations where it matters
+
+- Selling furniture or a car online with photos taken in your driveway
+- Sharing pictures of your children at home or school
+- Posting photos of a new purchase or a delivery at your door
+- Sending photos to someone you've just met online
+
+## How to remove location from photos
+
+**Stop it at the source:** turn off location for your camera on [iPhone](turn-off-location-iphone-camera.html) or [Android](turn-off-location-android-camera.html).
+
+**Clean existing photos:** use a metadata remover before sharing. GetFileClean shows you whether a photo contains GPS coordinates, displays them so you can see what would have been shared, and then removes all location and other metadata in your browser.
+
+## Check before you share
+
+If you're not sure whether a photo has location data, drop it into GetFileClean. The report highlights GPS data in red. It takes a second and the photo never leaves your device.
+
+=== does-removing-metadata-reduce-quality
+title: Does Removing Metadata Reduce Image or Video Quality?
+cat: Metadata Basics
+kw: remove metadata without losing quality, does removing exif reduce quality, lossless metadata removal, metadata remover quality
+desc: Does removing metadata reduce quality? Learn how lossless metadata removal works for JPG, PNG, PDF and video, and when a file actually gets re-compressed.
+---
+A common worry is that cleaning a file will make it look worse. The short answer: **removing metadata does not reduce quality** when it's done properly. It depends on how the tool works.
+
+## Two ways tools remove metadata
+
+**1. Re-saving the file.** Some tools open your image and save it again, which drops metadata as a side effect. For JPG files this means re-compressing the image, which can reduce quality and change file size. Each re-save loses a little more detail.
+
+**2. Removing the metadata blocks directly.** Better tools edit the file's structure and simply cut out the metadata sections, leaving the actual image data untouched byte for byte. This is lossless metadata removal.
+
+## How GetFileClean handles each format
+
+- **JPG, PNG, WebP, GIF:** metadata blocks are removed directly. Pixels are not re-compressed, so quality is identical.
+- **Word, Excel, PowerPoint, OpenDocument:** only the properties files are replaced. Your text, formatting and images stay the same.
+- **PDF:** the document info and XMP metadata are removed. Page content isn't changed.
+- **MP4 and MOV video:** metadata boxes are wiped in place. The file size stays the same and the video and sound are untouched.
+- **MP3, FLAC, WAV:** tag sections are removed. Audio data isn't re-encoded.
+- **HEIC, AVIF, BMP, TIFF:** these are converted to JPG or PNG, since browsers can't edit them directly. JPG output uses high quality settings.
+
+## What about colour?
+
+Some tools also remove the ICC colour profile, which can make photos look slightly duller on some screens. GetFileClean keeps the colour profile because it describes colours, not you.
+
+## What about rotation?
+
+Phone photos often rely on an orientation tag to appear upright. If that tag is removed without care, photos can appear sideways. GetFileClean rotates the actual pixels first when needed, then removes the tag. Read more about the [EXIF orientation tag](exif-orientation-tag.html).
+
+## Bottom line
+
+You don't have to choose between privacy and quality. Use a tool that removes metadata without re-compressing your files.
+
+=== metadata-privacy-risks
+title: 9 Metadata Privacy Risks Hiding in Everyday Files
+cat: Privacy & Security
+kw: metadata privacy risks, metadata security, hidden data in files, metadata leak, file privacy
+desc: Nine metadata privacy risks hiding in photos, documents, PDFs and videos, with simple ways to reduce each risk by removing metadata before sharing.
+---
+Metadata is easy to forget because it's invisible. Here are nine **metadata privacy risks** that show up in ordinary files, and what to do about each one.
+
+## 1. GPS coordinates in photos and videos
+
+Phone cameras can store exact locations. One shared photo can reveal where you live, work or go to school.
+
+## 2. Author names in documents
+
+Office files and PDFs usually store the author's name, often your full name from your computer account.
+
+## 3. Company and manager fields
+
+Word, Excel and PowerPoint files can store your employer and manager names in the extended properties, even on personal projects.
+
+## 4. Editing history and templates
+
+Document properties can reveal the original template, total editing time and revision numbers, showing a file was reused from another project.
+
+## 5. File paths with your username
+
+XMP editing history and some document fields can contain paths like a folder named after your computer username.
+
+## 6. Device models and serial numbers
+
+Camera serial numbers in EXIF can connect photos posted under different accounts to the same physical camera.
+
+## 7. Precise timestamps
+
+Creation dates reveal when you were at a location, when work was really done, or that a "new" document is actually years old.
+
+## 8. Embedded photos inside documents
+
+A Word file or presentation can contain photos that still carry their own GPS data, even after you clean the document's properties.
+
+## 9. Leftover thumbnails
+
+Some JPGs contain a small preview image stored in metadata. In older editing workflows, that preview could show the photo before it was cropped. See [hidden thumbnails in JPEG files](hidden-thumbnails-in-jpeg.html).
+
+## How to reduce these risks
+
+- Turn off camera location when you don't need it.
+- Use your Office privacy settings for new documents.
+- Clean files before sharing them outside your team.
+- Use a tool that also cleans images embedded inside documents.
+
+GetFileClean addresses all nine of these risks across photos, documents, PDFs, videos and audio, including images embedded inside Word and PowerPoint files. It works in your browser, so the files you're protecting are never uploaded.
+
+=== how-to-check-file-metadata
+title: How to Check Metadata of Any File (Photos, PDFs, Docs, Videos)
+cat: Metadata Basics
+kw: how to check metadata, view metadata, metadata viewer, check exif data, see file metadata
+desc: How to check metadata on Windows, Mac, iPhone and Android for photos, PDFs, Word documents and videos, plus a quick way to see and remove metadata in one step.
+---
+Before you can remove metadata, it helps to know what's there. Here's **how to check metadata** for the most common file types on any device.
+
+## Check metadata on Windows
+
+1. Right-click the file and choose **Properties**.
+2. Open the **Details** tab.
+3. Scroll through fields such as Authors, Date taken, Camera model and GPS.
+
+This works for photos, Office documents, music and many videos.
+
+## Check metadata on Mac
+
+- **Photos:** open the image in Preview, then choose **Tools > Show Inspector**. The info tabs show EXIF and, if present, a GPS tab with a map.
+- **Any file:** select it in Finder and press **Command + I** for basic information.
+
+## Check photo metadata on iPhone
+
+Open a photo in the Photos app and swipe up, or tap the info button. You'll see the date, device, camera settings and a map if location was saved.
+
+## Check photo metadata on Android
+
+In Google Photos, open a picture and swipe up to see details including date, device and location. Menus vary slightly between phone makers.
+
+## Check Word, Excel and PowerPoint metadata
+
+Go to **File > Info**. The right side shows properties such as Author, Last Modified By, Created and Company. Click **Show All Properties** for more.
+
+## Check PDF metadata
+
+In most PDF readers, open **File > Properties** or **Document Properties**. The Description tab shows Title, Author, Creator and Producer.
+
+## Check and remove metadata in one step
+
+Checking each file by hand is slow, especially across different formats. GetFileClean shows a short report for every file you drop in, including GPS location, author names, device models and dates. It then gives you a clean copy straight away. It handles photos, documents, PDFs, videos and audio, with no uploads and no limits.
+
+## Tip
+
+Built-in viewers don't always show everything. XMP and some app data are often hidden from basic property panels, so a file can look clean when it isn't.
+
+=== metadata-myths
+title: 8 Common Myths About Metadata (and the Truth)
+cat: Metadata Basics
+kw: metadata myths, metadata facts, does metadata matter, metadata misconceptions, photo metadata myths
+desc: Eight common metadata myths debunked, from "social media removes everything" to "screenshots are always safe", with what's actually true about file metadata.
+---
+Metadata is widely misunderstood. Here are eight common **metadata myths** and what's actually true.
+
+## Myth 1: "Social media removes all metadata, so I'm safe"
+
+Some large platforms strip metadata from images when they show them publicly. But email, cloud links, messaging apps sending files, forums and marketplaces often keep the original file. Platforms can also change how they handle uploads at any time.
+
+## Myth 2: "Only photos have metadata"
+
+Documents, spreadsheets, presentations, PDFs, videos and audio files all carry metadata, often including your name.
+
+## Myth 3: "Renaming a file removes its metadata"
+
+The file name is separate from the metadata stored inside the file. Renaming changes nothing inside.
+
+## Myth 4: "Converting to PDF cleans everything"
+
+Exporting to PDF usually copies the author and title into the PDF properties and adds the creating program's name. See [what PDF metadata contains](pdf-metadata-explained.html).
+
+## Myth 5: "Removing metadata ruins quality"
+
+Lossless tools remove metadata blocks without re-compressing your image. Read [does removing metadata reduce quality](does-removing-metadata-reduce-quality.html).
+
+## Myth 6: "Screenshots never have metadata"
+
+Screenshots usually carry less metadata than camera photos, but they can still include dates, device information and software details. See [screenshot metadata](screenshot-metadata.html).
+
+## Myth 7: "Turning off location removes it from old photos"
+
+Turning off camera location only affects new photos. Photos you've already taken still have their GPS data.
+
+## Myth 8: "Metadata can't identify me"
+
+Names, device serial numbers, locations and timestamps can be combined to identify a person, even when no single field does.
+
+## The simple habit that solves most of this
+
+Clean files before they leave your hands. GetFileClean removes metadata from photos, documents, PDFs, videos and audio in your browser, with no uploads and no limits.
+
+=== browser-based-metadata-removal
+title: Why a Browser-Based Metadata Remover Is Safer Than Uploading
+cat: Privacy & Security
+kw: metadata remover online, remove metadata online free, offline metadata remover, private metadata remover, no upload metadata remover
+desc: Most online metadata removers upload your files to a server. Learn why a browser-based metadata remover is safer, faster and free of file size limits.
+---
+If you search for a **metadata remover online**, most tools ask you to upload your file to their server. That creates an odd situation: to protect your private data, you hand the whole file to a company you've never heard of.
+
+## How upload-based tools work
+
+1. Your file travels over the internet to the service's server.
+2. The server removes the metadata.
+3. You download the cleaned copy.
+4. The service says it deletes your file after a period of time.
+
+You have to trust that the file is deleted, that the server is secure and that nobody looks at it. For confidential contracts, medical documents or private photos, that's a real risk.
+
+## How a browser-based metadata remover works
+
+A browser-based tool sends the cleaning program to your browser, then processes files locally on your own computer or phone. The file is never uploaded. Once the page has loaded you can even disconnect from the internet and keep working.
+
+## Advantages of cleaning in your browser
+
+- **Privacy:** nobody else ever receives your files.
+- **No size limits:** there's no server storage to pay for, so there's no reason to cap file size.
+- **No count limits:** clean one file or thousands.
+- **Speed:** no waiting for large uploads and downloads.
+- **Works offline:** useful on restricted networks.
+
+## Are there any limitations?
+
+Very large videos are limited by your device's memory, and very old browsers may not support every feature. Some image formats such as HEIC can only be opened in browsers that support them.
+
+## GetFileClean works this way
+
+GetFileClean is a free, browser-based metadata remover for photos, Office documents, PDFs, videos and audio. Drop files in, see a report of what was hidden, and download clean copies. Nothing is uploaded. Read more in [can GetFileClean work offline](getfileclean-works-offline.html).

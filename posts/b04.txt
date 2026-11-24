@@ -1,0 +1,372 @@
+=== remove-metadata-word-document
+title: How to Remove Metadata from a Word Document (DOCX)
+cat: Documents
+kw: remove metadata from word document, word document metadata, docx metadata remover, remove author from word, clean word file
+desc: How to remove metadata from a Word document: author, company, last modified by and dates. Use Word's Inspect Document or a free browser-based DOCX metadata remover.
+---
+Every Word file stores hidden properties about who made it and how. Here's how to **remove metadata from a Word document** before you send it.
+
+## What metadata is in a DOCX file?
+
+- **Author** and **Last Modified By**
+- **Company** and **Manager**
+- **Title, Subject, Keywords and Comments** properties
+- **Created and modified dates**, revision number and total editing time
+- **Template** name
+- **Custom properties** added by your organisation's systems
+- **Embedded images**, which can keep their own EXIF data and GPS location
+
+## Method 1: Word's Inspect Document
+
+1. Save a copy of your document.
+2. Go to **File > Info > Check for Issues > Inspect Document**.
+3. Tick the categories you want to check and click **Inspect**.
+4. Click **Remove All** next to **Document Properties and Personal Information**.
+5. Save.
+
+This is thorough and can also remove comments, revisions and hidden text. Read our full [Inspect Document guide](word-inspect-document.html).
+
+## Method 2: GetFileClean
+
+GetFileClean removes the core, app and custom properties from DOCX files and also cleans photos embedded inside the document, which Word's tool doesn't do. It's handy when you have many files or work on a computer without Microsoft Office.
+
+1. Drop your Word files into GetFileClean.
+2. See the author, editor, company and dates that were found.
+3. Download clean copies, one by one or as a ZIP.
+
+## What GetFileClean doesn't remove
+
+Comments, tracked changes and hidden text are part of the document's content, not metadata. Remove them in Word first: accept or reject all changes and delete comments. See [why track changes and comments are risky](track-changes-and-comments-risk.html).
+
+## Tip: stop Word saving your name
+
+In Word, **File > Options > Trust Center > Trust Center Settings > Privacy Options** has a setting to remove personal information from file properties on save for the current document.
+
+=== word-inspect-document
+title: Word Inspect Document: Remove Hidden Data Step by Step
+cat: Documents
+kw: word inspect document, document inspector word, remove hidden data word, remove personal information word, word hidden metadata
+desc: Step-by-step guide to Word's Document Inspector: what Inspect Document finds, how to remove hidden data and personal information, and what it misses.
+---
+Microsoft Word includes a **Document Inspector** that finds hidden data and personal information. Here's how to use **Inspect Document** properly.
+
+## How to run Inspect Document
+
+1. Open the document and **save a copy first**, because some removals can't be undone.
+2. Click **File > Info**.
+3. Click **Check for Issues > Inspect Document**.
+4. If prompted, save your changes.
+5. Choose the content types to check and click **Inspect**.
+6. Review the results and click **Remove All** for each item you want to remove.
+7. Save the document.
+
+## What the Document Inspector checks
+
+- **Comments, revisions and versions**
+- **Document properties and personal information**, such as author, company and dates
+- **Task pane add-ins** and embedded documents
+- **Collapsed headings**
+- **Custom XML data**
+- **Headers, footers and watermarks**
+- **Invisible content** and **hidden text**
+
+## Be careful with headers and watermarks
+
+Removing headers and footers deletes them completely, including page numbers and logos you may want to keep. Only remove what you intend to.
+
+## What it doesn't do
+
+The Inspector doesn't clean metadata inside images embedded in the document. A photo pasted into a report can still carry its GPS location. It also requires Word, one file at a time.
+
+## Combine both tools
+
+Use the Inspector to remove comments, revisions and hidden text, then run the file through GetFileClean to clear properties and embedded image metadata in bulk. Read the [complete Word metadata guide](remove-metadata-word-document.html).
+
+=== remove-metadata-excel
+title: How to Remove Metadata from Excel Files (XLSX)
+cat: Documents
+kw: remove metadata excel, excel file metadata, xlsx metadata remover, remove author excel, excel document properties
+desc: How to remove metadata from Excel files: author, company and dates in XLSX properties, plus hidden sheets and comments. Clean spreadsheets before sharing.
+---
+Spreadsheets travel widely: budgets, price lists, reports and exports. Here's how to **remove metadata from Excel** files before they leave your hands.
+
+## What metadata is in an XLSX file?
+
+- **Author** and **Last Modified By**
+- **Company** and **Manager**
+- **Created and modified dates**
+- **Application** and version
+- **Custom properties** from document management systems
+- **Images** embedded in the workbook with their own EXIF data
+
+## Method 1: Excel's Document Inspector
+
+1. Save a copy of the workbook.
+2. Go to **File > Info > Check for Issues > Inspect Document**.
+3. Click **Inspect**, then **Remove All** for **Document Properties and Personal Information**.
+4. Save.
+
+The Inspector can also find hidden rows, columns and worksheets, comments and notes.
+
+## Method 2: GetFileClean
+
+Drop XLSX files into GetFileClean to strip the document properties and clean any embedded photos. The report shows the author, editor and dates that were found. Your formulas, formatting and data stay the same.
+
+## Hidden data that isn't metadata
+
+Spreadsheets often hide information in plain sight: hidden sheets, hidden rows and columns, cells with white text, old pivot table caches and comments. These are part of the workbook's content. Read about [hidden data in spreadsheets](hidden-data-in-spreadsheets.html).
+
+## Sharing a spreadsheet with clients?
+
+Consider exporting only the sheet they need to a new workbook, or exporting to PDF, then cleaning the result.
+
+=== remove-metadata-powerpoint
+title: How to Remove Metadata from PowerPoint Presentations (PPTX)
+cat: Documents
+kw: remove metadata powerpoint, pptx metadata, powerpoint document properties, remove author powerpoint, clean presentation file
+desc: How to remove metadata from PowerPoint: author, company and template properties, speaker notes risks and image EXIF data inside PPTX presentations.
+---
+Presentations are often reused and passed between teams and companies. Here's how to **remove metadata from PowerPoint** files before you share a deck.
+
+## What metadata is in a PPTX file?
+
+- **Author, Last Modified By, Company and Manager**
+- **Title** and other descriptive properties, sometimes left over from an old deck
+- **Created date**, revision number and editing time
+- **Template** information
+- **Photos** inside slides with their own EXIF and GPS data
+
+## Method 1: PowerPoint's Document Inspector
+
+1. Save a copy.
+2. Go to **File > Info > Check for Issues > Inspect Document**.
+3. Inspect and remove **Document Properties and Personal Information**.
+4. Also check **Comments**, **Off-slide content** and **Presentation notes**.
+
+## Method 2: GetFileClean
+
+GetFileClean removes the PPTX properties and cleans metadata from photos embedded in your slides. Slide content, animations and notes are left as they are.
+
+## Watch out for speaker notes
+
+Speaker notes aren't metadata, but they're shared with the file. They may contain internal comments, pricing or remarks about the client. Delete them, or share a PDF export instead.
+
+## Off-slide content
+
+Objects dragged off the edge of a slide are invisible during the presentation but remain in the file. The Document Inspector can find them.
+
+## Quick checklist for decks
+
+1. Remove speaker notes and comments.
+2. Check for off-slide objects.
+3. Clean properties and images with GetFileClean.
+4. Consider sending a PDF instead of the editable file.
+
+=== track-changes-and-comments-risk
+title: Track Changes and Comments: The Hidden Data Metadata Tools Miss
+cat: Documents
+kw: track changes hidden data, remove comments word, tracked changes risk, document hidden content, remove revisions before sending
+desc: Tracked changes and comments stay inside Word files and can reveal negotiations and internal notes. Learn how to remove them, since metadata removal won't.
+---
+Metadata removers clean properties like author and company. They don't remove **tracked changes and comments**, because those are part of your document's content. Yet they're among the most damaging things to leave in a shared file.
+
+## Why tracked changes are risky
+
+Tracked changes keep every deletion and insertion, often with the reviewer's name and the time. Depending on view settings, a recipient may not see them at first, but they can turn on markup and read every earlier version of a clause, price or statement.
+
+## Why comments are risky
+
+Comments often contain frank internal remarks: "they'll accept a lower rate" or "don't mention the delay". Anyone with the file can read them.
+
+## How to remove tracked changes in Word
+
+1. Go to the **Review** tab.
+2. Click the arrow under **Accept** and choose **Accept All Changes**, or reject them.
+3. Make sure **Track Changes** is turned off.
+
+## How to remove comments in Word
+
+1. On the **Review** tab, click the arrow under **Delete**.
+2. Choose **Delete All Comments in Document**.
+
+## Double-check with Document Inspector
+
+Run **File > Info > Check for Issues > Inspect Document** to confirm nothing remains, including hidden text.
+
+## Then remove metadata
+
+After cleaning the content, use GetFileClean to remove author, company and other properties, plus metadata in embedded images. Read the full [Word metadata guide](remove-metadata-word-document.html).
+
+=== google-docs-download-metadata
+title: Do Google Docs Downloads Contain Metadata?
+cat: Documents
+kw: google docs metadata, google docs download metadata, google docs docx author, google docs pdf metadata, remove metadata google docs
+desc: When you download a Google Doc as DOCX or PDF, the file can include metadata such as the title. Learn what's included and how to clean exported files.
+---
+Google Docs lives in the cloud, but the moment you download a document as Word or PDF, you have a normal file. And normal files carry **metadata**.
+
+## What's in a downloaded Google Doc?
+
+Exported files typically include properties such as the document title and information about the program that created the file. Depending on the export, some fields may be empty or filled in differently from a Word document made on your computer.
+
+## The bigger risk: images
+
+Photos you inserted into the doc can keep their original metadata in the exported file, depending on how they were added and processed.
+
+## Suggestion mode and comments
+
+Suggestions and comments in Google Docs are normally left out of PDF exports, but exporting to DOCX can carry some of them across as tracked changes or comments. Resolve or remove suggestions and comments before exporting.
+
+## How to clean exported files
+
+1. Download the document as DOCX or PDF.
+2. Open the file and check for leftover comments or suggestions.
+3. Drop it into GetFileClean to see what properties were included and remove them.
+
+## Sharing links instead of files
+
+If you share a Google Docs link, viewers may be able to see version history or names, depending on their permissions. Check sharing settings carefully, or send a clean exported file instead.
+
+=== remove-metadata-odt-libreoffice
+title: How to Remove Metadata from LibreOffice and OpenDocument Files
+cat: Documents
+kw: remove metadata libreoffice, odt metadata, opendocument metadata, libreoffice remove personal information, ods odp metadata
+desc: How to remove metadata from LibreOffice and OpenDocument files (ODT, ODS, ODP), including author, generator and dates, using settings or a browser tool.
+---
+LibreOffice and other OpenDocument apps store metadata just like Microsoft Office. Here's how to **remove metadata from ODT, ODS and ODP** files.
+
+## What metadata is in OpenDocument files?
+
+OpenDocument files keep their metadata in a section called meta.xml, which can include:
+
+- **Initial creator** (original author) and **creator** (last editor)
+- **Creation and modification dates**
+- **Generator**: the app and version used
+- **Editing cycles and duration**
+- **Title, subject, keywords and description**
+- **User-defined properties**
+
+## Method 1: LibreOffice settings
+
+LibreOffice has an option to remove personal information on saving. Look under **Tools > Options > LibreOffice > Security > Options** for "Remove personal information on saving". You can also edit or clear fields in **File > Properties**.
+
+## Method 2: GetFileClean
+
+GetFileClean replaces meta.xml with an empty version and cleans metadata from images embedded in your document. Content and formatting are untouched. Drop ODT, ODS or ODP files in and download clean copies.
+
+## Converting between formats
+
+Saving an ODT as DOCX, or the other way around, can carry author information across. Clean the final file you send, not just the original.
+
+## Related
+
+- [Remove metadata from Word documents](remove-metadata-word-document.html)
+- [Remove metadata from Excel](remove-metadata-excel.html)
+
+=== change-author-name-word
+title: How to Change or Remove the Author Name in Word, Excel and PDF
+cat: Documents
+kw: change author name word, remove author name document, word author metadata, pdf author name remove, office author property
+desc: How to change or remove the author name in Word, Excel, PowerPoint and PDF files, and how to stop Office adding your name to new documents.
+---
+Your name ends up in documents automatically, usually from your Office account or computer user name. Here's how to **change or remove the author name**.
+
+## Change the author in an existing Word file
+
+1. Go to **File > Info**.
+2. Under **Related People**, right-click the author name.
+3. Choose **Remove Person** or **Edit Property**.
+4. Save.
+
+The **Last Modified By** field updates to the last person who saved, so it may still show your name. Removing all personal information with the Document Inspector or GetFileClean clears it.
+
+## Stop Office adding your name
+
+In Word, go to **File > Options > General** and look at **User name** and **Initials**. Office uses these for new documents and comments. When you're signed in, your account name may be used instead.
+
+## Remove the author from a PDF
+
+PDFs store an Author field in their document properties. Editors like Acrobat Pro let you change it under **File > Properties**. GetFileClean removes the whole document information section, including author, creator and producer. See [remove metadata from PDF](remove-metadata-from-pdf.html).
+
+## Remove author names in bulk
+
+Changing properties by hand is slow when you have dozens of files. Drop them all into GetFileClean. Each file's report shows the author and editor names it found, and the clean copies contain none.
+
+=== hidden-data-in-spreadsheets
+title: Hidden Data in Spreadsheets: What to Check Before Sharing
+cat: Documents
+kw: hidden data in spreadsheets, excel hidden sheets, excel hidden rows, spreadsheet privacy, excel before sharing checklist
+desc: Spreadsheets hide data in hidden sheets, rows, comments and pivot caches. A checklist for finding hidden data in Excel before you share a file.
+---
+Spreadsheets are full of places where information hides in plain sight. Before sharing, check for these common kinds of **hidden data in spreadsheets**.
+
+## 1. Hidden sheets
+
+Right-click any sheet tab and choose **Unhide** to see sheets that are hidden. Some workbooks also contain "very hidden" sheets that only appear in the developer tools.
+
+## 2. Hidden rows and columns
+
+Look for skipped row numbers or column letters. Select the whole sheet and unhide all to check.
+
+## 3. White text and tiny fonts
+
+Text coloured to match the background is invisible but still searchable and copyable.
+
+## 4. Comments and notes
+
+Red triangles in cell corners show notes or comments, often with the author's name.
+
+## 5. Pivot table caches
+
+Pivot tables can store a copy of their source data in the file, even if the source sheet was deleted.
+
+## 6. External links
+
+Formulas can link to files on your network, revealing folder names and server paths. Check **Data > Edit Links**.
+
+## 7. Named ranges
+
+Old named ranges can point to deleted data or external files. Check the **Name Manager**.
+
+## 8. Document properties
+
+Author, company and dates. These are metadata and can be removed with GetFileClean.
+
+## The safest approach
+
+Copy only what the recipient needs into a fresh workbook, paste values rather than formulas if appropriate, then clean the file's metadata. Read [remove metadata from Excel](remove-metadata-excel.html).
+
+=== resume-cv-metadata
+title: Remove Metadata from Your Resume or CV Before Applying
+cat: Documents
+kw: resume metadata, cv metadata, remove metadata from resume, job application file privacy, resume pdf author
+desc: Your resume file can reveal your current employer, old versions and editing history through metadata. Learn how to clean your CV before applying for jobs.
+---
+Recruiters read your resume, but your **resume file** can say more than the words on the page.
+
+## What resume metadata can reveal
+
+- **Company field:** often set to your current employer if you use a work computer or work Office account. Not ideal when you're job hunting.
+- **Title property:** may still say the name of an old version or a template, such as "CV for Company X".
+- **Author:** sometimes a family member's name or an old user account.
+- **Dates and editing time:** reveal how long ago the document was created or last updated.
+- **Template name:** shows if you used a downloaded template.
+
+## Resume PDFs aren't automatically clean
+
+Exporting to PDF usually copies the title and author into the PDF properties and adds the name of the program that created it.
+
+## How to clean your resume
+
+1. Remove comments and tracked changes if you used them.
+2. Export your final version to PDF, or keep it as DOCX if requested.
+3. Drop the file into GetFileClean and check what it found.
+4. Download the clean file and attach that one.
+
+## Also check the file name
+
+Use a clear, neutral file name like "FirstName-LastName-Resume.pdf" rather than "resume-v7-final-for-acme.pdf". File names aren't metadata, but recruiters see them.
+
+## Photos on CVs
+
+If your CV includes a photo, it may carry location data from your phone. GetFileClean cleans embedded images in Word files and removes metadata from PDF properties.

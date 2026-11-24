@@ -1,0 +1,361 @@
+=== remove-metadata-from-pdf
+title: How to Remove Metadata from PDF Files (Free, No Upload)
+cat: PDF
+kw: remove metadata from pdf, pdf metadata remover, remove pdf metadata online, delete pdf author, clean pdf metadata
+desc: How to remove metadata from PDF files: author, title, creator, producer, dates and XMP. Free browser-based PDF metadata remover with no upload and no limits.
+---
+PDFs are the standard format for sharing finished documents, and almost every PDF contains metadata. Here's how to **remove metadata from PDF** files safely.
+
+## What metadata is in a PDF?
+
+- **Document information:** Title, Author, Subject, Keywords, Creator (the app that made the original document), Producer (the software that made the PDF), Creation Date and Modification Date.
+- **XMP metadata:** a second, more detailed copy of these fields, sometimes with extra history.
+- **Private app data:** some design programs store their own data inside PDFs.
+
+Read more in [PDF metadata explained](pdf-metadata-explained.html).
+
+## Method 1: GetFileClean (free, in your browser)
+
+1. Open GetFileClean.
+2. Drop in one or many PDF files.
+3. Review what was found: author, title, creator app, producer and dates.
+4. Download the clean PDFs.
+
+GetFileClean removes the document information, XMP metadata and private app data, and saves the PDF as a single clean version. Your pages, text and images stay the same, and nothing is uploaded.
+
+## Method 2: Adobe Acrobat Pro
+
+Acrobat Pro has tools to remove hidden information and sanitise documents. See [Acrobat's Remove Hidden Information](acrobat-remove-hidden-information.html). It requires a paid licence.
+
+## Important exceptions
+
+- **Signed PDFs:** any change invalidates a digital signature. See [signed PDFs and metadata](signed-pdf-metadata.html).
+- **Password-protected PDFs:** remove the password with the owner's permission before cleaning.
+- **Redaction:** metadata removal isn't redaction. Black boxes drawn over text don't remove the text. See [redaction vs metadata removal](pdf-redaction-vs-metadata-removal.html).
+
+## Clean the source document too
+
+If your PDF came from a Word file, clean the Word file's metadata before exporting, then clean the PDF as a final check.
+
+=== pdf-metadata-explained
+title: PDF Metadata Explained: Every Hidden Field and What It Reveals
+cat: PDF
+kw: pdf metadata, pdf document properties, pdf hidden information, what is pdf metadata, pdf info dictionary
+desc: PDF metadata explained: Title, Author, Creator, Producer, dates, XMP and incremental updates. Learn what each hidden PDF field reveals about you.
+---
+A PDF looks like a finished page, but inside it's a structured file with its own **PDF metadata**. Here's what each part means.
+
+## The document information dictionary
+
+The classic PDF properties include:
+
+- **Title:** often copied from the source document, sometimes an old internal name.
+- **Author:** usually your name from Word or your computer.
+- **Subject and Keywords:** descriptive fields.
+- **Creator:** the program used to make the original document, such as a word processor or design app.
+- **Producer:** the software that generated the PDF, which may include a version number.
+- **CreationDate and ModDate:** precise timestamps.
+
+## XMP metadata
+
+Most modern PDFs also contain an XMP metadata stream. It repeats many of the fields above and can add more, such as document IDs and editing history. Removing only the classic properties can leave XMP behind. See [PDF XMP metadata](pdf-xmp-metadata.html).
+
+## Incremental updates
+
+When a PDF is edited and saved in some programs, the changes are added to the end of the file rather than rewriting it. Older versions of the content and metadata can remain inside the file. Tools that rewrite the whole PDF as a single version remove those leftovers.
+
+## Other places information hides
+
+- **Annotations and comments** with author names
+- **Form field values**
+- **Attachments** embedded in the PDF
+- **Images** that keep their own metadata
+- **Bookmarks** and hidden layers
+
+## Removing PDF metadata
+
+GetFileClean removes the document information, XMP metadata and private app data and rewrites the PDF as a single clean version. Check annotations, attachments and form fields yourself before sharing. Full steps: [remove metadata from PDF](remove-metadata-from-pdf.html).
+
+=== pdf-author-creator-producer
+title: PDF Author, Creator and Producer: What They Mean and How to Remove Them
+cat: PDF
+kw: pdf author creator producer, remove pdf producer, pdf creator field, pdf author metadata, change pdf properties
+desc: What the PDF Author, Creator and Producer fields mean, what they reveal about you and your software, and how to remove them from PDF properties.
+---
+Open a PDF's properties and you'll see three fields that often confuse people: **Author, Creator and Producer**.
+
+## Author
+
+The person who wrote the document, usually filled in automatically from your user account. It may be your full name, a shortened account name, or someone else's name if you started from their file.
+
+## Creator
+
+The application used to create the original document before it became a PDF, for example a word processor, spreadsheet, design app or browser. It shows what software you use and sometimes its version.
+
+## Producer
+
+The software that actually generated the PDF file. This can be a PDF printer driver, a library used by a website, or an export feature. It often includes version numbers.
+
+## Why these fields matter
+
+- They can identify you by name.
+- They show which tools you use, which matters if you're presenting work as made a certain way.
+- Software versions can hint at outdated, vulnerable programs.
+- A "Producer" from an online converter shows you uploaded the document to that service.
+
+## How to remove them
+
+GetFileClean removes the entire document information section, including Author, Creator, Producer, Title and dates, plus the XMP metadata where copies of these fields are often stored. Drop the PDF in and download the clean version.
+
+## Want to change rather than remove?
+
+Paid PDF editors let you edit these fields in **File > Properties**. Remember to check the XMP metadata too, or old values may remain.
+
+=== acrobat-remove-hidden-information
+title: Adobe Acrobat: Remove Hidden Information and Sanitize a PDF
+cat: PDF
+kw: acrobat remove hidden information, sanitize pdf acrobat, adobe remove metadata pdf, acrobat pro hidden data, pdf sanitize document
+desc: How to use Adobe Acrobat Pro to remove hidden information and sanitize PDFs, what each option removes, and a free alternative for removing PDF metadata.
+---
+Adobe Acrobat Pro includes tools to **remove hidden information** from PDFs. Here's how they work and when you might use a free alternative.
+
+## Remove Hidden Information
+
+In Acrobat Pro, the redaction tools include an option to remove hidden information. It scans the PDF and lists items such as:
+
+- Metadata
+- File attachments
+- Annotations and comments
+- Form fields
+- Hidden text and layers
+- Bookmarks
+- Embedded search indexes
+- Deleted or cropped content
+- Links and actions
+
+You choose which items to remove and save the file. Menu names vary between Acrobat versions. Search Acrobat's tools for "hidden information" or "redact" if you can't find it.
+
+## Sanitize Document
+
+Acrobat also offers a **Sanitize** option that removes all hidden information in one step, without asking about each item. It's quick but less selective.
+
+## When Acrobat is the right tool
+
+- You need to remove annotations, attachments or hidden layers as well as metadata.
+- You're doing true redaction of visible text.
+- You already have an Acrobat Pro licence.
+
+## A free alternative for metadata
+
+If you only need to remove metadata such as author, title, creator, producer, dates and XMP, GetFileClean does it free in your browser, for as many PDFs as you like, with no uploads.
+
+## Related
+
+- [Redaction vs metadata removal](pdf-redaction-vs-metadata-removal.html)
+- [PDF metadata explained](pdf-metadata-explained.html)
+
+=== pdf-redaction-vs-metadata-removal
+title: PDF Redaction vs Metadata Removal: What's the Difference?
+cat: PDF
+kw: pdf redaction vs metadata, redact pdf properly, black box redaction mistake, remove hidden text pdf, pdf redaction
+desc: Redaction and metadata removal are different. Learn why drawing black boxes over PDF text doesn't hide it, and how to redact and clean PDFs properly.
+---
+People often confuse **redaction** and **metadata removal**. Both protect information, but they protect different things.
+
+## Metadata removal
+
+Removes hidden data about the document: author, title, software, dates and XMP. It doesn't change any of the visible pages.
+
+## Redaction
+
+Permanently removes visible content from the pages: names, account numbers, addresses. Proper redaction deletes the underlying text and images, not just covers them.
+
+## The black box mistake
+
+A common and serious error is drawing black rectangles over text in a PDF. The box hides the text on screen, but the text is still in the file. Anyone can select it, copy it or remove the box. Highlighting text in black has the same problem.
+
+## How to redact properly
+
+- Use a real redaction tool that removes the content underneath, then apply the redactions.
+- Or, for simple cases, edit the source document to remove the text, then export a new PDF.
+- After redacting, check by trying to select and search for the removed text.
+
+## Then remove metadata
+
+Redaction tools don't always clear the document properties, and your source file may have added your name and software. After redacting, run the PDF through GetFileClean to remove the author, creator, producer, dates and XMP.
+
+## Summary
+
+- Visible sensitive content: **redact**.
+- Hidden information about the file: **remove metadata**.
+- Sharing sensitive PDFs: **do both**.
+
+=== signed-pdf-metadata
+title: Can You Remove Metadata from a Digitally Signed PDF?
+cat: PDF
+kw: signed pdf metadata, digital signature pdf metadata, remove metadata signed pdf, pdf signature invalid, e-signature metadata
+desc: Removing metadata from a digitally signed PDF invalidates the signature. Learn why, when it matters, and the right order for cleaning and signing PDFs.
+---
+If a PDF has a **digital signature**, removing its metadata will make the signature invalid. Here's why, and what to do instead.
+
+## Why signatures break
+
+A digital signature protects the exact bytes of the document at the moment of signing. Any change to the signed content, including metadata, means the document no longer matches what was signed. PDF readers then warn that the document has been modified.
+
+## The right order: clean first, then sign
+
+1. Finish the document.
+2. Remove metadata with GetFileClean.
+3. Then apply the digital signature.
+
+The signed file will contain the signer's certificate information, which is expected and needed to verify the signature.
+
+## What if you've received a signed PDF?
+
+Don't clean it if the signature needs to stay valid, for example contracts, official certificates or invoices that must be verified. Share it as it is.
+
+## E-signature platforms
+
+Documents signed through e-signature services often include signer names, emails and audit information. This is part of their legal value. Removing it may make the document less useful as evidence.
+
+## How GetFileClean handles signed PDFs
+
+GetFileClean detects digitally signed PDFs and shows a warning that the signature will no longer be valid after cleaning. You can then decide whether to keep the original.
+
+=== scanned-pdf-metadata
+title: Do Scanned PDFs Have Metadata? Scanners, Phones and Copiers
+cat: PDF
+kw: scanned pdf metadata, scanner metadata, scan app pdf metadata, copier pdf metadata, remove metadata scanned document
+desc: Scanned PDFs can contain metadata from the scanner, copier or phone scanning app, including device names and dates. Learn what's stored and how to remove it.
+---
+Scanned documents feel "clean" because they're just pictures of paper. But **scanned PDFs** usually have metadata too.
+
+## What scanned PDFs can contain
+
+- **Producer and Creator:** the scanner, copier or scanning app, often with model and version.
+- **Dates:** exact scan date and time.
+- **Title:** sometimes a default name from the device or app.
+- **Author:** occasionally a user name from the scanning device or the logged-in account.
+- **OCR text layer:** searchable text recognised from the image. Not metadata, but it means the words are stored as text in the file.
+
+## Phone scanning apps
+
+Phone apps that scan documents may add their own app name and dates. Some may include location if the app has location permission.
+
+## Images inside the PDF
+
+A scanned PDF is mostly images. Depending on how it was made, those images can carry their own embedded metadata. GetFileClean removes the PDF's document-level metadata and XMP. It doesn't change the scanned images themselves.
+
+## How to clean a scanned PDF
+
+1. Drop the scan into GetFileClean.
+2. Check the report for device and software names.
+3. Download the clean copy.
+
+## Check the content too
+
+Scans can capture more than you meant: sticky notes, handwriting in margins, the next page bleeding through, or a document number. Look at every page before sending.
+
+=== pdf-xmp-metadata
+title: PDF XMP Metadata: The Hidden Copy Most Tools Miss
+cat: PDF
+kw: pdf xmp metadata, remove xmp from pdf, xmp metadata stream, pdf metadata stream, adobe xmp pdf
+desc: PDFs often store a second copy of their metadata in XMP. Learn what PDF XMP metadata contains and why removing only the document properties isn't enough.
+---
+Most people check PDF metadata in the **Document Properties** window. But modern PDFs usually store a second copy of that information in **XMP metadata**, which many basic tools don't touch.
+
+## What is XMP in a PDF?
+
+XMP is an XML-based metadata format. In a PDF it's stored as a separate data stream attached to the document. It can include:
+
+- Title, author and description
+- Creator tool and producer
+- Creation, modification and metadata dates
+- Document and instance IDs, which can link versions of the same document
+- Editing history from some design applications
+
+## Why it gets missed
+
+If you edit the Author field in a basic tool, it may update the classic document properties but leave the XMP stream unchanged. A PDF can show a blank author in one viewer and the original name in another.
+
+## Pages and images can have XMP too
+
+XMP can be attached to individual pages and embedded objects, not just the whole document.
+
+## How GetFileClean handles PDF XMP
+
+GetFileClean removes the document-level XMP stream and any XMP or private app data attached to pages and objects, as well as the classic document information. Then it saves the PDF as a single clean version.
+
+## Related
+
+- [PDF metadata explained](pdf-metadata-explained.html)
+- [EXIF vs XMP vs IPTC](exif-vs-xmp-vs-iptc.html)
+
+=== remove-pdf-metadata-mac
+title: How to Remove PDF Metadata on a Mac
+cat: PDF
+kw: remove pdf metadata mac, mac preview pdf metadata, pdf properties mac, delete pdf author mac, clean pdf macos
+desc: How to see and remove PDF metadata on a Mac. What Preview can and can't do, and how to remove PDF author, creator and dates for free in your browser.
+---
+macOS makes PDFs easy to create and view, but removing their metadata takes a little more work. Here's how to **remove PDF metadata on a Mac**.
+
+## View PDF metadata in Preview
+
+1. Open the PDF in **Preview**.
+2. Choose **Tools > Show Inspector**.
+3. The info tab shows the title, author, subject, keywords, creator, producer and dates.
+
+## Can Preview remove PDF metadata?
+
+Preview shows metadata but offers very limited editing of it. Saving or exporting a PDF from Preview may also set itself as the producer. It isn't a reliable way to strip everything.
+
+## Print to PDF isn't a clean fix
+
+Using **Print > Save as PDF** creates a new PDF, but the new file gets its own metadata, often including the title and the producer.
+
+## Use GetFileClean in Safari or Chrome
+
+1. Open GetFileClean in your browser.
+2. Drag your PDFs onto the drop zone.
+3. Download the clean copies.
+
+It removes the document information and XMP metadata, and works with as many files as you need. Nothing is uploaded.
+
+## Command line option
+
+Advanced users can use ExifTool to clear PDF metadata. See our [ExifTool guide](exiftool-remove-metadata.html).
+
+=== legal-documents-pdf-metadata
+title: Filing Legal Documents? Check PDF Metadata First
+cat: PDF
+kw: legal documents metadata, court filing pdf metadata, legal pdf hidden data, law firm pdf metadata, submit pdf metadata check
+desc: Before filing or exchanging legal documents, check PDF metadata. Learn what hidden data legal PDFs can contain and a simple pre-filing cleaning routine.
+---
+Legal documents pass between parties, courts and clients, and their **metadata** can reveal drafting history, authors and software. A simple check before filing or sending avoids surprises.
+
+## What legal PDFs can reveal
+
+- **Author and title** from the original Word draft, sometimes naming a different matter or client.
+- **Creator and producer** software.
+- **Dates** showing when drafting really began.
+- **XMP history** in some workflows.
+- **Comments and markup** left in the PDF.
+
+## Follow the rules first
+
+Courts and regulators have their own rules about electronic filings, and some disclosure obligations require keeping metadata. Never remove metadata from documents where the law or a court order requires it to be preserved. This article is general information, not legal advice.
+
+## A pre-filing routine
+
+1. In Word, accept or reject all tracked changes and delete comments.
+2. Run Word's Document Inspector.
+3. Export to PDF.
+4. Apply any redactions properly with a redaction tool.
+5. Clean the final PDF's metadata with GetFileClean.
+6. Open the result and check properties, text selection and every page.
+
+## Why browser-based matters here
+
+Confidential documents shouldn't be uploaded to unknown websites just to be cleaned. GetFileClean processes files in your browser, so client documents never leave your computer.
+
+Read more: [metadata for lawyers](lawyers-document-metadata.html).

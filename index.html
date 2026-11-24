@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get File Clean – Free Metadata Remover for Any File | GetFileClean</title>
+<meta name="description" content="Get File Clean (GetFileClean) is a free metadata remover: remove metadata from photos, PDFs, Word files, videos and audio. No upload, no limits.">
+<meta name="keywords" content="get file clean, getfileclean, metadata remover, remove metadata, exif remover, remove metadata from pdf, remove exif data, metadata cleaner">
+<link rel="canonical" href="https://getfileclean.com/">
+<meta property="og:title" content="Get File Clean – Free Metadata Remover"><meta property="og:site_name" content="GetFileClean"><meta property="og:type" content="website"><meta property="og:description" content="Remove hidden metadata from any file. No upload, no limits."><meta property="og:url" content="https://getfileclean.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://getfileclean.com/#website","name":"GetFileClean","alternateName":["Get File Clean","getfileclean.com"],"url":"https://getfileclean.com/","publisher":{"@id":"https://getfileclean.com/#org"}},
+{"@type":"Organization","@id":"https://getfileclean.com/#org","name":"GetFileClean","alternateName":"Get File Clean","url":"https://getfileclean.com/","logo":"https://getfileclean.com/logo.png","email":"admin@arecomservice.com","parentOrganization":{"@type":"Organization","name":"AR ECOM SERVICE LLC","url":"https://arecomservice.com/"}},
+{"@type":"WebApplication","name":"GetFileClean","alternateName":"Get File Clean","url":"https://getfileclean.com/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free browser-based metadata remover for photos, documents, PDFs, videos and audio.","publisher":{"@id":"https://getfileclean.com/#org"}}]}</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: plain and trustworthy. Say what was hidden in the file, remove it, hand it back.
+   IDEA: a lab report: every file comes back with a short report of what was found and wiped.
+   PICTURE: the drop zone and the live report rows, at the top of the page.
+   COLOUR and TYPE: pale pink ground, ink, teal for action and "clean", claret for what was found. Libre Franklin 800 + 400.
+   LAYOUT: nav, tool hero, formats grid, three steps, privacy band, FAQ, footer. Single column on phones. */
+:root{color-scheme:light dark;--bg:light-dark(#ffe3dc,#1c1512);--card:light-dark(#fff4f0,#271d19);--paper:light-dark(#ffffff,#2f2420);--line:light-dark(#efc4b8,#43332c);--ink:light-dark(#1a1817,#f6ebe6);--mute:light-dark(#5e504b,#bba79f);--teal:light-dark(#0d7680,#3fb5bf);--claret:light-dark(#990f3d,#ff7aa2);--clbg:light-dark(#fbd3dc,#41202a);--tlbg:light-dark(#d2eef0,#163a3d)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Libre Franklin",system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+.band{padding:clamp(32px,5vw,72px) max(5vw,16px)}
+.wrap{max-width:1140px;margin:0 auto}
+h1,h2,h3{font-family:"Libre Franklin",system-ui,sans-serif;font-weight:800;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,5.2vw,52px);line-height:1.05}
+h2{font-size:clamp(28px,3.6vw,38px);line-height:1.1;margin-bottom:10px}
+h3{font-size:18px;line-height:1.3;margin-bottom:6px}
+.sub{color:var(--mute);max-width:64ch;margin:12px 0 0}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding:14px max(5vw,16px);border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:20px;text-decoration:none;margin-right:auto}
+.logo svg{width:34px;height:34px;flex:none}.logo em{font-style:normal;color:var(--teal)}
+nav .links{display:flex;flex-wrap:wrap;gap:4px 20px}
+nav .links a{text-decoration:none;font-weight:500;padding:8px 0}
+nav .links a:hover{color:var(--teal)}
+.hero{display:grid;gap:26px}
+.drop{position:relative;display:grid;place-items:center;text-align:center;min-height:280px;border:2px dashed var(--teal);border-radius:20px;background:var(--paper);padding:30px 20px;cursor:pointer;transition:background .2s,transform .2s}
+.drop:hover,.drop.on{background:var(--tlbg)}
+.drop.on{transform:scale(1.01)}
+.drop:focus-within{outline:3px solid var(--teal);outline-offset:3px}
+.drop svg{width:96px;height:96px;margin-bottom:8px}
+.drop b{display:block;font-size:24px;font-weight:800;margin-bottom:4px}
+.drop .small{color:var(--mute);font-size:15px;display:block;max-width:58ch;margin:0 auto}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:11px 24px;border-radius:999px;background:var(--teal);color:#fff;font:600 16px "Libre Franklin",sans-serif;border:0;cursor:pointer;margin-top:16px}
+.checks{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0;padding:0;list-style:none;font-size:15px;color:var(--mute)}
+.checks li::before{content:"✓";color:var(--teal);font-weight:800;margin-right:6px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px}
+.acts{display:flex;gap:10px}
+.stat{font-size:22px;font-weight:800;line-height:1.1}.stat small{display:block;font-size:13px;font-weight:500;color:var(--mute)}
+.bar .sp{flex:1}
+button.ghost,button.main{font:600 15px "Libre Franklin",sans-serif;min-height:44px;padding:10px 18px;border-radius:10px;cursor:pointer;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+button.main{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:disabled{opacity:.45;cursor:not-allowed}
+button:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.list{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:14px;align-items:center;padding:12px 14px;border-radius:14px;background:var(--paper);border:1px solid var(--line)}
+.ico{width:64px;height:64px;border-radius:10px;background:var(--card);display:grid;place-items:center;font-size:12px;font-weight:800;color:var(--teal);overflow:hidden;letter-spacing:.02em}
+.ico img{width:100%;height:100%;object-fit:cover}
+.fname{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fmeta{font-size:13px;color:var(--mute)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.tag{font-size:13px;line-height:1.4;padding:3px 9px;border-radius:999px;background:var(--clbg);color:var(--claret);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tag.ok{background:var(--tlbg);color:var(--teal);font-weight:700}
+.tag.gps{background:var(--claret);color:#fff;font-weight:700}
+.tag.plain{background:var(--card);color:var(--mute)}
+.empty{padding:22px;text-align:center;color:var(--mute);border:1px dashed var(--line);border-radius:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:26px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card .fmt{font-weight:800;color:var(--teal);font-size:14px;margin-bottom:8px}
+.card p{margin:0;color:var(--mute);font-size:15px}
+a.gl{text-decoration:none;color:var(--ink);background:var(--paper);transition:border-color .2s}a.gl:hover{border-color:var(--teal)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px;margin-top:26px}
+.steps div{counter-increment:s}
+.steps div::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--bg);font-weight:800;font-size:18px;margin-bottom:12px}
+.steps p{margin:0;color:var(--mute)}
+.privacy{background:var(--ink);color:var(--bg)}
+.privacy .sub{color:color-mix(in srgb,var(--bg) 75%,transparent)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:22px;margin-top:24px}
+.pgrid b{display:block;font-size:20px;margin-bottom:4px}
+.pgrid span{color:color-mix(in srgb,var(--bg) 75%,transparent);font-size:15px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:17px;min-height:28px}
+details p{margin:10px 0 0;color:var(--mute);max-width:72ch}
+footer{border-top:1px solid var(--line);padding:28px max(5vw,16px);font-size:14px;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center}
+footer .sp{flex:1}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:10px;font-size:15px;max-width:min(92vw,520px);opacity:0;pointer-events:none;transition:opacity .25s;z-index:5}
+.toast.show{opacity:1}
+@media(max-width:600px){nav .links{width:100%;gap:2px 16px}.row{grid-template-columns:52px minmax(0,1fr)}.ico{width:52px;height:52px}.row>button{grid-column:1/-1}.bar{gap:12px 20px}.stat{font-size:20px}.bar .sp{display:none}.acts{width:100%}.acts button{flex:1}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#top" aria-label="GetFileClean home">
+    <svg viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="7" fill="var(--teal)"/><path d="M9 5h9.5l4.5 4.5V24a1.6 1.6 0 0 1-1.6 1.6H9A1.6 1.6 0 0 1 7.4 24V6.6A1.6 1.6 0 0 1 9 5z" fill="#fff"/><path d="M18.5 5v4.5H23" fill="none" stroke="var(--teal)" stroke-width="1.3"/><path d="m10.6 17 2.9 2.9 5.6-6.1" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="wm">GetFile<em>Clean</em></span>
+  </a>
+  <div class="links"><a href="#formats">Formats</a><a href="#how">How it works</a><a href="#privacy">Privacy</a><a href="blog/index.html">Blog</a><a href="#faq">FAQ</a></div>
+</nav>
+
+<main id="top">
+<section class="band"><div class="wrap hero">
+  <div>
+    <h1>Remove hidden metadata from any file</h1>
+    <p class="sub"><strong>Get File Clean</strong> is a free metadata remover. Photos, documents, PDFs, videos and audio carry hidden details: GPS location, author names, device model, dates and editing history. GetFileClean removes them for free, with no file limits, and your files never leave your device.</p>
+  </div>
+
+  <label class="drop" id="drop">
+    <input id="pick" type="file" multiple aria-label="Choose files to clean">
+    <div>
+      <svg viewBox="0 0 96 96" aria-hidden="true"><rect x="22" y="10" width="52" height="68" rx="7" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/><path d="M32 30h32M32 40h32M32 50h20" stroke="var(--line)" stroke-width="4" stroke-linecap="round"/><circle cx="66" cy="66" r="18" fill="var(--teal)"/><path d="m58 66 6 6 10-11" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 22l4 4M10 36h5M80 14l-4 4" stroke="var(--claret)" stroke-width="3" stroke-linecap="round"/></svg>
+      <b>Drop files here to clean them</b>
+      <span class="small">JPG, PNG, WebP, GIF, HEIC · DOCX, XLSX, PPTX, ODT · PDF · MP4, MOV · MP3, M4A, FLAC, WAV · ZIP</span>
+      <span class="btn">Choose files</span>
+    </div>
+  </label>
+  <ul class="checks"><li>No upload, files stay on your device</li><li>No size or file count limit</li><li>No sign-up</li></ul>
+
+  <div class="bar">
+    <div class="stat" id="sCount">0<small>files cleaned</small></div>
+    <div class="stat" id="sGps">0<small>had GPS location</small></div>
+    <div class="stat" id="sWho">0<small>had names or device info</small></div>
+    <div class="sp"></div>
+    <div class="acts"><button class="ghost" id="clear" disabled>Clear</button>
+    <button class="main" id="all" disabled>Download all (.zip)</button></div>
+  </div>
+  <div class="list" id="list"><div class="empty">Your cleaned files and a report of what was removed will appear here.</div></div>
+</div></section>
+
+<section class="band" id="formats" style="background:var(--card)"><div class="wrap">
+  <h2>What GetFileClean removes</h2>
+  <p class="sub">Each file type hides different details. Here is what gets wiped from each one.</p>
+  <div class="grid">
+    <div class="card"><div class="fmt">JPG · PNG · WebP · GIF</div><h3>Photos</h3><p>GPS location, camera and phone model, lens, serial numbers, date taken, editing software, XMP, IPTC and comments. Image quality is untouched.</p></div>
+    <div class="card"><div class="fmt">HEIC · AVIF · BMP · TIFF</div><h3>Other images</h3><p>Re-saved as a clean JPG or PNG with nothing hidden inside. Works in browsers that can open these formats.</p></div>
+    <div class="card"><div class="fmt">DOCX · XLSX · PPTX · ODT · ODS · ODP</div><h3>Office documents</h3><p>Author, last edited by, company, manager, title, template, created and modified dates, custom properties, and photo data in embedded images.</p></div>
+    <div class="card"><div class="fmt">PDF</div><h3>PDF files</h3><p>Author, creator app, producer, title, keywords, creation dates, XMP metadata and private app data from programs like Illustrator.</p></div>
+    <div class="card"><div class="fmt">MP4 · MOV · M4V · 3GP</div><h3>Videos</h3><p>GPS location, phone make and model, software tags, XMP and creation dates. The video and sound are left exactly as they were.</p></div>
+    <div class="card"><div class="fmt">MP3 · M4A · FLAC · WAV · ZIP</div><h3>Audio and archives</h3><p>ID3, Vorbis and INFO tags, cover art, comments and encoder info. For ZIP files, every supported file inside is cleaned.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <div class="steps">
+    <div><h3>Drop your files</h3><p>Add one file or a thousand. Mix photos, documents and videos in the same batch.</p></div>
+    <div><h3>See what was hidden</h3><p>Each file gets a short report showing the location, names, devices and dates that were found.</p></div>
+    <div><h3>Download clean copies</h3><p>Save files one by one or all together in a single ZIP. Your originals are never changed.</p></div>
+  </div>
+</div></section>
+
+<section class="band privacy" id="privacy"><div class="wrap">
+  <h2>Your files never leave your device</h2>
+  <p class="sub">Most metadata tools upload your files to a server. GetFileClean does all the work inside your browser, so nobody, including us, ever sees your files.</p>
+  <div class="pgrid">
+    <div><b>No uploads</b><span>Cleaning happens on your computer or phone.</span></div>
+    <div><b>No limits</b><span>No size caps, daily quotas or watermarks.</span></div>
+    <div><b>Works offline</b><span>Once the page has loaded, you can disconnect and keep cleaning.</span></div>
+  </div>
+</div></section>
+
+<section class="band" id="guides" style="background:var(--card)"><div class="wrap">
+  <h2>Metadata guides</h2>
+  <p class="sub">Step-by-step help for removing metadata from the files you share most. <a href="blog/index.html">Browse all 100 guides</a>.</p>
+  <div class="grid">
+    <a class="card gl" href="blog/remove-metadata-from-pdf.html"><div class="fmt">PDF</div><h3>How to remove metadata from PDF files</h3><p>Author, creator, producer, dates and XMP.</p></a>
+    <a class="card gl" href="blog/remove-metadata-iphone-photos.html"><div class="fmt">Photos</div><h3>Remove metadata from iPhone photos</h3><p>Three easy ways, including location.</p></a>
+    <a class="card gl" href="blog/remove-metadata-word-document.html"><div class="fmt">Documents</div><h3>Remove metadata from a Word document</h3><p>Author, company and hidden properties.</p></a>
+    <a class="card gl" href="blog/what-is-exif-data.html"><div class="fmt">Basics</div><h3>What is EXIF data?</h3><p>What your photo metadata reveals.</p></a>
+    <a class="card gl" href="blog/remove-metadata-mp4.html"><div class="fmt">Video</div><h3>Remove metadata from MP4 videos</h3><p>Location, device and dates, no re-encoding.</p></a>
+    <a class="card gl" href="blog/hidden-gps-location-in-photos.html"><div class="fmt">Privacy</div><h3>How photos can reveal your address</h3><p>GPS metadata explained.</p></a>
+  </div>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap">
+  <h2>Questions</h2>
+  <details><summary>Is it really free with no limits?</summary><p>Yes. Your own device does the work, so there is no server cost and no cap on file size or number of files. Very large videos are limited only by your device's memory.</p></details>
+  <details><summary>Will cleaning change how my file looks or plays?</summary><p>No. JPG, PNG, WebP and GIF images are not re-compressed. Documents keep all their content and formatting. Videos and audio keep the same picture and sound. Only HEIC, AVIF, BMP and TIFF images are converted to JPG or PNG.</p></details>
+  <details><summary>Why are photos sometimes turned?</summary><p>Phones often save photos sideways with a tag that tells viewers to rotate them. That tag is metadata, so GetFileClean rotates the actual picture upright before removing it.</p></details>
+  <details><summary>What about digitally signed or password-protected PDFs?</summary><p>A digital signature stops being valid once anything in a signed PDF changes, so you will see a warning on signed files. Password-protected PDFs cannot be opened and are skipped.</p></details>
+  <details><summary>Does it remove comments and tracked changes in Word files?</summary><p>No. Those are part of the document's content. Use Word's built-in Inspect Document tool to remove them, then clean the file here.</p></details>
+  <details><summary>Does it work on my phone?</summary><p>Yes, in any recent version of Chrome, Safari, Edge or Firefox.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap"><b style="color:var(--ink)">GetFileClean (Get File Clean)</b><span>Free metadata remover. Files never leave your device.</span><span class="sp"></span><a href="blog/index.html">Blog</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="cookie-policy.html">Cookies</a><a href="disclaimer.html">Disclaimer</a><span>© 2026 GetFileClean, owned by AR ECOM SERVICE LLC</span></div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+{
+/*ENGINE*/
+const enc=new TextEncoder(),dec=new TextDecoder();
+const ascii=(u,a,n)=>{let s='';const e=Math.min(u.length,a+n);for(let i=a;i<e;i++)s+=String.fromCharCode(u[i]);return s};
+const cat=parts=>{let n=0;for(const p of parts)n+=p.length;const o=new Uint8Array(n);let i=0;for(const p of parts){o.set(p,i);i+=p.length}return o};
+const readAll=async b=>new Uint8Array(await b.arrayBuffer());
+const readAt=async(f,a,n)=>new Uint8Array(await f.slice(a,a+n).arrayBuffer());
+const newInfo=()=>({found:new Set(),props:[],notes:[],warn:[],removed:0});
+const addProp=(info,s)=>{s=String(s).replace(/\s+/g,' ').trim();if(s&&!info.props.includes(s)&&info.props.length<12)info.props.push(s)};
+
+/* --- EXIF / TIFF --- */
+function readTiff(u,t,info){
+  try{
+    const dv=new DataView(u.buffer,u.byteOffset,u.byteLength),le=ascii(u,t,2)==='II';
+    const g16=o=>dv.getUint16(o,le),g32=o=>dv.getUint32(o,le);
+    const ifd=off=>{const m={},p=t+off,n=g16(p);for(let i=0;i<n;i++){const e=p+2+i*12;m[g16(e)]={c:g32(e+4),e}}return m};
+    const str=x=>x?ascii(u,x.c<=4?x.e+8:t+g32(x.e+8),x.c).replace(/\0.*$/s,'').trim():'';
+    const rat=x=>{const a=t+g32(x.e+8),r=[];for(let i=0;i<3;i++){const d=g32(a+i*8+4);r.push(d?g32(a+i*8)/d:0)}return r};
+    const i0=ifd(g32(t+4));
+    const cam=[str(i0[0x10F]),str(i0[0x110])].filter(Boolean).join(' ');if(cam)addProp(info,'Device: '+cam);
+    const sw=str(i0[0x131]);if(sw)addProp(info,'Software: '+sw);
+    const ar=str(i0[0x13B]);if(ar)addProp(info,'Artist: '+ar);
+    let date=str(i0[0x132]);
+    if(i0[0x112])info.orient=g16(i0[0x112].e+8);
+    if(i0[0x8769]){const ex=ifd(g32(i0[0x8769].e+8));date=str(ex[0x9003])||date;const sn=str(ex[0xA431]);if(sn)addProp(info,'Serial: '+sn)}
+    if(date)addProp(info,'Taken: '+date.replace(/^(\d{4}):(\d\d):(\d\d)/,'$1-$2-$3'));
+    if(i0[0x8825]){info.gps=true;const g=ifd(g32(i0[0x8825].e+8));
+      if(g[2]&&g[4]){const a=rat(g[2]),b=rat(g[4]);let la=a[0]+a[1]/60+a[2]/3600,lo=b[0]+b[1]/60+b[2]/3600;
+        if(str(g[1])==='S')la=-la;if(str(g[3])==='W')lo=-lo;if(la||lo)info.loc=la.toFixed(4)+', '+lo.toFixed(4)}}
+  }catch(e){}
+}
+
+/* --- images (byte level, no quality loss) --- */
+function cleanJpeg(u,info){
+  const keep=[u.subarray(0,2)];let p=2;
+  while(p<u.length){
+    if(u[p]!==0xFF)throw new Error('Damaged JPG');
+    const m=u[p+1];if(m===0xFF){p++;continue}
+    if(m===0xD9){keep.push(u.subarray(p,p+2));break}
+    if(m===0xDA){let q=p+2;while(q<u.length-1&&!(u[q]===0xFF&&u[q+1]===0xD9))q++;
+      const end=Math.min(q+2,u.length);if(end<u.length){info.removed+=u.length-end;info.found.add('Hidden extra images')}
+      keep.push(u.subarray(p,end));break}
+    if((m>=0xD0&&m<=0xD7)||m===0x01){keep.push(u.subarray(p,p+2));p+=2;continue}
+    const len=(u[p+2]<<8)|u[p+3],seg=u.subarray(p,p+2+len);let drop=true;
+    if(m===0xE1){if(ascii(u,p+4,4)==='Exif'){readTiff(u,p+10,info);info.found.add('EXIF')}else info.found.add('XMP')}
+    else if(m===0xED)info.found.add('IPTC');
+    else if(m===0xFE)info.found.add('Comment');
+    else if(m===0xE2&&ascii(u,p+4,11)!=='ICC_PROFILE')info.found.add('Multi-picture data');
+    else if((m>=0xE3&&m<=0xEC)||m===0xEF)info.found.add('App data');
+    else drop=false;
+    if(drop)info.removed+=seg.length;else keep.push(seg);
+    p+=2+len;
+  }
+  return cat(keep);
+}
+const PNG_DROP=new Set(['tEXt','zTXt','iTXt','eXIf','tIME']);
+function cleanPng(u,info){
+  const dv=new DataView(u.buffer,u.byteOffset,u.byteLength),keep=[u.subarray(0,8)];let p=8;
+  while(p+8<=u.length){
+    const len=dv.getUint32(p),type=ascii(u,p+4,4),end=p+12+len;
+    if(PNG_DROP.has(type)){info.removed+=end-p;
+      if(type==='eXIf'){readTiff(u,p+8,info);info.found.add('EXIF')}else if(type==='tIME')info.found.add('Timestamp');
+      else{const k=ascii(u,p+8,Math.min(len,80)).split('\0')[0];if(k==='XML:com.adobe.xmp')info.found.add('XMP');else info.found.add('Text tags');
+        if(type==='tEXt'&&/^(Author|Artist|Software|Comment|Copyright)$/.test(k))addProp(info,k+': '+ascii(u,p+9+k.length,Math.min(len-k.length-1,80)))}}
+    else keep.push(u.subarray(p,end));
+    p=end;if(type==='IEND')break;
+  }
+  return cat(keep);
+}
+function cleanWebp(u,info){
+  const dv=new DataView(u.buffer,u.byteOffset,u.byteLength),keep=[];let p=12,vx=null;
+  while(p+8<=u.length){
+    const cc=ascii(u,p,4),sz=dv.getUint32(p+4,true),end=p+8+sz+(sz&1);
+    if(cc==='EXIF'||cc==='XMP '){info.removed+=end-p;
+      if(cc==='EXIF'){readTiff(u,ascii(u,p+8,4)==='Exif'?p+14:p+8,info);info.found.add('EXIF')}else info.found.add('XMP')}
+    else{const c=u.slice(p,Math.min(end,u.length));if(cc==='VP8X')vx=c;keep.push(c)}
+    p=end;
+  }
+  if(vx)vx[8]&=~0x0C;
+  const body=cat(keep),out=new Uint8Array(12+body.length);out.set(u.subarray(0,12));out.set(body,12);
+  new DataView(out.buffer).setUint32(4,out.length-8,true);return out;
+}
+function cleanGif(u,info){
+  let p=13;if(u[10]&0x80)p+=3*(1<<((u[10]&7)+1));
+  const keep=[u.subarray(0,p)],sub=q=>{while(q<u.length&&u[q])q+=u[q]+1;return q+1};
+  while(p<u.length){
+    const b=u[p];
+    if(b===0x3B){keep.push(u.subarray(p,p+1));break}
+    if(b===0x2C){let q=p+10;if(u[p+9]&0x80)q+=3*(1<<((u[p+9]&7)+1));q=sub(q+1);keep.push(u.subarray(p,q));p=q;continue}
+    if(b===0x21){const lab=u[p+1],q=sub(p+2);let drop=false;
+      if(lab===0xFE){drop=true;info.found.add('Comment')}
+      else if(lab===0xFF){const id=ascii(u,p+3,11);if(!/^(NETSCAPE2\.0|ANIMEXTS1\.0)/.test(id)){drop=true;info.found.add(id.startsWith('XMP')?'XMP':'App data')}}
+      if(drop)info.removed+=q-p;else keep.push(u.subarray(p,q));p=q;continue}
+    throw new Error('Damaged GIF');
+  }
+  return cat(keep);
+}
+function imgKind(u){
+  if(u[0]===0xFF&&u[1]===0xD8)return'jpg';if(u[0]===0x89&&ascii(u,1,3)==='PNG')return'png';
+  if(ascii(u,0,4)==='RIFF'&&ascii(u,8,4)==='WEBP')return'webp';if(ascii(u,0,4)==='GIF8')return'gif';return null;
+}
+function cleanImg(u,info){const k=imgKind(u);return k?({jpg:cleanJpeg,png:cleanPng,webp:cleanWebp,gif:cleanGif})[k](u,info):null}
+
+/* --- ZIP read / write --- */
+const CRC=(()=>{const t=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})();
+const crc32=u=>{let c=0xFFFFFFFF;for(let i=0;i<u.length;i++)c=CRC[(c^u[i])&255]^(c>>>8);return(c^0xFFFFFFFF)>>>0};
+const pipe=async(u,s)=>readAll(new Response(new Blob([u]).stream().pipeThrough(s)));
+function readZip(u){
+  const dv=new DataView(u.buffer,u.byteOffset,u.byteLength);
+  let e=u.length-22;while(e>=0&&dv.getUint32(e,true)!==0x06054b50)e--;
+  if(e<0)throw new Error('Damaged ZIP');
+  const n=dv.getUint16(e+10,true),out=[];let p=dv.getUint32(e+16,true);
+  for(let i=0;i<n;i++){
+    if(dv.getUint32(p,true)!==0x02014b50)throw new Error('Damaged ZIP');
+    const flags=dv.getUint16(p+8,true),nl=dv.getUint16(p+28,true),lho=dv.getUint32(p+42,true),csize=dv.getUint32(p+20,true);
+    if(flags&1)throw new Error('Password-protected ZIP files are not supported');
+    const nameB=u.slice(p+46,p+46+nl),ds=lho+30+dv.getUint16(lho+26,true)+dv.getUint16(lho+28,true);
+    out.push({nameB,name:flags&0x800?dec.decode(nameB):ascii(nameB,0,nl),flags:flags&0x800,method:dv.getUint16(p+10,true),
+      time:dv.getUint16(p+12,true),date:dv.getUint16(p+14,true),crc:dv.getUint32(p+16,true),csize,usize:dv.getUint32(p+24,true),raw:u.subarray(ds,ds+csize)});
+    p+=46+nl+dv.getUint16(p+30,true)+dv.getUint16(p+32,true);
+  }
+  return out;
+}
+async function getData(en){if(en.method===0)return en.raw;if(en.method===8)return pipe(en.raw,new DecompressionStream('deflate-raw'));throw new Error('Unsupported compression')}
+async function setData(en,d,squeeze=true){
+  en.usize=d.length;en.crc=crc32(d);en.method=0;en.raw=d;
+  if(squeeze&&typeof CompressionStream!=='undefined'){try{const c=await pipe(d,new CompressionStream('deflate-raw'));if(c.length<d.length){en.method=8;en.raw=c}}catch(e){}}
+  en.csize=en.raw.length;
+}
+function writeZip(ens){
+  const parts=[],cen=[];let off=0;
+  for(const en of ens){
+    const h=new DataView(new ArrayBuffer(30)),nl=en.nameB.length;
+    h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,en.flags,true);h.setUint16(8,en.method,true);h.setUint16(10,en.time,true);h.setUint16(12,en.date,true);
+    h.setUint32(14,en.crc,true);h.setUint32(18,en.csize,true);h.setUint32(22,en.usize,true);h.setUint16(26,nl,true);
+    parts.push(new Uint8Array(h.buffer),en.nameB,en.raw);
+    const c=new DataView(new ArrayBuffer(46));
+    c.setUint32(0,0x02014b50,true);c.setUint16(4,20,true);c.setUint16(6,20,true);c.setUint16(8,en.flags,true);c.setUint16(10,en.method,true);c.setUint16(12,en.time,true);c.setUint16(14,en.date,true);
+    c.setUint32(16,en.crc,true);c.setUint32(20,en.csize,true);c.setUint32(24,en.usize,true);c.setUint16(28,nl,true);c.setUint32(42,off,true);
+    cen.push(new Uint8Array(c.buffer),en.nameB);off+=30+nl+en.csize;
+  }
+  let cs=0;for(const c of cen)cs+=c.length;
+  const e=new DataView(new ArrayBuffer(22));const n=Math.min(ens.length,65535);
+  e.setUint32(0,0x06054b50,true);e.setUint16(8,n,true);e.setUint16(10,n,true);e.setUint32(12,cs,true);e.setUint32(16,off,true);
+  return new Blob([...parts,...cen,new Uint8Array(e.buffer)],{type:'application/zip'});
+}
+
+/* --- Office & OpenDocument --- */
+const OOXML={
+ 'docProps/core.xml':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></cp:coreProperties>',
+ 'docProps/app.xml':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/extended-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes"></Properties>',
+ 'docProps/custom.xml':'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<Properties xmlns="http://schemas.openxmlformats.org/officeDocument/2006/custom-properties" xmlns:vt="http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes"></Properties>'
+};
+const odfMeta=v=>'<?xml version="1.0" encoding="UTF-8"?>\n<office:document-meta xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" office:version="'+v+'"><office:meta/></office:document-meta>';
+const PROP_RX=[['dc:creator','Author'],['cp:lastModifiedBy','Last edited by'],['meta:initial-creator','Author'],['Company','Company'],['Manager','Manager'],['dc:title','Title'],['Application','Made with'],['meta:generator','Made with'],['dcterms:created','Created'],['meta:creation-date','Created'],['Template','Template']];
+const unxml=s=>s.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&apos;/g,"'").replace(/&amp;/g,'&');
+function xmlProps(t,info){for(const[tagn,label]of PROP_RX){const m=t.match(new RegExp('<'+tagn+'(?:\\s[^>]*)?>([^<]+)<'));if(m)addProp(info,label+': '+unxml(m[1]).slice(0,60))}}
+
+async function cleanZip(u,info,depth){
+  const ens=readZip(u),ooxml=ens.some(e=>e.name==='[Content_Types].xml'),odf=ens.some(e=>e.name==='mimetype');
+  for(const en of ens){
+    if(en.name.endsWith('/'))continue;
+    const leaf=en.name.split('/').pop();
+    if(ooxml&&OOXML[en.name]){
+      const d=await getData(en),t=dec.decode(d);xmlProps(t,info);
+      if(en.name.endsWith('custom.xml')&&/<property/.test(t))info.found.add('Custom properties');
+      if(t!==OOXML[en.name]){const nb=enc.encode(OOXML[en.name]);info.removed+=Math.max(0,d.length-nb.length);if(/<(dc:|cp:|dcterms:|Company|Manager|Application|Template)/.test(t))info.found.add('Document properties');await setData(en,nb)}
+      continue}
+    if(odf&&en.name==='meta.xml'){
+      const d=await getData(en),t=dec.decode(d);xmlProps(t,info);
+      const v=(t.match(/office:version="([^"]+)"/)||[,'1.2'])[1],nb=enc.encode(odfMeta(v));
+      if(t!==dec.decode(nb)){info.removed+=Math.max(0,d.length-nb.length);info.found.add('Document properties');await setData(en,nb)}
+      continue}
+    if(ooxml||odf){
+      if(/\.(jpe?g|png|webp|gif)$/i.test(leaf)){const d=await getData(en),si=newInfo();
+        try{const out=cleanImg(d,si);if(out&&si.removed){await setData(en,out);info.removed+=si.removed;info.found.add('Photo data in embedded images');if(si.gps){info.gps=true;info.loc=info.loc||si.loc}}}catch(e){}}
+      continue}
+    if(depth<1){
+      try{const d=await getData(en),r=await cleanFile(new File([d],leaf),{inArchive:true,depth:depth+1});
+        if(r&&r.info.removed){await setData(en,await readAll(r.blob));info.removed+=r.info.removed;info.inner=(info.inner||0)+1;
+          if(r.info.gps)info.gps=true;for(const p of r.info.props)addProp(info,p)}}catch(e){}
+    }
+  }
+  if(!ooxml&&!odf&&info.inner)info.found.add(info.inner+' file'+(info.inner>1?'s':'')+' cleaned inside');
+  return{kind:ooxml||odf?'Document':'Archive',blob:writeZip(ens)};
+}
+
+/* --- PDF (uses pdf-lib, loaded only when needed) --- */
+let pdfLibP=null;
+function loadPdfLib(){
+  if(globalThis.PDFLib)return Promise.resolve(globalThis.PDFLib);
+  if(!pdfLibP)pdfLibP=new Promise((res,rej)=>{
+    const tryS=(src,next)=>{const s=document.createElement('script');s.src=src;s.onload=()=>res(globalThis.PDFLib);
+      s.onerror=()=>{s.remove();next?tryS(next):(pdfLibP=null,rej(new Error('Could not load the PDF tool. Check your connection.')))};document.head.append(s)};
+    tryS('pdf-lib.min.js','https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js')});
+  return pdfLibP;
+}
+async function cleanPdf(u,info){
+  const L=await loadPdfLib(),{PDFDocument,PDFName,PDFRef,PDFDict}=L;
+  const signed=/\/ByteRange\s*\[/.test(new TextDecoder('latin1').decode(u));
+  let doc;
+  try{doc=await PDFDocument.load(u,{updateMetadata:false})}
+  catch(e){throw new Error(/encrypt/i.test(e.message)?'Password-protected PDFs are not supported':'Could not read this PDF')}
+  const ctx=doc.context,infoRef=ctx.trailerInfo.Info;
+  if(infoRef){
+    const g=(f,l)=>{try{const v=doc[f]();if(v)addProp(info,l+': '+(v instanceof Date?v.toISOString().slice(0,10):String(v).slice(0,60)))}catch(e){}};
+    g('getAuthor','Author');g('getTitle','Title');g('getCreator','Made with');g('getProducer','Producer');g('getCreationDate','Created');g('getKeywords','Keywords');
+    if(infoRef instanceof PDFRef)ctx.delete(infoRef);ctx.trailerInfo.Info=undefined;info.found.add('Document info');info.removed++;
+  }
+  const MD=PDFName.of('Metadata'),PI=PDFName.of('PieceInfo'),TY=PDFName.of('Type');
+  for(const[ref,obj]of ctx.enumerateIndirectObjects()){
+    const d=obj instanceof PDFDict?obj:(obj&&obj.dict instanceof PDFDict?obj.dict:null);if(!d)continue;
+    if(d.get(TY)===MD){ctx.delete(ref);info.found.add('XMP');info.removed++;continue}
+    for(const k of[MD,PI]){const v=d.get(k);if(v!==undefined){if(v instanceof PDFRef)ctx.delete(v);d.delete(k);info.found.add(k===MD?'XMP':'App data');info.removed++}}
+  }
+  if(signed)info.warn.push('Digital signature is no longer valid');
+  return doc.save({updateFieldAppearances:false});
+}
+
+/* --- MP4 / MOV / M4A --- */
+const XMP_UUID='be7acfcb97a942e89c71999491e3afac';
+const hex=(u,a,n)=>Array.from(u.subarray(a,a+n),b=>b.toString(16).padStart(2,'0')).join('');
+function boxHead(m,p,end){
+  const dv=new DataView(m.buffer,m.byteOffset,m.byteLength);let size=dv.getUint32(p),hl=8;
+  if(size===1){size=Number(dv.getBigUint64(p+8));hl=16}else if(size===0)size=end-p;
+  return{size,hl,type:ascii(m,p+4,4)};
+}
+function wipeBox(m,p,b,info){
+  const txt=ascii(m,p,Math.min(b.size,300000));
+  if(/\xA9xyz|ISO6709|location/.test(txt)){info.gps=true;const g=txt.match(/([+-]\d{1,2}\.\d+)([+-]\d{1,3}\.\d+)/);if(g)info.loc=(+g[1]).toFixed(4)+', '+(+g[2]).toFixed(4)}
+  const mk=txt.match(/(?:\xA9mak|make)[\s\S]{0,24}?([A-Za-z][\w ]{1,30})/),md=txt.match(/(?:\xA9mod|model)[\s\S]{0,24}?([A-Za-z][\w ]{1,30})/);
+  if(mk||md)addProp(info,'Device: '+[mk&&mk[1],md&&md[1]].filter(Boolean).join(' '));
+  const sw=txt.match(/\xA9(?:swr|too)[\s\S]{0,4}?data[\s\S]{8}([\x20-\x7e]{2,40})/);if(sw)addProp(info,'Software: '+sw[1]);
+  m.set(enc.encode('free'),p+4);m.fill(0,p+b.hl,p+b.size);info.removed+=b.size;
+  info.found.add(b.type==='uuid'?'XMP':'Metadata tags');
+}
+function walkMp4(m,start,end,info){
+  let p=start;
+  while(p+8<=end){
+    const b=boxHead(m,p,end);if(b.size<8||p+b.size>end)break;
+    if(b.type==='udta'||b.type==='meta'||(b.type==='uuid'&&hex(m,p+b.hl,16)===XMP_UUID))wipeBox(m,p,b,info);
+    else if(b.type==='mvhd'||b.type==='tkhd'||b.type==='mdhd'){
+      const v=m[p+b.hl],o=p+b.hl+4,n=v===1?16:8,dv=new DataView(m.buffer,m.byteOffset);
+      const secs=v===1?Number(dv.getBigUint64(o)):dv.getUint32(o);
+      if(secs){if(b.type==='mvhd'){const d=new Date((secs-2082844800)*1000);if(d.getFullYear()>1990)addProp(info,'Created: '+d.toISOString().slice(0,16).replace('T',' '))}
+        m.fill(0,o,o+n);info.found.add('Creation dates')}}
+    else if(b.type==='trak'||b.type==='mdia')walkMp4(m,p+b.hl,p+b.size,info);
+    p+=b.size;
+  }
+}
+async function cleanMp4(file,info){
+  const parts=[],N=file.size;let p=0;
+  while(p+8<=N){
+    const h=await readAt(file,p,16),b=boxHead(h,0,N-p);
+    if(b.size<8||p+b.size>N)break;
+    const meta=b.type==='udta'||b.type==='meta'||b.type==='uuid';
+    if(b.type==='moov'){const m=await readAt(file,p,b.size);walkMp4(m,b.hl,b.size,info);parts.push(m)}
+    else if(meta&&b.size<=64*1048576){const m=await readAt(file,p,b.size);if(b.type!=='uuid'||hex(m,b.hl,16)===XMP_UUID)wipeBox(m,0,b,info);parts.push(m)}
+    else parts.push(file.slice(p,p+b.size));
+    p+=b.size;
+  }
+  if(p<N)parts.push(file.slice(p));
+  return new Blob(parts);
+}
+
+/* --- MP3 --- */
+const ID3N={TIT2:'Title',TPE1:'Artist',TALB:'Album',TYER:'Year',TDRC:'Date',TENC:'Encoded by',TSSE:'Encoder'};
+const ID3F={APIC:'Cover art',COMM:'Comment',PRIV:'Private data',GEOB:'Embedded objects',TXXX:'Custom tags',USLT:'Lyrics',WXXX:'Links'};
+function id3Read(t,info){
+  const v=t[3];info.found.add('ID3 tags');if(v<3||(t[5]&0x40))return;
+  let p=10;const ss=o=>((t[o]&127)<<21)|((t[o+1]&127)<<14)|((t[o+2]&127)<<7)|(t[o+3]&127);
+  while(p+10<=t.length){
+    const id=ascii(t,p,4);if(!/^[A-Z0-9]{4}$/.test(id))break;
+    const sz=v===4?ss(p+4):new DataView(t.buffer,t.byteOffset).getUint32(p+4);
+    if(ID3F[id])info.found.add(ID3F[id]);
+    if(ID3N[id]&&sz>1&&p+10+sz<=t.length){const e=t[p+10],b=t.subarray(p+11,p+10+sz);
+      const s=new TextDecoder(e===1||e===2?(e===2?'utf-16be':'utf-16'):e===3?'utf-8':'latin1').decode(b).replace(/\0/g,' ');addProp(info,ID3N[id]+': '+s.slice(0,60))}
+    p+=10+sz;
+  }
+}
+async function cleanMp3(file,info){
+  let s=0,e=file.size;
+  for(;;){const h=await readAt(file,s,10);if(ascii(h,0,3)!=='ID3')break;
+    const tot=10+(((h[6]&127)<<21)|((h[7]&127)<<14)|((h[8]&127)<<7)|(h[9]&127))+(h[5]&0x10?10:0);
+    id3Read(await readAt(file,s,Math.min(tot,8*1048576)),info);info.removed+=tot;s+=tot}
+  if(e-s>=128&&ascii(await readAt(file,e-128,128),0,3)==='TAG'){e-=128;info.removed+=128;info.found.add('ID3 tags')}
+  const a=await readAt(file,Math.max(s,e-32),32);
+  if(ascii(a,0,8)==='APETAGEX'){const dv=new DataView(a.buffer),sz=dv.getUint32(12,true)+((dv.getUint32(20,true)>>>31)?32:0);e-=sz;info.removed+=sz;info.found.add('APE tags')}
+  return file.slice(s,e);
+}
+
+/* --- FLAC --- */
+async function cleanFlac(file,info){
+  const kept=[];let p=4,last=false;
+  while(!last){
+    if(p+4>file.size)throw new Error('Damaged FLAC');
+    const h=await readAt(file,p,4),type=h[0]&127,len=(h[1]<<16)|(h[2]<<8)|h[3];last=!!(h[0]&0x80);
+    if(type===0||type===3||type===5)kept.push(await readAt(file,p,4+len));
+    else{info.removed+=4+len;
+      if(type===4){info.found.add('Vorbis tags');const b=await readAt(file,p+4,len),dv=new DataView(b.buffer);let q=4+dv.getUint32(0,true);const n=dv.getUint32(q,true);q+=4;
+        for(let i=0;i<n&&q<b.length;i++){const l=dv.getUint32(q,true),c=dec.decode(b.subarray(q+4,q+4+l)),m=c.match(/^(ARTIST|TITLE|ALBUM|DATE|ENCODER)=(.*)$/i);if(m)addProp(info,m[1][0].toUpperCase()+m[1].slice(1).toLowerCase()+': '+m[2].slice(0,60));q+=4+l}}
+      else if(type===6)info.found.add('Cover art');else if(type===2)info.found.add('App data')}
+    p+=4+len;
+  }
+  kept.forEach((b,i)=>{b[0]=(b[0]&127)|(i===kept.length-1?0x80:0)});
+  return new Blob([enc.encode('fLaC'),...kept,file.slice(p)]);
+}
+
+/* --- WAV --- */
+const WAV_DROP={LIST:'INFO tags','id3 ':'ID3 tags','ID3 ':'ID3 tags',bext:'Broadcast info',iXML:'iXML data',_PMX:'XMP',DISP:'App data',cart:'App data'};
+async function cleanWav(file,info){
+  const parts=[];let p=12,tot=4;
+  while(p+8<=file.size){
+    const h=await readAt(file,p,8),id=ascii(h,0,4),sz=new DataView(h.buffer).getUint32(4,true),full=Math.min(8+sz+(sz&1),file.size-p);
+    if(WAV_DROP[id]){info.removed+=full;info.found.add(WAV_DROP[id])}else{parts.push(file.slice(p,p+full));tot+=full}
+    p+=8+sz+(sz&1);
+  }
+  const hd=new Uint8Array(12);hd.set(enc.encode('RIFF'));new DataView(hd.buffer).setUint32(4,tot,true);hd.set(enc.encode('WAVE'),8);
+  return new Blob([hd,...parts]);
+}
+
+/* --- re-save other images through the browser --- */
+async function redraw(file,type){
+  const bmp=await createImageBitmap(file,{imageOrientation:'from-image'});
+  const c=document.createElement('canvas');c.width=bmp.width;c.height=bmp.height;c.getContext('2d').drawImage(bmp,0,0);if(bmp.close)bmp.close();
+  const b=await new Promise(r=>c.toBlob(r,type,0.95));if(!b)throw new Error('Could not convert');return b;
+}
+
+/* --- dispatcher --- */
+async function cleanFile(file,o={}){
+  const info=newInfo(),h=await readAt(file,0,16),base=file.name.replace(/\.[^.]+$/,'')||'file';
+  let ext=((file.name.match(/\.([^.]+)$/)||[])[1]||'').toLowerCase(),blob,kind;
+  const ik=imgKind(h),brand=ascii(h,8,4);
+  if(ik){kind='Image';const u=await readAll(file),out=cleanImg(u,info);
+    if(ik==='jpg'&&info.orient>1&&!o.inArchive&&typeof createImageBitmap!=='undefined'){blob=await redraw(file,'image/jpeg');info.notes.push('Turned upright')}
+    else blob=new Blob([out]);
+    if(!ext||!(ik==='jpg'?/^jpe?g$/.test(ext):ext===ik))ext=ik}
+  else if(ascii(h,0,5)==='%PDF-'){kind='PDF';blob=new Blob([await cleanPdf(await readAll(file),info)]);ext='pdf'}
+  else if(h[0]===0x50&&h[1]===0x4B&&h[2]===3&&h[3]===4){const r=await cleanZip(await readAll(file),info,o.depth||0);kind=r.kind;blob=r.blob;ext=ext||'zip'}
+  else if(ascii(h,4,4)==='ftyp'&&!/^(heic|heix|hevc|heim|heis|mif1|msf1|avif|avis)/.test(brand)){kind=/^M4[AB]/.test(brand)?'Audio':'Video';blob=await cleanMp4(file,info);ext=ext||'mp4'}
+  else if(ascii(h,0,4)==='fLaC'){kind='Audio';blob=await cleanFlac(file,info);ext='flac'}
+  else if(ascii(h,0,4)==='RIFF'&&ascii(h,8,4)==='WAVE'){kind='Audio';blob=await cleanWav(file,info);ext='wav'}
+  else if(ascii(h,0,3)==='ID3'||(h[0]===0xFF&&(h[1]&0xE0)===0xE0&&/^(mp3|mp2|mpga)$/.test(ext||'mp3'))){kind='Audio';blob=await cleanMp3(file,info);ext=ext||'mp3'}
+  else if(!o.inArchive&&typeof createImageBitmap!=='undefined'&&((file.type||'').startsWith('image/')||/^(heic|heif|avif|bmp|tiff?)$/.test(ext))){
+    kind='Image';const ll=/^(bmp|tiff?)$/.test(ext);blob=await redraw(file,ll?'image/png':'image/jpeg');ext=ll?'png':'jpg';
+    info.found.add('All embedded data');info.notes.push('Saved as '+ext.toUpperCase());info.removed=1}
+  else return null;
+  return{name:base+'-clean.'+ext,blob,info,kind,orig:file.size};
+}
+/*END ENGINE*/
+
+/* ---------- page ---------- */
+const $=id=>document.getElementById(id),items=[];let dl=null,queue=Promise.resolve(),nGps=0,nWho=0;
+if(window.claude&&claude.use)claude.use('downloads').then(d=>{dl=d}).catch(()=>{});
+const toast=t=>{const e=$('toast');e.textContent=t;e.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('show'),3400)};
+const size=n=>n<1024?n+' B':n<1048576?(n/1024).toFixed(0)+' KB':n<1073741824?(n/1048576).toFixed(1)+' MB':(n/1073741824).toFixed(2)+' GB';
+const tag=(box,t,c)=>{const s=document.createElement('span');s.className='tag'+(c?' '+c:'');s.textContent=t;s.title=t;box.append(s)};
+
+function addRow(file){
+  const list=$('list');if(!items.length)list.textContent='';
+  const row=document.createElement('div');row.className='row';
+  const ico=document.createElement('div');ico.className='ico';ico.textContent=(file.name.split('.').pop()||'FILE').slice(0,4).toUpperCase();
+  const mid=document.createElement('div'),nm=document.createElement('div'),mt=document.createElement('div'),tg=document.createElement('div');
+  nm.className='fname';nm.textContent=file.name;mt.className='fmeta';mt.textContent=size(file.size)+' · Cleaning…';tg.className='tags';
+  mid.append(nm,mt,tg);
+  const btn=document.createElement('button');btn.className='ghost';btn.textContent='Download';btn.disabled=true;
+  row.append(ico,mid,btn);list.prepend(row);
+  const it={file,ico,nm,mt,tg,btn};items.push(it);return it;
+}
+function show(it){
+  const r=it.res,i=r.info;
+  if(r.kind==='Image'){const img=document.createElement('img');img.alt='';img.src=it.url=URL.createObjectURL(r.blob);it.ico.textContent='';it.ico.append(img)}
+  it.nm.textContent=r.name;
+  it.mt.textContent=r.kind+' · '+size(r.orig)+(r.blob.size!==r.orig?' → '+size(r.blob.size):'')+(i.notes.length?' · '+i.notes.join(', '):'');
+  if(i.gps)tag(it.tg,i.loc?'GPS '+i.loc:'GPS location','gps');
+  for(const p of i.props)tag(it.tg,p);
+  for(const f of i.found)tag(it.tg,f);
+  for(const w of i.warn)tag(it.tg,'⚠ '+w,'gps');
+  if(!i.removed&&!i.found.size)tag(it.tg,'No metadata found','plain');
+  tag(it.tg,'Clean','ok');
+  it.btn.disabled=false;it.btn.onclick=()=>save(r.name,r.blob);
+}
+function stats(){
+  const done=items.filter(x=>x.res).length;
+  $('sCount').firstChild.textContent=done;$('sGps').firstChild.textContent=nGps;$('sWho').firstChild.textContent=nWho;
+  $('all').disabled=!done;$('clear').disabled=!items.length;
+}
+function addFiles(files){
+  for(const f of files){
+    const it=addRow(f);stats();
+    queue=queue.then(async()=>{
+      try{const r=await cleanFile(f);
+        if(!r){it.mt.textContent=size(f.size)+' · This file type is not supported yet';tag(it.tg,'Not supported','plain')}
+        else{it.res=r;if(r.info.gps)nGps++;if(r.info.props.length)nWho++;show(it)}}
+      catch(e){it.mt.textContent=size(f.size)+' · '+(e&&e.message||'Could not clean this file');tag(it.tg,'Failed','gps')}
+      stats();
+    });
+  }
+}
+async function save(name,blob){
+  if(dl){try{await dl.save({filename:name,data:blob});toast('Saved '+name)}
+    catch(e){const c=e&&e.code;toast(c==='declined'?'Download cancelled':c==='rejected_extension'?'This file type can only be saved inside the ZIP':'Could not save the file here')}return}
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.append(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),5000);
+}
+async function zipAll(){
+  const done=items.filter(x=>x.res),used=new Set(),ens=[];
+  const d=new Date(),time=(d.getHours()<<11)|(d.getMinutes()<<5)|(d.getSeconds()>>1),date=((d.getFullYear()-1980)<<9)|((d.getMonth()+1)<<5)|d.getDate();
+  let total=0;for(const x of done)total+=x.res.blob.size;
+  if(total>4e9)throw new Error('Too large for one ZIP. Download the files one by one.');
+  for(const x of done){
+    let n=x.res.name,k=1;while(used.has(n))n=x.res.name.replace(/(\.[^.]+)?$/,'-'+(++k)+'$1');used.add(n);
+    const data=await readAll(x.res.blob);
+    ens.push({nameB:enc.encode(n),flags:0x800,method:0,time,date,crc:crc32(data),csize:data.length,usize:data.length,raw:data});
+  }
+  return writeZip(ens);
+}
+
+const drop=$('drop'),pick=$('pick');
+pick.addEventListener('change',()=>{addFiles([...pick.files]);pick.value=''});
+['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('on')}));
+['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('on')}));
+drop.addEventListener('drop',e=>addFiles([...e.dataTransfer.files]));
+$('all').addEventListener('click',async()=>{
+  const b=$('all');b.disabled=true;b.textContent='Zipping…';
+  try{const done=items.filter(x=>x.res).length;await save('getfileclean-'+done+'-files.zip',await zipAll())}
+  catch(e){toast(e.message||'Could not build the ZIP')}
+  finally{b.textContent='Download all (.zip)';b.disabled=false}
+});
+$('clear').addEventListener('click',()=>{
+  for(const x of items)if(x.url)URL.revokeObjectURL(x.url);
+  items.length=0;nGps=nWho=0;$('list').innerHTML='<div class="empty">Your cleaned files and a report of what was removed will appear here.</div>';stats();
+});
+}
+</script>
+</body>
+</html>

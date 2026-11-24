@@ -1,0 +1,287 @@
+=== about
+title: About Get File Clean (GetFileClean)
+desc: GetFileClean is a free, browser-based metadata remover for photos, documents, PDFs, videos and audio. Learn who we are, how it works and why we built it.
+---
+GetFileClean, also written **Get File Clean**, is a free online tool that removes hidden metadata from your files: GPS location in photos, author names in documents, device details in videos and much more. It also publishes plain-English guides to help people understand what their files reveal.
+
+## Why we built GetFileClean
+
+Most people have no idea that a photo can contain the exact location where it was taken, or that a Word document can carry the name of the person who wrote it and the company they work for. Most metadata removal tools also ask you to upload your files to their servers, which means handing private files to a stranger in order to protect your privacy.
+
+We built GetFileClean to do the opposite. The cleaning happens inside your own web browser. **Your files are never uploaded to us or anyone else.**
+
+## What GetFileClean does
+
+- Removes EXIF, GPS, XMP and IPTC metadata from JPG, PNG, WebP and GIF images without reducing quality.
+- Removes author, company, dates and other properties from Word, Excel, PowerPoint and OpenDocument files.
+- Removes document information and XMP metadata from PDF files.
+- Removes location, device and date metadata from MP4 and MOV videos without re-encoding.
+- Removes tags from MP3, M4A, FLAC and WAV audio files.
+- Cleans supported files inside ZIP archives.
+
+There are no file size limits, no file count limits and no sign-up.
+
+## Our guides
+
+Our [metadata guides](blog/index.html) explain how metadata works and how to remove it on different devices and in different file types. We write them to be practical and accurate, and we update them when software changes. If you spot a mistake, please [contact us](contact.html).
+
+## Who runs GetFileClean
+
+GetFileClean is operated by AR ECOM SERVICE LLC, a company registered in Wyoming, United States.
+
+## How the service is funded
+
+GetFileClean is free to use. To cover hosting and development costs, the website may display advertising from Google AdSense. Advertising never has access to the files you clean, because those files never leave your device. See our [Privacy Policy](privacy-policy.html) for details.
+
+## Contact
+
+Questions, feedback or partnership enquiries: see our [Contact page](contact.html).
+
+=== contact
+title: Contact Us
+desc: Contact the GetFileClean team with questions, feedback, bug reports, privacy requests or partnership enquiries.
+---
+We'd love to hear from you, whether you have a question about the tool, found a bug, want to suggest a file format, or have a privacy request.
+
+## Email
+
+**admin@arecomservice.com**
+
+We aim to reply within 2 business days.
+
+## Helpful details to include
+
+- **Bug reports:** the file type, your browser and device, and what happened. Please don't send us private files. Describe the problem instead, or send a sample file that contains nothing sensitive.
+- **Privacy requests:** tell us what you'd like us to do and how we can reach you. See our [Privacy Policy](privacy-policy.html) for your rights.
+- **Corrections to our guides:** the page address and what needs fixing.
+
+## Company details
+
+GetFileClean is operated by AR ECOM SERVICE LLC, Wyoming, United States.
+
+## Before you write
+
+Many common questions are answered in the FAQ on our [home page](index.html) and in our [metadata guides](blog/index.html).
+
+=== privacy-policy
+title: Privacy Policy
+desc: GetFileClean's Privacy Policy: your files never leave your device. Learn what limited data our website collects, how advertising cookies work and your choices.
+---
+**Last updated: 25 November 2026**
+
+This Privacy Policy explains how GetFileClean ("we", "us", "our"), operated by AR ECOM SERVICE LLC, handles information when you use getfileclean.com (the "Website") and the metadata removal tool on it (the "Tool").
+
+## Summary
+
+- **Your files never leave your device.** The Tool processes files inside your web browser. We do not receive, upload, store or see the files you clean.
+- We do not ask you to create an account and we do not ask for your name or email to use the Tool.
+- Like most websites, our hosting provider records basic technical logs.
+- The Website may show ads from Google AdSense, which uses cookies. You can control personalised advertising (details below).
+
+## 1. Files you process with the Tool
+
+When you add a file to the Tool, it is read and cleaned by code running in your own browser. The file and the cleaned copy stay on your device. They are not transmitted to our servers or to any third party. When you close or reload the page, the files are removed from the browser's memory.
+
+## 2. Information collected automatically
+
+When you visit the Website, our hosting provider (Hostinger) automatically records standard server log information, which may include your IP address, browser type, device type, the pages you visit, the referring page and the date and time of your visit. This information is used to operate, secure and troubleshoot the Website and is kept only as long as needed for those purposes.
+
+## 3. Cookies and similar technologies
+
+We do not currently set our own cookies to run the Tool. Third parties, including Google, may place and read cookies or use similar technologies (such as web beacons and device identifiers) on your browser when you visit the Website, as described below. See our [Cookie Policy](cookie-policy.html) for more detail.
+
+## 4. Advertising (Google AdSense)
+
+We may use Google AdSense to display advertisements on the Website.
+
+- Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this Website or other websites.
+- Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this Website and/or other sites on the Internet.
+- You may opt out of personalised advertising by visiting [Google Ads Settings](https://adssettings.google.com/). You can also opt out of some third-party vendors' use of cookies for personalised advertising at [www.aboutads.info](https://www.aboutads.info/choices/) or, in Europe, [www.youronlinechoices.com](https://www.youronlinechoices.com/).
+- If you opt out, you may still see ads, but they will not be personalised based on your browsing.
+- Learn more about how Google uses information from sites that use its services at [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites).
+
+Where required by law, including for visitors in the European Economic Area, the United Kingdom and Switzerland, we will ask for your consent before personalised advertising cookies are used, through a consent message shown on the Website.
+
+## 5. Analytics
+
+We may use privacy-respecting analytics or Google Analytics to understand how visitors use the Website, such as which pages are popular. If we do, analytics data is aggregated and is never connected to the files you clean, because those files never leave your device. Where required, analytics cookies are only used with your consent.
+
+## 6. Other third-party services
+
+- **Google Fonts:** our pages load fonts from Google's servers, which receive your IP address in order to deliver them.
+- **PDF component:** when you clean a PDF, the Tool may load an open-source PDF library from a public content delivery network (unpkg.com) if it is not available from our own server. Only the library is downloaded. Your PDF is not sent anywhere.
+- **External links:** our guides link to other websites. We are not responsible for their privacy practices.
+
+## 7. Contacting us
+
+If you email us, we receive your email address and whatever you include in your message. We use it only to reply and keep a record of the conversation. Please do not email us private files.
+
+## 8. How we use information
+
+We use the limited information described above to operate and secure the Website, show advertising that funds the free service, respond to your messages, and comply with legal obligations. We do not sell your personal information for money.
+
+## 9. Legal bases (EEA and UK visitors)
+
+Where the GDPR or UK GDPR applies, we rely on our legitimate interests (running and securing the Website), your consent (personalised advertising and analytics cookies, where required), and legal obligations.
+
+## 10. Your rights
+
+Depending on where you live, you may have the right to access, correct, delete or restrict the use of your personal information, to object to processing, to data portability, and to withdraw consent at any time.
+
+**California residents:** under the CCPA/CPRA you have the right to know what personal information is collected, to request deletion, to correct information, and to opt out of the "sale" or "sharing" of personal information for cross-context behavioural advertising. You can opt out of personalised ads using the links in section 4. We will not discriminate against you for exercising your rights.
+
+To make a request, email **admin@arecomservice.com**. We may need to verify your request.
+
+## 11. Data retention
+
+We keep server logs and emails only as long as necessary for the purposes above, unless a longer period is required by law. Files you clean are never stored by us.
+
+## 12. Security
+
+Because files are processed locally in your browser, the main risk to your files is on your own device. The Website is served over an encrypted (HTTPS) connection.
+
+## 13. International transfers
+
+We and our service providers may process information in the United States and other countries. Where required, appropriate safeguards are used.
+
+## 14. Children
+
+The Website is not directed at children under 13 (or under 16 in the EEA and UK), and we do not knowingly collect personal information from them. If you believe a child has provided us with personal information, please contact us and we will delete it.
+
+## 15. Changes to this policy
+
+We may update this Privacy Policy from time to time. We will post the updated version on this page with a new "Last updated" date.
+
+## 16. Contact
+
+AR ECOM SERVICE LLC (GetFileClean)
+Email: **admin@arecomservice.com**
+
+=== cookie-policy
+title: Cookie Policy
+desc: GetFileClean's Cookie Policy explains which cookies may be used on our website, including Google advertising cookies, and how you can manage or refuse them.
+---
+**Last updated: 25 November 2026**
+
+This Cookie Policy explains how cookies and similar technologies may be used on getfileclean.com. Read it together with our [Privacy Policy](privacy-policy.html).
+
+## What are cookies?
+
+Cookies are small text files that a website stores in your browser. Similar technologies include local storage, pixels and device identifiers. They can remember settings, measure visits or help show relevant ads.
+
+## Cookies we set
+
+The GetFileClean Tool does not need cookies to work, and we do not currently set our own cookies. Your files are processed in your browser and are not stored in cookies.
+
+## Third-party cookies
+
+**Advertising (Google AdSense).** If ads are shown on the Website, Google and its partners may use cookies to serve ads, limit how often you see an ad, measure ad performance and, with your consent where required, personalise ads based on your visits to this and other websites. Learn more at [How Google uses cookies in advertising](https://policies.google.com/technologies/ads).
+
+**Analytics.** If we use analytics, analytics cookies may count visits and show which pages are used, in aggregate.
+
+**Fonts.** Google Fonts may be loaded from Google's servers. This doesn't set cookies for our pages, but Google receives your IP address to deliver the fonts.
+
+## Consent
+
+Where the law requires it, such as for visitors in the European Economic Area, the UK and Switzerland, a consent message will ask you to accept or reject non-essential cookies before they are used. You can change your choice at any time using the privacy or cookie settings link shown on the Website.
+
+## How to manage cookies
+
+- **Personalised ads:** visit [Google Ads Settings](https://adssettings.google.com/), [aboutads.info](https://www.aboutads.info/choices/) or [youronlinechoices.com](https://www.youronlinechoices.com/).
+- **Your browser:** most browsers let you block or delete cookies in their settings. Blocking cookies won't stop the GetFileClean Tool from working.
+
+## Contact
+
+Questions about cookies: **admin@arecomservice.com**
+
+=== terms
+title: Terms of Use
+desc: The Terms of Use for GetFileClean, the free browser-based metadata remover: acceptable use, no warranty, limitation of liability and other important terms.
+---
+**Last updated: 25 November 2026**
+
+These Terms of Use ("Terms") govern your use of getfileclean.com and the metadata removal tool on it (together, the "Service"), operated by AR ECOM SERVICE LLC ("we", "us"). By using the Service, you agree to these Terms. If you do not agree, please do not use the Service.
+
+## 1. The Service
+
+GetFileClean lets you remove metadata from supported files. Files are processed in your browser and are not uploaded to us. The Service is provided free of charge and may display advertising.
+
+## 2. Acceptable use
+
+You agree to use the Service only for lawful purposes. You must not use it to:
+
+- tamper with evidence, or alter files you are legally required to preserve in their original form;
+- remove copyright or licence information in order to infringe someone else's rights or pass off their work as your own;
+- deceive people, for example by hiding that content was generated by AI where disclosure is required;
+- break the law or the rights of others in any other way;
+- interfere with the Website, attempt to disrupt it, or copy it in bulk by automated means.
+
+## 3. Your files and your responsibility
+
+You are responsible for the files you process and for keeping copies of your originals. The Service creates new clean copies and does not change your original files, but you should always keep backups. Some changes have consequences you should consider, for example cleaning a digitally signed PDF makes its signature invalid.
+
+## 4. No warranty
+
+The Service and the content on the Website are provided "as is" and "as available", without warranties of any kind, whether express or implied, including fitness for a particular purpose, accuracy and non-infringement. We work hard to remove metadata thoroughly, but we do not guarantee that every piece of hidden information will be removed from every file, or that the Service will always be available or error-free. Check important files yourself before sharing them.
+
+## 5. Limitation of liability
+
+To the fullest extent permitted by law, we will not be liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, profits or reputation, arising from your use of, or inability to use, the Service. Our total liability for any claim relating to the Service will not exceed USD 50.
+
+## 6. Content and intellectual property
+
+The Website's design, text, guides and code are owned by us or our licensors. You may share links to our guides and quote short passages with attribution. You may not republish our guides in full without permission. Open-source components are used under their own licences.
+
+## 7. Advertising and third-party links
+
+The Website may show ads and link to third-party websites. We are not responsible for third-party content, products or services.
+
+## 8. Guides are not professional advice
+
+Our guides are for general information only. See our [Disclaimer](disclaimer.html).
+
+## 9. Changes
+
+We may change the Service or these Terms at any time. The updated Terms will be posted on this page. Continuing to use the Service means you accept the changes.
+
+## 10. Governing law
+
+These Terms are governed by the laws of the State of Wyoming, United States, without regard to its conflict of law rules, unless the law where you live requires otherwise.
+
+## 11. Contact
+
+**admin@arecomservice.com**
+
+=== disclaimer
+title: Disclaimer
+desc: GetFileClean's disclaimer: our metadata guides are for general information and are not legal, security or professional advice. Read about accuracy, links and ads.
+---
+**Last updated: 25 November 2026**
+
+## General information only
+
+The guides and articles on GetFileClean are provided for general information. They are not legal, regulatory, compliance, security or other professional advice. For decisions with legal or professional consequences, such as court filings, evidence handling, data protection compliance or healthcare records, consult a qualified professional.
+
+## Accuracy
+
+We aim to keep our guides accurate and up to date, but software, apps and platforms change often. Menu names, settings and the way platforms handle metadata may differ from what we describe. We make no guarantee that information is complete or current.
+
+## The tool
+
+The GetFileClean tool is provided "as is". Always keep your original files and check important files before sharing them. See our [Terms of Use](terms.html).
+
+## External links
+
+Our pages link to other websites for your convenience. We don't control and aren't responsible for their content, accuracy or privacy practices.
+
+## Trademarks
+
+Product and company names mentioned in our guides, such as Microsoft Word, Adobe Acrobat, Apple iPhone, Google Photos and others, are trademarks of their respective owners. Their use is for identification only and does not imply endorsement or affiliation.
+
+## Advertising
+
+The Website may display advertising. Ads are provided by third parties such as Google and do not mean we endorse the products advertised.
+
+## Contact
+
+**admin@arecomservice.com**

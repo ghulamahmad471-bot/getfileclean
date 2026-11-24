@@ -1,0 +1,351 @@
+=== journalists-protect-sources-metadata
+title: Metadata and Source Protection: A Guide for Journalists
+cat: Professionals
+kw: journalist metadata, source protection metadata, leaked document metadata, protect sources files, newsroom metadata
+desc: Metadata can expose journalistic sources through documents, photos and recordings. A practical guide to removing metadata and protecting sources.
+---
+For journalists, **metadata** isn't an abstract privacy concern. Documents, photos and recordings published or shared carelessly can point back to the people who provided them.
+
+## How metadata can expose a source
+
+- **Document properties:** an author or "last modified by" name inside a leaked file.
+- **Printer and scanner details:** device names and dates in scanned PDFs.
+- **Photo location and device:** a photo's GPS coordinates or the phone model that took it.
+- **Timestamps:** creation dates that narrow down who had access and when.
+- **Embedded images:** photos inside documents that keep their own location data.
+
+## Metadata is only one layer
+
+Visible features can identify sources too, such as unique wording, formatting, and tracking marks some printers add to pages. Publishing an original document as-is, even if cleaned, carries risk. Many newsrooms retype, describe or recreate documents instead of publishing originals.
+
+## A safer handling workflow
+
+1. Keep originals untouched and secure for verification.
+2. Work on copies.
+3. Remove metadata from any file that leaves the newsroom or is published.
+4. Check images and documents for visible identifying details.
+5. Consider publishing reconstructions instead of originals.
+
+## Why local processing matters
+
+Uploading sensitive files to an online tool means trusting a third party. GetFileClean processes everything in your browser. Files never leave your computer, and the tool keeps working with the network disconnected.
+
+## Related
+
+- [Can removed metadata be recovered?](can-removed-metadata-be-recovered.html)
+- [Metadata forensics basics](metadata-forensics-basics.html)
+
+=== lawyers-document-metadata
+title: Metadata for Lawyers: Protecting Client Documents
+cat: Professionals
+kw: lawyer metadata, law firm document metadata, legal metadata removal, client confidentiality metadata, metadata in legal documents
+desc: Lawyers handle documents full of metadata: authors, tracked changes and drafting history. Learn the risks and a practical cleaning workflow for law firms.
+---
+Legal documents go through many drafts and hands. Their **metadata** and hidden content can reveal strategy, earlier positions and confidential client details.
+
+## Common risks in legal documents
+
+- **Tracked changes** showing earlier offers or wording
+- **Comments** with internal advice
+- **Author and company** fields showing a document was reused from another client's matter
+- **Template names** and document IDs from document management systems
+- **PDF properties** carried over from the Word draft
+
+## Professional duties
+
+Lawyers generally have duties of confidentiality and competence that extend to electronic documents. Many bar associations have issued guidance on metadata. Equally, litigation can require preserving metadata. Follow your jurisdiction's rules and your firm's policies. This article is general information, not legal advice.
+
+## A practical workflow
+
+1. Finish the document and resolve all tracked changes and comments.
+2. Run Word's Document Inspector.
+3. Export to PDF if appropriate, and redact properly if needed.
+4. Remove remaining metadata with GetFileClean.
+5. Do a final check of properties and content before sending.
+
+## Why browser-based matters for law firms
+
+Client documents shouldn't be uploaded to third-party websites for cleaning. GetFileClean processes files entirely in the browser. Nothing is transmitted, which is easier to square with confidentiality obligations.
+
+Related: [filing legal PDFs](legal-documents-pdf-metadata.html), [track changes and comments](track-changes-and-comments-risk.html).
+
+=== real-estate-photos-metadata
+title: Real Estate Photos and Metadata: What Agents Should Know
+cat: Professionals
+kw: real estate photo metadata, property listing photos privacy, realtor photo metadata, remove metadata listing photos, rental listing photos
+desc: Property photos can carry metadata about agents' devices, dates and locations. Learn when real estate photo metadata matters and how to clean listing photos.
+---
+Property listings are mostly public, so why should agents care about **photo metadata**? There are a few good reasons.
+
+## Situations where it matters
+
+- **Rental and private listings:** the exact address may be withheld until viewing, but GPS data in photos can reveal it.
+- **Tenants' privacy:** photos taken in occupied homes can carry dates showing when the occupants are away.
+- **Agents' own devices:** device models and dates are attached to every photo.
+- **Photos taken elsewhere:** shots of a neighbourhood or area photographed from your own home or office.
+
+## Large listing sites vs direct sharing
+
+Big property portals may process images. But photos are also emailed to sellers, sent to buyers, shared in cloud folders and posted on agency websites, where originals are often kept.
+
+## Smaller files, faster pages
+
+Removing metadata also makes image files slightly smaller, which helps listing pages load faster.
+
+## A simple workflow for agencies
+
+1. Edit photos as usual.
+2. Clean the final set in GetFileClean, which can handle hundreds of photos at once.
+3. Upload and share the clean copies.
+
+No uploads to another service and no per-file fees.
+
+## Related
+
+- [Photo location metadata and your address](hidden-gps-location-in-photos.html)
+- [Bulk cleaning thousands of files](bulk-remove-metadata.html)
+
+=== hr-recruiting-documents-metadata
+title: HR and Recruiting: Metadata in CVs, Offers and Policies
+cat: Professionals
+kw: hr document metadata, recruiting metadata, offer letter metadata, employee document privacy, hr data protection files
+desc: HR teams handle CVs, offer letters and policies full of metadata. Learn the privacy risks and how to clean HR documents before sending them.
+---
+HR teams create and receive many documents containing personal data. **Metadata** adds a hidden layer to that data.
+
+## Documents HR sends
+
+- **Offer letters and contracts:** template names, author names and earlier versions made for other candidates.
+- **Policies and handbooks:** internal comments and reviewer names.
+- **Rejection letters:** properties revealing a template or recruiter's name.
+
+## Documents HR receives
+
+Candidates' CVs can contain metadata such as their current employer or other personal details. When forwarding CVs to hiring managers, consider whether all of that needs to travel. Anonymised recruitment processes should also remove metadata, not just names on the page.
+
+## Data protection
+
+Metadata such as names can be personal data, and many privacy laws expect organisations to share only what's necessary. Cleaning files is a simple, practical step. See [metadata and GDPR](metadata-and-gdpr.html).
+
+## A simple HR routine
+
+1. Remove comments and tracked changes from outgoing documents.
+2. Clean the files with GetFileClean before sending.
+3. For anonymised hiring, clean candidate files before forwarding.
+
+GetFileClean handles Word files and PDFs in bulk and runs in the browser, so candidate data isn't uploaded to another service.
+
+=== healthcare-files-metadata
+title: Healthcare and Metadata: Protecting Patient Information in Files
+cat: Professionals
+kw: healthcare metadata, patient file privacy, medical document metadata, clinic photo metadata, health data files
+desc: Healthcare files can carry metadata that adds to patient privacy risk. Learn where metadata appears in clinical photos and documents, and simple cleaning habits.
+---
+Healthcare organisations protect patient information carefully, but **file metadata** is easy to overlook.
+
+## Where metadata appears in healthcare work
+
+- **Clinical photos** taken on phones or cameras, with dates, devices and sometimes location.
+- **Letters and reports** written in Word, with author names, templates and document IDs.
+- **Scanned documents**, with scanner names and dates.
+- **Recordings** of consultations or dictation.
+
+## Why it matters
+
+Metadata can connect a file to a patient, a clinic location or a time. Combined with other information, it can make data more identifiable.
+
+## Follow your organisation's systems first
+
+Clinical images and records should usually be stored and shared through approved systems. Your organisation's policies and applicable laws come first. This article is general guidance only.
+
+## When cleaning helps
+
+- Sharing anonymised images for teaching, research or publication.
+- Sending patient information leaflets or templates outside the organisation.
+- Publishing documents online.
+
+## Why browser-based processing fits
+
+GetFileClean doesn't upload files. All processing happens on your device, so files containing sensitive information aren't sent to an outside service just to be cleaned.
+
+## Remember
+
+Removing metadata doesn't anonymise the content. Faces, tattoos, wristbands and visible text in photos still need handling.
+
+=== freelancers-client-files-metadata
+title: Freelancers: Clean Your Files Before Sending Them to Clients
+cat: Professionals
+kw: freelancer metadata, client files metadata, deliver files without metadata, designer file metadata, freelance file privacy
+desc: Freelancers' deliverables can reveal other clients, software and working hours through metadata. Learn how to clean files before sending them to clients.
+---
+Freelancers reuse templates, work for many clients and send lots of files. **Metadata** can reveal more about your business than you'd like.
+
+## What client files can reveal
+
+- **Another client's name** in a reused document's title or properties
+- **Your working hours**, from creation and modification dates
+- **Software and versions** you use, including trial or student versions
+- **Total editing time** in Office documents
+- **Your location**, from photos you took for the project
+- **Subcontractors**, if their names are in the author field
+
+## Professional delivery
+
+Clean files look deliberate. A logo file or report full of another agency's metadata raises questions you don't need.
+
+## Keep your own records
+
+Metadata can also be useful for you: version history, dates and authorship. Keep your working files and archive originals, then send clean copies.
+
+## A quick delivery routine
+
+1. Export final files.
+2. Drop them into GetFileClean and check the report.
+3. Download clean copies, or use **Download all** for one ZIP.
+4. Send the ZIP to your client.
+
+GetFileClean is free, has no file limits and doesn't upload your clients' files anywhere.
+
+## Designers and photographers
+
+If you want to keep copyright information in delivered images, read [should photographers keep copyright metadata](photographers-copyright-metadata.html).
+
+=== students-assignments-metadata
+title: Students: What Metadata Is in Your Assignments?
+cat: Professionals
+kw: student assignment metadata, essay file metadata, coursework document properties, word metadata students, assignment author name
+desc: Assignment files carry metadata such as author names, editing time and dates. Learn what's in your coursework files and how to keep them tidy.
+---
+Every essay and assignment file you submit carries **metadata**. Most of the time it's harmless, but it's worth knowing what's there.
+
+## What's in an assignment file?
+
+- **Author:** the name on the computer or Office account used to create the file.
+- **Last modified by:** the last person who saved it.
+- **Total editing time** and revision number in Word documents.
+- **Created and modified dates.**
+- **Template** names.
+
+## Shared and borrowed computers
+
+If you use a family computer, a library PC or a friend's laptop, the author field may show someone else's name. That can be confusing for whoever marks your work.
+
+## Group projects
+
+Group documents show who edited last and, through tracked changes and comments, who wrote what. Clean up comments and changes before final submission.
+
+## Academic integrity
+
+Don't try to use metadata changes to misrepresent when or how work was done. Institutions may look at a range of evidence, and misrepresentation is a serious integrity issue. Cleaning metadata is about privacy and tidiness, not hiding the truth.
+
+## When cleaning makes sense
+
+- Sharing your work publicly or in a portfolio.
+- Submitting to anonymous review where names shouldn't appear.
+- Sending documents from a shared computer.
+
+Check your institution's submission rules first. Some ask for specific formats or properties.
+
+=== activists-protest-photos-metadata
+title: Protest and Event Photos: Remove Metadata to Protect People
+cat: Privacy & Security
+kw: protest photos metadata, activist photo safety, remove location from protest photos, event photo privacy, photo metadata safety
+desc: Photos from protests and public events can carry location, time and device metadata. Learn how to protect yourself and others when sharing them.
+---
+Photos and videos from protests, rallies and community events can carry **metadata** that identifies the person who took them and where they were.
+
+## What event photos can reveal
+
+- **Exact location and time**, placing the photographer at a specific spot.
+- **Device model and serial numbers**, linking photos to the same camera.
+- **A series of locations**, showing someone's movements before and after.
+
+## Protect yourself
+
+1. Turn off camera location before the event. See [iPhone](turn-off-location-iphone-camera.html) and [Android](turn-off-location-android-camera.html).
+2. Clean photos and videos before sharing them anywhere.
+3. Share clean files instead of originals with journalists or organisers.
+
+## Protect others
+
+Faces in photos can identify people who didn't consent. Consider blurring faces of bystanders, particularly anyone who might face risks for attending. Metadata removal doesn't blur faces. That's a separate editing step.
+
+## Why offline tools help
+
+GetFileClean processes files on your device, and after the page has loaded it works without an internet connection. That's useful where networks are slow, crowded or monitored.
+
+## Related
+
+- [Why browser-based metadata removal is safer](browser-based-metadata-removal.html)
+- [Can removed metadata be recovered?](can-removed-metadata-be-recovered.html)
+
+=== photographers-copyright-metadata
+title: Should Photographers Remove Metadata? Keep Copyright, Remove Location
+cat: Professionals
+kw: photographer metadata, copyright metadata photos, iptc copyright, remove gps keep copyright, photographer exif privacy
+desc: Photographers rely on copyright metadata but may not want to share GPS and gear details. Learn what to keep, what to remove and how to do both.
+---
+Photographers have a more complicated relationship with **metadata** than most. Some of it protects your work. Some of it exposes your locations and equipment.
+
+## Metadata photographers often want to keep
+
+- **Copyright notice**
+- **Creator name** and contact details
+- **Usage terms** and licensing information
+
+These IPTC and XMP fields help clients and publishers credit you and know how an image may be used.
+
+## Metadata you may want to remove
+
+- **GPS location:** client homes, private shoots and your own studio or home.
+- **Camera and lens serial numbers:** they link all your images together and can identify stolen gear, but you may not want them public.
+- **Editing software details and history.**
+- **Exact capture times.**
+
+## How to keep some and remove the rest
+
+Most editing software can choose which metadata to include on export, such as "copyright only" or "all except camera and location info". Use those export settings for selective control.
+
+GetFileClean is built for complete removal. It strips everything, including copyright fields. Use it when you want a fully clean file, such as images for personal sharing, social posts, or files where your client will add their own metadata.
+
+## Visible protection
+
+Metadata is easy to remove by anyone, so it isn't strong protection on its own. Visible watermarks and registration where available offer more protection for your copyright.
+
+## Related
+
+[EXIF vs XMP vs IPTC](exif-vs-xmp-vs-iptc.html)
+
+=== tender-bid-documents-metadata
+title: Tenders and Bids: Check Metadata Before You Submit
+cat: Ecommerce & Business
+kw: tender documents metadata, bid proposal metadata, rfp response metadata, proposal file metadata, submission document properties
+desc: Tender and bid documents are often reused from earlier proposals, and metadata can show it. Learn what to check before submitting a proposal.
+---
+Proposals and tender responses are usually built from earlier ones. That's efficient, but **metadata** can reveal the reuse.
+
+## What bid documents can reveal
+
+- **Title property** still naming a previous client or project
+- **Author and company** fields showing a partner or subcontractor wrote sections
+- **Creation dates** years before the current tender
+- **Template** names
+- **Comments and tracked changes** with pricing discussions
+- **Images** taken on other projects, with their own locations and dates
+
+## Why it matters
+
+Evaluators want to see a response written for their requirements. A properties field naming a competitor's client undermines that impression, even if the content is tailored.
+
+## A pre-submission checklist
+
+1. Accept or reject all tracked changes and delete comments.
+2. Search for previous client names in the visible text.
+3. Check headers, footers and hidden text.
+4. Export PDFs if the submission allows.
+5. Clean all files with GetFileClean.
+6. Open the final files and check their properties.
+
+## Large submissions
+
+Tenders often require many files. GetFileClean cleans them all at once and lets you download a single ZIP, without uploading confidential pricing to an outside server.

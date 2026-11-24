@@ -1,0 +1,406 @@
+=== how-to-use-getfileclean
+title: How to Use GetFileClean: Remove Metadata in 3 Steps
+cat: GetFileClean Guides
+kw: how to remove metadata, free metadata remover, getfileclean guide, remove metadata online free, metadata cleaner
+desc: How to remove metadata from any file with GetFileClean, the free metadata remover: drop files, read the report, download clean copies. No upload, no limits.
+---
+GetFileClean is a free **metadata remover** that works in your browser. Here's how to use it.
+
+## Step 1: Add your files
+
+Open GetFileClean and either drag files onto the drop zone or click **Choose files**. You can add many files at once and mix types: photos, Word and Excel files, PDFs, videos, audio and ZIP archives.
+
+## Step 2: Read the report
+
+Each file appears in a list with a short report of what was found:
+
+- **Red GPS tag:** the file contained a location, shown as coordinates.
+- **Names:** author, last edited by, artist or company.
+- **Device:** phone or camera make and model, serial number.
+- **Dates:** when the photo, video or document was created.
+- **Types of metadata removed:** EXIF, XMP, IPTC, document properties, tags.
+- **Warnings:** for example, when a PDF's digital signature will no longer be valid.
+
+A green **Clean** tag means the clean copy is ready.
+
+## Step 3: Download
+
+- Click **Download** next to any file to save its clean copy.
+- Click **Download all (.zip)** to save every clean file in one ZIP.
+
+Clean files get "-clean" added to their name, so you can tell them apart from your originals. Your original files are never changed.
+
+## The counters
+
+At the top of the list you'll see how many files were cleaned, how many had a GPS location and how many had names or device information.
+
+## Start again
+
+Click **Clear** to empty the list. Because files are processed in your browser, closing the page removes everything.
+
+## Related
+
+- [Supported file formats](getfileclean-supported-formats.html)
+- [Bulk cleaning](bulk-remove-metadata.html)
+
+=== clean-files-on-phone
+title: How to Remove Metadata on Your Phone (iPhone and Android)
+cat: GetFileClean Guides
+kw: remove metadata on phone, metadata remover app, remove exif on phone, clean photos on phone, mobile metadata remover
+desc: How to remove metadata from photos, videos and documents on your phone without installing an app. Works on iPhone and Android in the browser.
+---
+You don't need to install an app to **remove metadata on your phone**. GetFileClean works in mobile browsers.
+
+## On iPhone
+
+1. Open GetFileClean in Safari.
+2. Tap **Choose files**.
+3. Choose **Photo Library** for photos and videos, or **Browse** for files such as PDFs and documents.
+4. Wait for the report.
+5. Tap **Download** to save a clean copy. Safari may show a download prompt. Saved files usually go to the Files app, from where you can share them or save images to Photos.
+
+## On Android
+
+1. Open GetFileClean in Chrome.
+2. Tap **Choose files** and pick photos, videos or documents.
+3. Review the report.
+4. Tap **Download**. Files are saved to your Downloads folder.
+
+## Tips for phones
+
+- **Download all as a ZIP** if you clean many files, then share the ZIP.
+- **Large videos** depend on your phone's memory. Very long 4K videos are easier to clean on a computer.
+- **HEIC photos** are often converted to JPG automatically when picked through the browser on iPhone.
+
+## Why no app?
+
+Apps need installing, updating and permission to access your photos. A browser tool only sees the files you choose, and nothing is uploaded.
+
+## Related
+
+[Remove metadata from iPhone photos](remove-metadata-iphone-photos.html) · [Remove metadata from Android photos](remove-metadata-android-photos.html)
+
+=== getfileclean-works-offline
+title: Remove Metadata Offline: Does GetFileClean Work Without Internet?
+cat: GetFileClean Guides
+kw: remove metadata offline, offline metadata remover, metadata remover without internet, local metadata removal, private metadata tool
+desc: GetFileClean removes metadata offline once the page has loaded, because files are processed on your device. Learn how it works and what needs a connection.
+---
+Yes. Once GetFileClean has loaded, it can **remove metadata offline**. Here's how that works.
+
+## Why it works offline
+
+GetFileClean doesn't send your files to a server. The cleaning code runs inside your browser, on your own computer or phone. After the page loads, cleaning photos, documents, videos and audio doesn't need the internet.
+
+## How to use it offline
+
+1. Open GetFileClean while connected.
+2. Disconnect from the internet if you want to.
+3. Add files, clean them and download the results as usual.
+
+## One exception: PDFs
+
+The PDF cleaning component loads the first time you clean a PDF. To clean PDFs offline, clean one PDF while connected first, then it's ready to use for the rest of your session.
+
+## Why offline matters
+
+- **Sensitive files:** proof that nothing is being uploaded.
+- **Restricted networks:** some workplaces block uploads.
+- **Travel:** clean files on a plane or with poor signal.
+- **Peace of mind:** you can check that nothing is sent.
+
+## Related
+
+[Why browser-based metadata removal is safer](browser-based-metadata-removal.html)
+
+=== getfileclean-supported-formats
+title: Metadata Remover Supported Formats: Every File Type We Clean
+cat: GetFileClean Guides
+kw: metadata remover supported formats, remove metadata file types, jpg png pdf docx metadata, video audio metadata remover, file formats metadata
+desc: Every file format GetFileClean supports, from JPG, PNG and HEIC to DOCX, PDF, MP4, MP3 and ZIP, and exactly what metadata is removed from each.
+---
+Here's every file type GetFileClean supports and what it removes from each.
+
+## Images
+
+- **JPG / JPEG:** EXIF (including GPS, device, dates, serial numbers and thumbnails), XMP, IPTC, comments, app data and extra embedded images. No re-compression. Photos with a rotation tag are turned upright first.
+- **PNG:** text chunks (author, software, comments), EXIF, XMP and timestamps. Lossless.
+- **WebP:** EXIF and XMP chunks. Lossless.
+- **GIF:** comments and app data including XMP. Animation looping is kept.
+- **HEIC, HEIF, AVIF, BMP, TIFF:** converted to a clean JPG or PNG in browsers that can open them.
+
+## Documents
+
+- **DOCX, XLSX, PPTX:** core, app and custom properties (author, last modified by, company, manager, title, template, dates) and metadata in embedded images.
+- **ODT, ODS, ODP:** document metadata (meta.xml) and metadata in embedded images.
+
+## PDF
+
+Document information (author, title, creator, producer, dates, keywords), XMP metadata and private app data. Saved as a single clean version. Signed PDFs show a warning.
+
+## Video
+
+- **MP4, MOV, M4V, 3GP:** metadata boxes (location, make, model, software, titles), XMP and creation dates. No re-encoding, same file size.
+
+## Audio
+
+- **MP3:** ID3v1, ID3v2 and APE tags.
+- **M4A:** metadata boxes and dates.
+- **FLAC:** Vorbis comments, pictures and app blocks.
+- **WAV:** INFO, bext, iXML, ID3 and XMP chunks.
+
+## Archives
+
+- **ZIP:** every supported file inside is cleaned. Unsupported files are kept as they are.
+
+## Not supported yet
+
+Password-protected files, 7z and RAR archives, and older Office formats (DOC, XLS, PPT). Convert older Office files to the newer formats first.
+
+=== online-metadata-removers-compared
+title: Online Metadata Removers Compared: What to Look For
+cat: Privacy & Security
+kw: best metadata remover, online metadata remover comparison, free metadata remover, exif remover online, metadata removal tools
+desc: How to choose the best metadata remover: compare upload vs browser-based tools, supported formats, limits, quality and privacy before you pick one.
+---
+There are many **metadata removers** online. Before choosing one, compare them on the points that actually matter.
+
+## 1. Does it upload your files?
+
+This is the most important question. Upload-based tools send your file to a server. Browser-based tools process files on your device. If you're cleaning files for privacy, uploading them somewhere else works against you.
+
+## 2. Which formats does it support?
+
+Many tools handle only JPG photos. Look for support for the files you actually share: PDFs, Word and Excel files, videos, audio and archives.
+
+## 3. Does it remove everything?
+
+Some tools remove EXIF but leave XMP and IPTC, or clear PDF properties but leave the XMP copy. A good tool removes all metadata types and tells you what it found.
+
+## 4. Does it keep quality?
+
+Tools that re-save images can reduce quality. Look for lossless removal for JPG, PNG and video.
+
+## 5. What are the limits?
+
+Common limits include maximum file size, number of files per day, and paid tiers for batches. Browser-based tools don't have server costs, so they rarely need limits.
+
+## 6. Does it handle rotation and colour?
+
+Look for tools that keep photos upright and keep the colour profile.
+
+## 7. Does it show a report?
+
+Seeing what was found, such as GPS coordinates or author names, helps you understand your risk and confirms the tool did its job.
+
+## How GetFileClean measures up
+
+GetFileClean is browser-based, supports photos, Office files, PDFs, video, audio and ZIP, removes EXIF, XMP, IPTC and document properties, keeps quality and colour, keeps photos upright, shows a report for every file and has no limits.
+
+=== metadata-checklist-before-sharing
+title: Metadata Checklist: 10 Things to Check Before Sharing a File
+cat: Metadata Basics
+kw: metadata checklist, before sharing files checklist, file privacy checklist, remove metadata steps, document sharing checklist
+desc: A 10-point metadata checklist to run before you share photos, documents, PDFs or videos, covering hidden data, visible clues and clean copies.
+---
+Use this **metadata checklist** before sharing files with anyone outside your circle.
+
+## For every file
+
+1. **Is it the final version?** Not a draft with old content.
+2. **Are file and folder names neutral?** No client names, personal names or internal labels.
+3. **Has metadata been removed?** Run it through GetFileClean and check the report.
+
+## For documents
+
+4. **Tracked changes accepted or rejected?** And Track Changes turned off.
+5. **Comments deleted?** Including resolved comments.
+6. **Hidden text, rows, columns and sheets checked?** See [hidden data in spreadsheets](hidden-data-in-spreadsheets.html).
+7. **Redactions done properly?** No black boxes over live text. See [redaction vs metadata removal](pdf-redaction-vs-metadata-removal.html).
+
+## For photos and videos
+
+8. **Location removed?** The GetFileClean report shows GPS in red if it was found.
+9. **Visible clues checked?** House numbers, number plates, documents, screens and reflections.
+
+## For everything
+
+10. **Is the original stored safely?** Keep it privately if you need it, and share only the clean copy.
+
+## Make it a habit
+
+Bookmark GetFileClean. Running files through it takes a few seconds and catches the hidden information people most often forget.
+
+=== ai-images-metadata-content-credentials
+title: AI-Generated Images, Metadata and Content Credentials
+cat: Technical
+kw: ai image metadata, content credentials c2pa, ai generated image metadata, remove ai metadata, c2pa metadata
+desc: AI image tools can add metadata and Content Credentials (C2PA) to images. Learn what they contain, how metadata removal affects them, and responsible use.
+---
+Many AI image generators and editing tools add information to the images they produce. Some of it is ordinary metadata; some is newer **Content Credentials** based on the C2PA standard.
+
+## What AI image files can contain
+
+- **Software tags** naming the generator or editor
+- **Prompts and settings**, written into PNG text chunks or XMP by some tools
+- **Content Credentials (C2PA):** signed provenance information describing how the image was made and edited
+- **Invisible watermarks** embedded in the pixels by some providers
+
+## Privacy considerations
+
+Prompts stored in images can reveal more than you expect, such as personal details, client names or project ideas typed into a prompt. If you share AI images for work, check what text is embedded.
+
+## How metadata removal affects provenance
+
+Metadata removers delete metadata-based provenance such as XMP, text chunks and, in JPEG files, embedded credential data. Invisible watermarks are part of the image pixels, so metadata removal doesn't affect them.
+
+## Be honest about AI content
+
+Removing metadata to hide that an image is AI-generated, in order to mislead people, is not okay, and some platforms and laws require AI content to be labelled. If you remove metadata for privacy, label AI images clearly where it matters, in captions, posts or descriptions.
+
+## When cleaning makes sense
+
+- Removing personal prompts before sharing
+- Stripping software details from client work, with your client's knowledge
+- Keeping file sizes small for websites, with AI use disclosed elsewhere
+
+=== screenshot-metadata
+title: Do Screenshots Have Metadata?
+cat: Photo Privacy
+kw: screenshot metadata, do screenshots have exif, screenshot location data, screenshot privacy, iphone screenshot metadata
+desc: Do screenshots have metadata? What screenshots on iPhone, Android, Windows and Mac usually store, why they rarely include GPS, and what to check before sharing.
+---
+Screenshots feel safer than photos. Do **screenshots have metadata**? Usually a little, rarely location.
+
+## What screenshots usually contain
+
+- **Date and time** taken
+- **Software or device** information, depending on the system
+- **Image dimensions** and sometimes a description, such as "Screenshot"
+- **Colour profile**
+
+Screenshots usually don't include GPS coordinates because they don't come from the camera, though behaviour varies by device and app.
+
+## The bigger risk: what's in the picture
+
+Screenshots capture everything on screen:
+
+- Notifications, usernames and contact names
+- Battery, time, network name and carrier
+- Browser tabs, bookmarks and open apps
+- Email addresses and phone numbers
+- Parts of conversations you didn't mean to share
+
+Crop and blur carefully, and remember the cropped part may still be there in some editing workflows. See [hidden thumbnails in JPEG files](hidden-thumbnails-in-jpeg.html).
+
+## Screenshots of photos
+
+A screenshot of a photo doesn't contain the original photo's GPS data. It's a new image. That's a quick trick for sharing a single image without its location, though quality is reduced and visible details remain.
+
+## Cleaning screenshots
+
+GetFileClean removes text tags, EXIF and timestamps from PNG and JPG screenshots without reducing quality.
+
+=== metadata-glossary
+title: Metadata Glossary: 40 Terms Explained Simply
+cat: Metadata Basics
+kw: metadata glossary, metadata terms, exif terms, metadata definitions, file metadata vocabulary
+desc: A plain-English metadata glossary: EXIF, XMP, IPTC, GPS IFD, ID3, ICC, C2PA, document properties and more, all explained simply.
+---
+A quick reference to the terms you'll see when dealing with file **metadata**.
+
+## General
+
+- **Metadata:** information about a file, stored inside it or alongside it.
+- **Hidden data:** content in a file that isn't visible by default, including metadata, comments and hidden text.
+- **Lossless removal:** removing metadata without changing the main content or quality.
+- **Re-encoding:** saving media again with compression, which can reduce quality.
+
+## Images
+
+- **EXIF:** camera-generated metadata in photos. See [what is EXIF data](what-is-exif-data.html).
+- **GPS IFD:** the EXIF section that stores location.
+- **Maker notes:** manufacturer-specific EXIF data.
+- **Orientation tag:** tells viewers how to rotate an image.
+- **EXIF thumbnail:** a small preview image stored in EXIF.
+- **IPTC:** descriptive metadata such as captions, keywords and copyright.
+- **XMP:** Adobe's flexible XML metadata format.
+- **ICC profile:** describes an image's colour space.
+- **APP segments:** sections of a JPEG file that hold metadata.
+- **PNG chunks:** sections of a PNG file, such as tEXt and eXIf.
+- **MPF:** Multi-Picture Format, extra images stored in one JPEG.
+- **HEIC:** Apple's default photo format.
+- **C2PA / Content Credentials:** signed provenance information about how media was made.
+
+## Documents
+
+- **Document properties:** author, title, company and dates in Office files.
+- **Core properties:** standard properties in Office files (core.xml).
+- **Extended properties:** application, company and manager (app.xml).
+- **Custom properties:** organisation-specific fields.
+- **Document Inspector:** Microsoft Office's hidden data tool.
+- **Tracked changes:** recorded edits in a document.
+- **meta.xml:** metadata section in OpenDocument files.
+
+## PDF
+
+- **Info dictionary:** classic PDF properties.
+- **Creator:** the app that made the original document.
+- **Producer:** the software that made the PDF.
+- **Incremental update:** edits added to the end of a PDF file.
+- **Redaction:** permanently removing visible content.
+- **Sanitise:** removing all hidden information.
+
+## Video and audio
+
+- **Atoms / boxes:** sections of MP4 and MOV files.
+- **udta / meta boxes:** where video metadata is stored.
+- **ID3:** MP3 metadata tags.
+- **Vorbis comments:** FLAC and Ogg metadata.
+- **INFO chunk:** WAV metadata.
+- **BWF / bext:** broadcast metadata in WAV files.
+- **iXML:** production metadata from field recorders.
+
+## Files and privacy
+
+- **File system dates:** created and modified dates stored by your computer, not in the file.
+- **Data minimisation:** sharing only the personal data needed.
+- **OSINT:** open-source intelligence, finding information from public sources.
+- **Provenance:** the history of where a file came from.
+- **Browser-based processing:** handling files on your device rather than on a server.
+
+=== remove-metadata-chromebook
+title: How to Remove Metadata on a Chromebook
+cat: Photo Privacy
+kw: remove metadata chromebook, chromebook exif remover, chrome os metadata, clean photos chromebook, chromebook pdf metadata
+desc: Chromebooks have no built-in tool to remove metadata. Learn how to remove metadata from photos, PDFs and documents on ChromeOS using your browser.
+---
+Windows and macOS have basic built-in tools for removing photo metadata. ChromeOS doesn't. Here's how to **remove metadata on a Chromebook**.
+
+## Why it's harder on ChromeOS
+
+Many metadata tools are desktop programs that don't run on ChromeOS. Android apps may work on some Chromebooks but often have limited file access. Online upload tools work, but they send your files to someone else's server.
+
+## The easiest way: a browser-based tool
+
+GetFileClean runs entirely in Chrome, which makes it a natural fit for Chromebooks:
+
+1. Open GetFileClean in Chrome.
+2. Click **Choose files** and pick files from your Downloads folder, Google Drive or a USB drive.
+3. Review the report.
+4. Download clean copies or a ZIP to your Downloads folder.
+
+It works for photos, Word and Excel files, PDFs, videos and audio, and nothing is uploaded.
+
+## School and work Chromebooks
+
+Managed Chromebooks may restrict downloads or some sites. If GetFileClean can't download files on a managed device, ask your administrator.
+
+## Google Drive files
+
+Files stored in Google Drive keep their metadata. Download them, clean them with GetFileClean, then upload or share the clean copies.
+
+## Related
+
+- [Does GetFileClean work offline?](getfileclean-works-offline.html)
+- [Remove metadata on your phone](clean-files-on-phone.html)

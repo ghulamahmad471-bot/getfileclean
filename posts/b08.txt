@@ -1,0 +1,372 @@
+=== ecommerce-product-photos-metadata
+title: Product Photo Metadata: A Guide for Online Store Owners
+cat: Ecommerce & Business
+kw: product photo metadata, ecommerce image metadata, remove metadata product images, online store photo privacy, product image exif
+desc: Product photos for your online store can carry GPS, device and editing metadata. Learn why ecommerce sellers should clean product images before uploading.
+---
+Online sellers take and upload hundreds of product photos. Each one may carry **metadata** that has nothing to do with the product.
+
+## What product photos can reveal
+
+- **Where your stock is kept:** GPS coordinates of your home, warehouse or studio.
+- **When you work:** timestamps on every photo.
+- **Your devices and software.**
+- **Supplier details:** images received from suppliers may carry their names, locations or software.
+
+## Why it matters for your business
+
+- **Security:** stock locations are useful information for thieves.
+- **Competitive privacy:** competitors can learn about your setup or suppliers.
+- **Page speed:** metadata adds a little to every image's file size. Across a large catalogue, cleaner files mean slightly faster pages.
+- **Professionalism:** clean images look and behave consistently.
+
+## Marketplace and store platforms
+
+Some marketplaces process images, but you also send photos to customers, wholesale buyers, ad platforms and designers. Cleaning at the source covers every channel.
+
+## A catalogue-friendly workflow
+
+1. Shoot and edit your product photos.
+2. Drop the whole batch into GetFileClean.
+3. Download all as a ZIP.
+4. Upload the clean images to your store and marketplaces.
+
+GetFileClean handles JPG, PNG, WebP and GIF without re-compressing, so product detail stays sharp.
+
+## Related
+
+- [eBay listing photos](ebay-listing-photos-metadata.html)
+- [Amazon product images](amazon-product-images-metadata.html)
+- [Does image metadata affect SEO?](does-image-metadata-affect-seo.html)
+
+=== ebay-listing-photos-metadata
+title: eBay Listing Photos: Should You Remove Metadata?
+cat: Ecommerce & Business
+kw: ebay photo metadata, ebay listing photos privacy, remove exif ebay photos, ebay seller photos, ebay image metadata
+desc: Should eBay sellers remove metadata from listing photos? What photo metadata can reveal about your stock and home, and how to clean listing images quickly.
+---
+eBay sellers upload large numbers of photos, often taken at home or in a storage space. Should you **remove metadata from eBay photos**?
+
+## What eBay listing photos can carry
+
+- GPS location of where items are stored
+- Timestamps showing when you list and work
+- Phone model and software
+
+## Doesn't eBay process uploaded photos?
+
+Marketplaces generally resize and process images for display, which may remove metadata from the versions buyers see. But you shouldn't rely on that, and photos you send to buyers directly through messages, email or other channels may be the originals.
+
+## Reasons to clean anyway
+
+- **Home sellers:** keep your address private when selling valuable items.
+- **Consistency:** clean images behave the same on every channel you list on.
+- **Smaller files:** slightly faster uploads, especially in bulk.
+- **Cross-listing:** the same photos often go to other marketplaces, social media and your own store.
+
+## Quick workflow for sellers
+
+1. Take your listing photos.
+2. Drop them into GetFileClean and download all as a ZIP.
+3. Use the clean photos everywhere you list.
+
+GetFileClean works in your phone's browser too, so you can clean photos straight after taking them.
+
+## Other privacy tips
+
+Avoid showing house numbers, mail with your address, or your car number plate in listing photos.
+
+=== amazon-product-images-metadata
+title: Amazon Product Images and Metadata: What Sellers Should Know
+cat: Ecommerce & Business
+kw: amazon product image metadata, amazon listing images exif, amazon seller photos, product image file size, clean product images amazon
+desc: What Amazon sellers should know about metadata in product images: what files can carry, why to clean them, and how to prepare images in bulk.
+---
+Amazon sellers prepare main images, lifestyle photos and infographics for every listing. Here's what to know about **metadata in product images**.
+
+## What product image files carry
+
+- **Camera data and GPS** on photos you shoot yourself
+- **Editing software history** on infographics and edited photos
+- **Supplier and designer details** on images you received from others
+- **Colour profiles**, which are worth keeping
+
+## Follow Amazon's image requirements first
+
+Amazon has its own rules for product images, covering backgrounds, dimensions, file types and content. Check Seller Central for the current requirements. Metadata cleaning doesn't change pixel dimensions or appearance, so it won't affect whether an image meets those rules.
+
+## Why clean product images
+
+- **Supplier privacy:** images from manufacturers can contain their company names, software or locations.
+- **Designer files:** freelance designers' details shouldn't travel to every channel.
+- **Multi-channel selling:** the same images go to your website, social media and ads.
+- **Smaller files** for faster uploads.
+
+## Bulk cleaning
+
+GetFileClean cleans entire folders of images at once. Drop a batch in, download all as a ZIP, and upload the clean set.
+
+## Related
+
+- [Dropshipping and supplier photos](dropshipping-supplier-photos-metadata.html)
+- [Product photo metadata guide](ecommerce-product-photos-metadata.html)
+
+=== does-image-metadata-affect-seo
+title: Does Image Metadata Affect SEO? EXIF, IPTC and Rankings
+cat: Ecommerce & Business
+kw: image metadata seo, does exif affect seo, image seo metadata, iptc google images, remove exif seo
+desc: Does image metadata affect SEO? What Google has said about EXIF, the IPTC fields it can show, and whether removing photo metadata hurts your rankings.
+---
+Website owners sometimes worry that removing photo metadata will hurt their search rankings. Here's what we know about **image metadata and SEO**.
+
+## EXIF data and rankings
+
+Google representatives have said publicly that Google doesn't rely on EXIF data such as camera model or GPS for ranking images in search. Removing EXIF is very unlikely to affect your rankings.
+
+## IPTC fields Google can display
+
+Google Images can show certain IPTC photo metadata, such as creator, credit line and copyright notice, and licensing details. If you rely on those credits appearing, keep those fields, which means not stripping all metadata from those particular images.
+
+## What actually matters for image SEO
+
+- **Descriptive file names**, such as "red-leather-wallet.jpg"
+- **Alt text** describing the image
+- **Relevant surrounding text** on the page
+- **Fast loading:** compressed images in modern formats, sized correctly
+- **Structured data** for products where relevant
+- **Image sitemaps** for large sites
+
+## Metadata and page speed
+
+Metadata adds bytes to every image. On its own it's usually small, but some photos carry large blocks of data or embedded thumbnails. Removing it trims file size, which supports faster pages.
+
+## The bottom line
+
+For most sites, removing EXIF and other personal metadata has no downside for SEO and a small benefit for speed and privacy. Keep IPTC credit fields only on images where you want credits shown.
+
+=== dropshipping-supplier-photos-metadata
+title: Dropshipping: Clean Supplier Photos Before Using Them
+cat: Ecommerce & Business
+kw: dropshipping photo metadata, supplier image metadata, dropshipping product images, clean supplier photos, aliexpress alibaba image metadata
+desc: Supplier photos used in dropshipping can carry the supplier's metadata. Learn what supplier images may reveal and how to clean them for your store.
+---
+Dropshippers often use product images supplied by manufacturers and wholesalers. Those images can carry the **supplier's metadata**.
+
+## What supplier images may contain
+
+- Software and editing history from the supplier's design team
+- Creator names, company names or copyright notices
+- Camera details and sometimes the location of the factory or studio
+- Comments and descriptions in other languages
+
+## Why clean them?
+
+- **Supplier privacy:** your sourcing is part of your business, and image files can point to who supplies you.
+- **Consistency:** images from many suppliers end up uniform and tidy.
+- **Speed:** removing extra data trims file sizes.
+
+## Respect image rights
+
+Removing metadata doesn't change who owns an image. Only use supplier images you have permission to use, and don't remove copyright information from images in order to pass them off as your own. Where you have permission and the supplier doesn't require credit, cleaning is fine.
+
+## Workflow
+
+1. Download images from your supplier.
+2. Drop them into GetFileClean.
+3. Download all as a ZIP.
+4. Upload the clean images to your store.
+
+## Better still: your own photos
+
+Your own photos help your listings stand out from other sellers using the same supplier images. Clean them too before uploading. See [product photo metadata](ecommerce-product-photos-metadata.html).
+
+=== invoice-pdf-metadata
+title: Invoice and Quote PDFs: Metadata Businesses Forget to Check
+cat: Ecommerce & Business
+kw: invoice pdf metadata, quote pdf metadata, business pdf properties, invoice software metadata, clean business documents
+desc: Invoices and quotes carry PDF metadata such as author, software and template names. Learn what customers can see and when to clean business PDFs.
+---
+Invoices, quotes and receipts are sent to customers every day, usually as PDFs. Their **metadata** is rarely checked.
+
+## What business PDFs can reveal
+
+- **Author:** an employee's personal name or an accountant's name.
+- **Creator and producer:** your accounting or invoicing software.
+- **Title:** sometimes an internal file name such as a template for another client.
+- **Dates:** when the document was really created.
+
+## Is that a problem?
+
+Often not. But it can be:
+
+- When you invoice on behalf of someone else.
+- When an outsourced bookkeeper prepares documents.
+- When template titles name other customers.
+- When you'd rather not reveal what software you use.
+
+## Don't remove what you need
+
+Some PDFs, such as e-invoices in regulated formats or digitally signed invoices, must stay exactly as generated. Don't clean those. Check your local tax and invoicing rules. This is general information, not tax advice.
+
+## Cleaning standard PDFs
+
+For ordinary PDF quotes and invoices, GetFileClean removes the author, creator, producer, title, dates and XMP while leaving the visible document unchanged. Clean many files at once and download them as a ZIP.
+
+## Related
+
+[PDF author, creator and producer](pdf-author-creator-producer.html)
+
+=== company-data-leaks-metadata
+title: How Metadata Causes Company Data Leaks (and How to Prevent Them)
+cat: Ecommerce & Business
+kw: metadata data leak, company metadata leak, document metadata breach, prevent metadata leaks, corporate document security
+desc: Metadata has caused embarrassing and costly leaks of internal information. Learn the common patterns behind metadata leaks and how companies prevent them.
+---
+Some of the most avoidable information leaks happen through **metadata** and hidden document content rather than hacking.
+
+## Common leak patterns
+
+**1. Tracked changes in published documents.** Reports, contracts and statements published with revision history intact, showing earlier wording.
+
+**2. Author and company properties.** Documents claiming to be independent but carrying an author or company name pointing elsewhere.
+
+**3. Fake redaction.** PDFs where sensitive text was covered with black boxes but not actually removed.
+
+**4. Photo location.** Images posted online that reveal sensitive sites through GPS data.
+
+**5. Reused templates.** Proposals or letters with properties naming another client.
+
+These patterns have appeared in public cases involving governments, law firms and companies. They're simple mistakes with outsized consequences.
+
+## Prevention
+
+- **Policy:** decide when files must be cleaned, for example anything going outside the company.
+- **Training:** a short session on metadata, track changes and proper redaction.
+- **Tools:** give staff an easy tool that works without uploading files to third parties.
+- **Checks:** include metadata in review steps for public documents.
+
+## Make it easy
+
+People skip steps that are slow. GetFileClean takes seconds, handles every common file type in one place and needs no install or account. See [creating a metadata policy for your team](metadata-policy-for-teams.html).
+
+=== metadata-and-gdpr
+title: Metadata and GDPR: Is Metadata Personal Data?
+cat: Privacy & Security
+kw: metadata gdpr, is metadata personal data, gdpr file metadata, data minimisation metadata, privacy law metadata
+desc: Can file metadata be personal data under GDPR? How author names, GPS and device data fit into data protection, and practical steps to minimise metadata.
+---
+Under privacy laws like the EU's GDPR, personal data means information relating to an identified or identifiable person. Much **file metadata** fits that description.
+
+## Metadata that can be personal data
+
+- **Author and editor names** in documents
+- **GPS coordinates** in photos taken at someone's home
+- **Device serial numbers** that can be linked to a person
+- **Timestamps** combined with other details
+- **Names in comments** and tracked changes
+
+## Data minimisation
+
+GDPR includes the principle of data minimisation: personal data should be adequate, relevant and limited to what's necessary. Sending documents full of names and location data that the recipient doesn't need sits awkwardly with that principle.
+
+## Practical steps
+
+1. Remove metadata from files shared outside the organisation where it isn't needed.
+2. Clean images before publishing them on websites.
+3. Include metadata in your privacy training.
+4. Prefer tools that don't upload files to third parties, since uploading personal data to another service can create further obligations.
+
+## When you must keep metadata
+
+Some legal, regulatory and records-management duties require preserving original files with metadata. Keep originals where required and clean only the copies you share.
+
+## Disclaimer
+
+This article is general information, not legal advice. Talk to your data protection officer or a lawyer about your situation.
+
+GetFileClean processes files entirely in the browser, so no personal data is transferred to us.
+
+=== metadata-policy-for-teams
+title: How to Create a Metadata Policy for Your Team
+cat: Ecommerce & Business
+kw: metadata policy, document metadata policy, team file sharing policy, metadata removal process, company metadata guidelines
+desc: A simple template for a team metadata policy: when to remove metadata, which files to check, who's responsible, and tools that make it easy.
+---
+A **metadata policy** doesn't need to be long. It needs to be clear enough that people follow it. Here's a simple structure.
+
+## 1. Purpose
+
+One or two sentences: "To prevent personal and confidential information hidden in files from being shared unintentionally."
+
+## 2. When files must be cleaned
+
+- Files sent to anyone outside the organisation
+- Files published on websites or social media
+- Files submitted to tenders, courts or regulators, unless rules require original metadata
+- Photos taken on location
+
+## 3. What to check
+
+- Document properties: author, company, title, template
+- Tracked changes, comments and hidden text
+- Photo location and device data
+- PDF properties and proper redaction
+
+## 4. Exceptions
+
+- Records that must be preserved with original metadata
+- Digitally signed documents
+- Files where copyright or credit metadata is required
+
+## 5. Tools
+
+Name the approved tools. For example: Word's Document Inspector for comments and tracked changes, and GetFileClean for removing metadata from all file types without uploading them.
+
+## 6. Responsibility
+
+The person sending or publishing a file is responsible for cleaning it. Managers check high-risk documents.
+
+## 7. Training
+
+Include a ten-minute walkthrough in onboarding. Show one real example of metadata in a file. It's more convincing than any rule.
+
+## Keep it practical
+
+The best policy is one people actually follow. A fast, free, no-install tool removes the main reason people skip the step.
+
+=== bulk-remove-metadata
+title: How to Remove Metadata from Many Files at Once (Bulk Cleaning)
+cat: GetFileClean Guides
+kw: bulk remove metadata, batch metadata remover, remove metadata multiple files, bulk exif remover, clean many files at once
+desc: How to bulk remove metadata from hundreds or thousands of photos, documents and PDFs at once, for free, without uploading anything.
+---
+Cleaning files one at a time is fine for a single photo. For a product catalogue, a project archive or a year of photos, you need to **bulk remove metadata**.
+
+## Built-in options and their limits
+
+- **Windows:** you can select many photos and use Remove Properties, but it mainly works on images, and it creates copies one batch at a time.
+- **Word's Document Inspector:** one document at a time.
+- **Online tools:** many limit the number of files or the file size, or charge for batches.
+
+## Bulk cleaning with GetFileClean
+
+1. Open GetFileClean.
+2. Select all your files, or drag a large selection onto the drop zone. You can mix photos, documents, PDFs, videos and audio.
+3. Files are cleaned one after another, and each gets a report.
+4. Click **Download all (.zip)** to get every clean file in one ZIP.
+
+There's no limit on the number of files. Because nothing is uploaded, large batches don't depend on your upload speed.
+
+## Tips for very large batches
+
+- Work in batches of a few thousand files if your computer has limited memory.
+- Use a desktop browser for large video batches.
+- Very large batches over 4 GB in total are best downloaded one file at a time, because standard ZIP files have a 4 GB limit.
+
+## Clean ZIP archives directly
+
+You can also drop a ZIP file in. GetFileClean cleans every supported file inside it and gives you a clean ZIP back.
+
+## Related
+
+[How to use GetFileClean](how-to-use-getfileclean.html)

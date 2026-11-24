@@ -1,0 +1,362 @@
+=== remove-metadata-mp4
+title: How to Remove Metadata from MP4 Videos (Location, Device, Dates)
+cat: Video & Audio
+kw: remove metadata from mp4, mp4 metadata remover, video metadata, remove location from video, strip video metadata
+desc: How to remove metadata from MP4 videos, including GPS location, device model and creation dates, without re-encoding. Free, no upload, no file size limit.
+---
+Videos carry metadata just like photos, and video files are often shared as originals. Here's how to **remove metadata from MP4** files.
+
+## What metadata is in an MP4?
+
+MP4 files are built from sections called boxes. Metadata lives in a few of them:
+
+- **User data and meta boxes:** title, artist, comments, software, device make and model, and often GPS location.
+- **Header timestamps:** creation and modification dates for the movie and each track.
+- **XMP:** added by editing software.
+
+## Why not just re-export the video?
+
+Re-exporting through a video editor takes time, may reduce quality and can add new metadata from the editor itself. For large files it can take ages.
+
+## Remove MP4 metadata without re-encoding
+
+GetFileClean wipes the metadata boxes in place and clears the creation dates. It doesn't re-encode the video. The file size stays the same, playback is identical and it's fast even for large files.
+
+1. Open GetFileClean.
+2. Drop your MP4 files in.
+3. Check the report: location, device, software and dates.
+4. Download the clean videos.
+
+Nothing is uploaded, so there's no waiting for a big video to transfer and no file size limit beyond your device's memory.
+
+## What stays
+
+Information needed for playback, such as codec details, frame rate and resolution, stays in the file. These describe the video, not you.
+
+## Related
+
+- [iPhone videos and location](iphone-video-location.html)
+- [Remove metadata from MOV files](remove-metadata-mov.html)
+
+=== iphone-video-location
+title: iPhone Videos Store Your Location: How to Remove It
+cat: Video & Audio
+kw: iphone video location, iphone video metadata, remove location from iphone video, video gps metadata, iphone mov location
+desc: iPhone videos can store GPS location, device model and recording dates. Learn how to stop location being saved and how to remove it from existing videos.
+---
+Like photos, **iPhone videos** can save where they were recorded. The location is stored inside the video file, along with the device model and recording time.
+
+## What's stored in an iPhone video
+
+- **GPS coordinates** of the recording location
+- **Make and model**, for example the specific iPhone
+- **Software version**
+- **Creation date and time**
+
+## Turn off location for future videos
+
+1. Go to **Settings > Privacy & Security > Location Services**.
+2. Tap **Camera** and choose **Never**.
+
+This also stops location in new photos. Old videos still keep their location. See [turn off location on the iPhone camera](turn-off-location-iphone-camera.html).
+
+## Share without location from Photos
+
+In the share sheet, tap **Options** and turn off **Location** before sharing. This applies to that share only.
+
+## Remove location from existing videos
+
+1. Open GetFileClean in Safari.
+2. Choose videos from your library.
+3. Review what was found, including the GPS coordinates.
+4. Download the clean videos.
+
+GetFileClean wipes location, device and date metadata without re-encoding, so the video looks and sounds the same.
+
+## Large videos
+
+Because cleaning happens in your browser, very long 4K videos depend on your phone's memory. If a huge file struggles on your phone, try it on a computer.
+
+=== remove-metadata-mov
+title: How to Remove Metadata from MOV Files (QuickTime Video)
+cat: Video & Audio
+kw: remove metadata mov, mov file metadata, quicktime metadata, remove location mov, mov metadata remover
+desc: How to remove metadata from MOV (QuickTime) videos, including GPS location, Apple device details and creation dates, without re-encoding the video.
+---
+MOV is Apple's QuickTime video format, used by iPhones and many cameras and editing apps. Here's how to **remove metadata from MOV** files.
+
+## What's inside MOV metadata?
+
+MOV and MP4 share the same basic structure. MOV files commonly store:
+
+- **Location** in a standard text format with latitude and longitude
+- **Make, model and software** of the recording device
+- **Creation dates** for the movie and each track
+- **Titles, descriptions and keywords** added by editing software
+
+## Remove it in one step
+
+GetFileClean finds and wipes the metadata sections inside MOV files and clears creation dates, without re-encoding. Your video plays exactly as before and the file size doesn't change.
+
+1. Drop MOV files into GetFileClean.
+2. Review the report.
+3. Download the clean files.
+
+## Should you convert MOV to MP4 instead?
+
+Converting changes the container and may re-encode the video. It can also add new metadata from the converter. If you only need to remove metadata, clean the MOV directly.
+
+## Related guides
+
+- [Remove metadata from MP4 videos](remove-metadata-mp4.html)
+- [iPhone videos and location](iphone-video-location.html)
+
+=== video-upload-metadata
+title: Does Video Metadata Survive Uploading to Video Sites?
+cat: Video & Audio
+kw: video upload metadata, youtube video metadata, does youtube remove metadata, video platform metadata, upload video privacy
+desc: What happens to video metadata like GPS and device info when you upload to video platforms, and why cleaning videos before upload is still a good idea.
+---
+When you upload a video to a large video platform, it's usually processed into new formats for streaming. Does the **video metadata** survive?
+
+## Viewers usually don't get your original file
+
+Most large video platforms re-encode uploads for streaming. Viewers watch the platform's versions, not your original file, so the embedded metadata generally isn't passed on to them.
+
+## But the platform receives everything
+
+The original upload, with location, device and dates, reaches the platform. Some platforms read information such as recording date or location from uploads to help organise videos. What happens next depends on the platform's settings and privacy policy.
+
+## Where originals do get shared
+
+- Sending video files directly by email, cloud links or messaging apps
+- Smaller sites and forums that host the original file
+- Client delivery of video projects
+- Platforms offering an "original file" download option
+
+## Clean before upload
+
+If you'd rather keep your location and devices private, clean videos before uploading. GetFileClean wipes location, device and date metadata from MP4 and MOV without re-encoding, so you upload the same quality.
+
+## Visible information
+
+Remember that what's in the frame matters too: street names, number plates, reflections, and anything spoken aloud.
+
+=== remove-metadata-mp3
+title: How to Remove Metadata from MP3 Files (ID3 Tags)
+cat: Video & Audio
+kw: remove metadata from mp3, mp3 metadata remover, remove id3 tags, mp3 tag remover, clean mp3 file
+desc: How to remove metadata from MP3 files: ID3v1, ID3v2 and APE tags, including artist, comments, cover art and encoder. Free, no upload, no re-encoding.
+---
+MP3 files store their metadata in tags. Here's how to **remove metadata from MP3** files without touching the audio.
+
+## What's in MP3 metadata?
+
+MP3 files can contain up to three kinds of tags:
+
+- **ID3v2** at the start of the file: title, artist, album, year, comments, cover art, lyrics, encoder, private data and custom tags.
+- **ID3v1** in the last 128 bytes: a short, older tag format.
+- **APE tags** near the end, added by some software.
+
+## Why remove MP3 tags?
+
+- Recordings from your phone or recorder can include your name or device.
+- Cover art and comments can carry details you didn't mean to share.
+- Encoder information shows what software you used.
+- Private data frames from some apps can contain IDs.
+
+## Remove MP3 metadata without re-encoding
+
+GetFileClean cuts the ID3v2, ID3v1 and APE tags out of the file. The audio frames aren't changed, so sound quality is identical.
+
+1. Drop MP3 files into GetFileClean.
+2. See the artist, title, encoder and other tags it found.
+3. Download the clean files.
+
+## Will my music player still work?
+
+Yes. MP3s without tags play normally, but your music library won't show a title or artist. If you only want to remove some tags, use a tag editor instead.
+
+Learn more: [ID3 tags explained](id3-tags-explained.html).
+
+=== id3-tags-explained
+title: ID3 Tags Explained: The Metadata Inside Your MP3 Files
+cat: Video & Audio
+kw: id3 tags explained, what are id3 tags, id3v2 vs id3v1, mp3 metadata fields, id3 frames
+desc: ID3 tags explained: ID3v1 vs ID3v2, common frames like TIT2, TPE1 and APIC, what they reveal and how to view or remove MP3 metadata.
+---
+**ID3 tags** are the metadata format used by MP3 files. They let music players show a song's title, artist and cover art.
+
+## ID3v1 vs ID3v2
+
+- **ID3v1:** a fixed 128-byte block at the end of the file. It holds a short title, artist, album, year, comment and genre.
+- **ID3v2:** a flexible block at the start of the file, made of frames. It can hold many fields, images and long text. Versions 2.3 and 2.4 are the most common.
+
+## Common ID3v2 frames
+
+- **TIT2:** title
+- **TPE1:** artist
+- **TALB:** album
+- **TYER / TDRC:** year or recording date
+- **TENC / TSSE:** encoded by and encoder software
+- **COMM:** comments
+- **APIC:** attached picture, usually cover art
+- **USLT:** lyrics
+- **PRIV:** private data added by software
+- **TXXX:** custom text fields
+- **GEOB:** embedded objects
+
+## Privacy concerns
+
+Voice recordings, interviews and podcast drafts can carry the recorder's name, software and dates. Private and custom frames may contain identifiers that aren't visible in most players.
+
+## How to view and remove ID3 tags
+
+Most music players and file properties windows show common tags. GetFileClean shows the main tags it finds and removes all ID3v1, ID3v2 and APE tags without changing the audio. See [remove metadata from MP3](remove-metadata-mp3.html).
+
+=== flac-wav-metadata
+title: How to Remove Metadata from FLAC and WAV Audio Files
+cat: Video & Audio
+kw: remove metadata flac, wav metadata, flac vorbis comments, wav info chunk, bwf bext metadata
+desc: FLAC and WAV files store metadata in Vorbis comments, INFO chunks, BEXT and iXML. Learn what they contain and how to remove audio metadata losslessly.
+---
+High-quality audio formats carry their own kinds of metadata. Here's how to **remove metadata from FLAC and WAV** files.
+
+## FLAC metadata
+
+FLAC files start with metadata blocks:
+
+- **Vorbis comments:** tags like ARTIST, TITLE, ALBUM, DATE and ENCODER, plus any custom fields.
+- **Picture blocks:** embedded cover art.
+- **Application blocks:** data from specific software.
+
+The stream info and seek table blocks are technical and needed for playback.
+
+## WAV metadata
+
+WAV files are made of chunks. Metadata chunks include:
+
+- **LIST/INFO:** artist, title, comments, software and dates.
+- **bext (Broadcast Wave):** originator, description, origination date and time, used by professional recorders.
+- **iXML:** detailed production data from field recorders, such as scene, take and notes.
+- **id3:** some software adds ID3 tags to WAV files.
+- **XMP:** from Adobe audio software.
+
+## Remove audio metadata losslessly
+
+GetFileClean removes Vorbis comments, pictures and app blocks from FLAC, and LIST, bext, iXML, ID3 and XMP chunks from WAV. The audio data isn't touched, so quality is identical.
+
+## Professional audio note
+
+Broadcast and film workflows sometimes rely on bext and iXML data. Clean copies you share externally, not your production masters.
+
+=== voice-memo-metadata
+title: Voice Memos and Recordings: What Metadata Do They Contain?
+cat: Video & Audio
+kw: voice memo metadata, audio recording metadata, m4a metadata, recording location metadata, remove metadata voice recording
+desc: Voice memos and audio recordings can store dates, device details and sometimes location. Learn what's inside M4A recordings and how to remove it.
+---
+Voice memos and recordings feel personal, and their files can carry personal **metadata** too.
+
+## What's in a voice recording file?
+
+Many phone recording apps save M4A files, which use the same structure as MP4. They can contain:
+
+- **Creation dates** for the recording
+- **Device and software** information
+- **Title** set from the recording name, which may be a location name or your own label
+- **Location**, if the app was allowed to use it
+
+## When recordings get shared
+
+- Sending interview recordings to colleagues or transcription services
+- Sharing evidence recordings with lawyers or authorities
+- Posting audio clips online
+- Sending recordings in messaging apps as files
+
+## How to clean recordings
+
+GetFileClean cleans M4A recordings by wiping metadata sections and clearing creation dates without re-encoding the audio. It also cleans MP3, WAV and FLAC files.
+
+## A word of caution about evidence
+
+If a recording may be used as evidence, its original metadata, such as recording time, can matter. Keep the untouched original safely and share a cleaned copy only when appropriate. Ask a legal professional if you're unsure.
+
+## Related
+
+- [Remove metadata from MP3](remove-metadata-mp3.html)
+- [Journalists and source protection](journalists-protect-sources-metadata.html)
+
+=== podcast-audio-file-metadata
+title: Podcast Audio Files: Metadata to Remove and Metadata to Keep
+cat: Video & Audio
+kw: podcast metadata, podcast audio file tags, podcast mp3 metadata, clean podcast files, audio metadata for podcasters
+desc: Podcast audio files carry both useful and private metadata. Learn which tags to keep for listeners, which to remove, and how to clean draft files you share.
+---
+Podcasters deal with two kinds of **audio metadata**: tags you want listeners to see, and hidden details you don't want to share.
+
+## Metadata worth keeping in published episodes
+
+- Episode title
+- Show name as artist or album
+- Cover art
+- Episode number and year
+
+Most podcast hosts set these from your feed settings, but tags in the file help when people download episodes.
+
+## Metadata to remove
+
+- Encoder and software details from your editing setup
+- Comments left during editing
+- Names of guests' recording devices or apps
+- Private frames from production tools
+- Raw recording dates on unedited guest files
+
+## Draft files are the bigger risk
+
+The files most likely to leak private details are drafts and raw recordings shared with editors, guests and collaborators. Raw files from field recorders and apps can include device information, dates and even location.
+
+## Practical workflow
+
+1. Clean raw guest and interview files before sending them to editors.
+2. Clean draft episodes shared for review.
+3. For the final release, clean the file, then add only the tags you want with your publishing tool or tag editor.
+
+GetFileClean removes all tags from MP3, M4A, WAV and FLAC files losslessly. See [ID3 tags explained](id3-tags-explained.html).
+
+=== screen-recording-metadata
+title: Do Screen Recordings Contain Metadata?
+cat: Video & Audio
+kw: screen recording metadata, screen recording privacy, screencast metadata, remove metadata screen recording, mp4 screen capture metadata
+desc: Screen recordings usually contain dates, device and software metadata, and sometimes much more on screen. Learn what to check before sharing a screen recording.
+---
+Screen recordings are used for tutorials, bug reports and showing someone how to do something. They usually carry less metadata than camera videos, but they're not empty.
+
+## Metadata in screen recordings
+
+- **Creation dates**
+- **Software** used to record, sometimes with version numbers
+- **Device information** on some phones
+- **Title** from the recording app
+
+Location is less common because screen recordings don't use the camera, but don't assume it's never there.
+
+## The bigger risk is what's on screen
+
+Screen recordings often capture far more than intended:
+
+- Notification pop-ups with messages and names
+- Browser tabs and bookmarks
+- Email addresses and account names
+- Open files and folder names
+- Passwords typed in plain text fields
+
+## Before you share
+
+1. Turn on **Do Not Disturb** before recording.
+2. Close unrelated tabs and apps.
+3. Watch the recording all the way through.
+4. Trim or blur anything sensitive.
+5. Remove the file's metadata with GetFileClean.
+
+GetFileClean cleans MP4 and MOV recordings without re-encoding, so they keep their sharpness. See also [do screenshots have metadata](screenshot-metadata.html).

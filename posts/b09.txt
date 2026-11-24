@@ -1,0 +1,374 @@
+=== how-gps-coordinates-stored-in-photos
+title: How GPS Coordinates Are Stored in Photo Metadata
+cat: Technical
+kw: gps exif tags, how gps stored in photos, exif gps coordinates, photo latitude longitude metadata, gps ifd
+desc: How GPS coordinates are stored in photo EXIF metadata: the GPS IFD, latitude and longitude tags, references, altitude and how to read them.
+---
+Photo location isn't stored as an address. It's stored as numbers in a dedicated section of the EXIF data called the **GPS IFD**.
+
+## The GPS section of EXIF
+
+EXIF data is organised into directories (IFDs). The main directory includes a pointer to a separate GPS directory, which holds tags such as:
+
+- **GPSLatitudeRef:** N or S
+- **GPSLatitude:** degrees, minutes and seconds
+- **GPSLongitudeRef:** E or W
+- **GPSLongitude:** degrees, minutes and seconds
+- **GPSAltitude** and **GPSAltitudeRef**
+- **GPSTimeStamp** and **GPSDateStamp:** satellite time in UTC
+- **GPSImgDirection:** which way the camera was pointing, on some devices
+- **GPSHPositioningError:** estimated accuracy
+
+## From degrees to a map pin
+
+Each coordinate is stored as three fractions: degrees, minutes and seconds. Software converts them to decimal degrees. For example, 30° 11' 30" N becomes 30.1917. A negative sign is used for south and west.
+
+## How precise is it?
+
+Phone GPS is often accurate to within a few metres outdoors. Indoors or in dense cities it may be less precise, but it's usually enough to identify a building.
+
+## Videos store location differently
+
+MP4 and MOV files store location as text, often in a format like "+30.1917+071.4700/", inside metadata boxes. See [remove metadata from MP4](remove-metadata-mp4.html).
+
+## Removing GPS data
+
+GetFileClean removes the entire EXIF block, including the GPS directory, and shows you the coordinates it found so you can see what would have been shared.
+
+=== exif-orientation-tag
+title: The EXIF Orientation Tag: Why Photos Turn Sideways
+cat: Technical
+kw: exif orientation tag, photo sideways after removing metadata, image rotation exif, fix rotated photo, orientation metadata
+desc: Why photos sometimes appear sideways after removing metadata: the EXIF orientation tag explained, and how good metadata removers keep photos upright.
+---
+Ever removed metadata from a photo and found it turned sideways? The culprit is the **EXIF orientation tag**.
+
+## How cameras handle rotation
+
+When you take a photo holding your phone sideways or upside down, many cameras don't rotate the pixels. They save the image in the sensor's natural orientation and add an EXIF tag saying how to display it. Viewers read the tag and rotate the image on screen.
+
+## The orientation values
+
+The tag has eight possible values. The common ones are:
+
+- **1:** normal
+- **3:** rotated 180°
+- **6:** rotated 90° clockwise
+- **8:** rotated 90° counter-clockwise
+
+Values 2, 4, 5 and 7 include mirroring.
+
+## Why removing metadata can cause sideways photos
+
+If a tool deletes all EXIF data, including the orientation tag, without rotating the pixels, viewers no longer know to rotate the image. A portrait photo then appears sideways.
+
+## How GetFileClean handles it
+
+When a JPG has an orientation other than normal, GetFileClean first turns the actual pixels upright, then saves the image without metadata. Your photo appears the right way up everywhere. For normal-orientation photos, metadata is removed without re-saving the image at all.
+
+## Fixing already-sideways photos
+
+If you've cleaned photos with another tool and they're now sideways, rotate them in any photo editor and save. The rotation will now be part of the pixels.
+
+=== camera-serial-number-exif
+title: Camera Serial Numbers in EXIF: How Photos Link Back to You
+cat: Technical
+kw: camera serial number exif, body serial number metadata, lens serial number exif, photo traced to camera, exif serial privacy
+desc: Many cameras write their serial number into every photo's EXIF data. Learn how serial numbers can link photos to one camera and how to remove them.
+---
+Many cameras, especially DSLRs and mirrorless cameras, write their **serial number** into the EXIF data of every photo.
+
+## Where serial numbers are stored
+
+- **Body serial number:** a standard EXIF tag for the camera body.
+- **Lens serial number:** a standard tag for the lens.
+- **Maker notes:** a manufacturer-specific EXIF section that can hold serial numbers and other internal data.
+
+## Why it matters
+
+A serial number is a unique identifier. If photos you post under different names or accounts all carry the same serial number, they can be linked to the same camera, and possibly to you if any of those photos are connected to your identity.
+
+## Legitimate uses
+
+Serial numbers aren't all bad. Some services use them to help photographers find stolen cameras by searching for images taken with that serial number. Photographers may also use them to prove which images came from their gear.
+
+## Phones are different
+
+Phone photos don't usually include a unique serial number in standard EXIF fields, but they include the device model, software version and other details.
+
+## Removing serial numbers
+
+GetFileClean removes the entire EXIF block, including serial numbers and maker notes. The report shows the serial number when it's found in the standard tag.
+
+## Related
+
+[What is EXIF data?](what-is-exif-data.html)
+
+=== icc-color-profile
+title: Should You Remove the ICC Colour Profile When Cleaning Metadata?
+cat: Technical
+kw: icc color profile metadata, remove icc profile, color profile photo, srgb profile metadata, keep color profile
+desc: The ICC colour profile is technically metadata, but removing it can change how colours look. Learn why GetFileClean keeps colour profiles.
+---
+When you remove metadata, should the **ICC colour profile** go too? In most cases, no.
+
+## What is an ICC profile?
+
+An ICC profile describes the colour space of an image, such as sRGB, Display P3 or Adobe RGB. It tells screens and printers how to interpret the colour values stored in the pixels.
+
+## What happens if you remove it
+
+Without a profile, software usually assumes sRGB. If the image was in a wider colour space, such as Display P3 from many modern phones or Adobe RGB from a camera, colours can look duller or shifted.
+
+## Is a colour profile private?
+
+Generally, no. A profile describes colours, not you. Standard profiles like sRGB or Display P3 are shared by millions of images. Custom profiles from calibrated monitors could contain a profile name, but that's uncommon in shared images.
+
+## GetFileClean's approach
+
+GetFileClean keeps ICC colour profiles in JPG and PNG images and removes everything personal: EXIF, GPS, XMP, IPTC, comments and app data. Your images look the same, with nothing identifying left inside.
+
+## Converting instead
+
+If you need to remove a wide-gamut profile for compatibility, convert the image to sRGB in an image editor first. That changes the pixel values so colours stay correct without the profile.
+
+=== file-system-dates-vs-metadata
+title: File Dates vs Metadata: Created and Modified Dates Explained
+cat: Technical
+kw: file created date metadata, file modified date, file system timestamps, metadata dates vs file dates, change file date
+desc: The created and modified dates in your file manager aren't the same as the dates stored inside a file's metadata. Learn the difference and which ones travel.
+---
+There are two kinds of dates on most files, and they behave very differently.
+
+## Dates inside the file (metadata)
+
+These are stored in the file itself and travel with it wherever it goes:
+
+- **Date taken** in photo EXIF
+- **Created** and **modified** in Word and PDF properties
+- **Creation time** in video headers
+
+## Dates on the file system
+
+Your computer also records dates about the file in its file system:
+
+- **Date created** on this computer
+- **Date modified**
+- **Date accessed**
+
+These belong to the copy on your disk, not the file's contents.
+
+## Which dates travel when you share?
+
+- **Email attachments and most downloads:** file system dates usually reset to the moment the file is saved on the recipient's computer. Internal metadata dates stay.
+- **ZIP archives:** store a modification date for each file inside, which is restored when unzipped.
+- **USB drives and file copies:** may keep the original modified date.
+
+## What GetFileClean changes
+
+GetFileClean removes dates stored inside files: EXIF dates, document and PDF dates and video creation times. The clean file you download gets new file system dates from your computer. When GetFileClean cleans files inside a ZIP, it keeps the archive's own per-file dates. The **Download all** ZIP uses the time you downloaded it.
+
+## Related
+
+[ZIP archive metadata](zip-archive-metadata.html)
+
+=== zip-archive-metadata
+title: Do ZIP Files Have Metadata? What Archives Reveal
+cat: Technical
+kw: zip file metadata, archive metadata, zip timestamps, remove metadata from zip, compressed file privacy
+desc: ZIP archives store file names, folder paths, dates and comments, and the files inside keep their own metadata. Learn how to clean ZIP files.
+---
+Zipping files doesn't remove their metadata. And **ZIP archives** add some metadata of their own.
+
+## What the ZIP itself stores
+
+- **File and folder names**, including full folder paths, which can include your user name or project names
+- **Modification dates** for each file
+- **Comments**, for the whole archive or individual files
+- **Extra fields** added by some tools, such as file permissions or extra timestamps
+
+## The files inside keep their metadata
+
+Photos in a ZIP keep their GPS data. Word files keep their authors. Compression doesn't touch any of it.
+
+## How to clean a ZIP
+
+GetFileClean can open a ZIP, clean every supported file inside it (photos, documents, PDFs, audio and video) and give you a new clean ZIP. Folder structure and file names stay the same so the recipient sees what they expect. Files it can't clean are kept unchanged.
+
+## Check folder names yourself
+
+Before zipping, make sure folder and file names don't contain information you don't want to share, such as "client-X-confidential" or your full name.
+
+## 7z and RAR
+
+GetFileClean currently cleans ZIP archives. For other formats, extract the files, clean them, then create a new archive.
+
+## Password-protected ZIPs
+
+Encrypted ZIPs can't be opened without the password, so they're skipped.
+
+=== exiftool-remove-metadata
+title: How to Remove Metadata with ExifTool (Command Line Guide)
+cat: Technical
+kw: exiftool remove metadata, exiftool all=, exiftool command, command line metadata remover, exiftool tutorial
+desc: How to remove metadata with ExifTool from the command line: the -all= command, overwriting originals, batch folders and keeping the colour profile.
+---
+**ExifTool** is a powerful free command-line tool for reading and writing metadata. Here's how to use it to remove metadata.
+
+## View metadata
+
+```
+exiftool photo.jpg
+```
+
+This lists every metadata tag ExifTool can read.
+
+## Remove all metadata
+
+```
+exiftool -all= photo.jpg
+```
+
+ExifTool writes a new photo.jpg and keeps the original as photo.jpg_original.
+
+## Overwrite without a backup
+
+```
+exiftool -all= -overwrite_original photo.jpg
+```
+
+Use this carefully. There's no undo.
+
+## Clean a whole folder
+
+```
+exiftool -all= -r folder_name
+```
+
+The `-r` option includes subfolders.
+
+## Keep the colour profile
+
+```
+exiftool -all= -tagsfromfile @ -icc_profile photo.jpg
+```
+
+This removes everything, then copies the ICC profile back.
+
+## Remove only GPS
+
+```
+exiftool -gps:all= photo.jpg
+```
+
+## Things to know
+
+- ExifTool doesn't rotate pixels, so removing the orientation tag can turn photos sideways. See [the EXIF orientation tag](exif-orientation-tag.html).
+- For PDFs, ExifTool's edits can sometimes be reversible because of how PDF updates work. Check ExifTool's documentation for PDF behaviour.
+- It's a command-line tool, which is great for scripts but not for everyone.
+
+## A visual alternative
+
+If you'd rather not use the command line, GetFileClean does the same job in your browser with a visual report, handles PDFs, Office files and video, and keeps photos upright.
+
+=== metadata-forensics-basics
+title: Metadata Forensics: How Investigators Use Hidden File Data
+cat: Technical
+kw: metadata forensics, digital forensics metadata, file metadata investigation, osint metadata, photo forensics exif
+desc: How investigators, journalists and researchers use metadata to verify and trace files, and what that means for everyday privacy.
+---
+**Metadata forensics** is the practice of examining hidden file data to learn where a file came from, when it was made and by whom. It's used by investigators, journalists, fact-checkers and researchers.
+
+## What investigators look for
+
+- **Timestamps:** when a photo was taken or a document was created and edited.
+- **Device information:** camera models, serial numbers and software versions.
+- **Location:** GPS coordinates in photos and videos.
+- **Authorship:** author, last editor and company in documents.
+- **Inconsistencies:** dates that don't match, or editing software that suggests manipulation.
+
+## Verification
+
+Fact-checkers use metadata as one clue when checking whether a photo is what it claims to be. Metadata can be edited or removed, so it's never proof on its own. Analysts combine it with visual clues, reverse image searches and other sources.
+
+## What this means for you
+
+If professionals can learn this much from a file, so can anyone with a free tool. Many open-source intelligence (OSINT) techniques start with exactly this kind of metadata.
+
+## Removing metadata and verification
+
+Removing metadata from your files protects your privacy, but it also removes information that could help others verify them. Journalists and organisations often keep originals securely for verification and publish clean copies.
+
+## Related
+
+- [Can removed metadata be recovered?](can-removed-metadata-be-recovered.html)
+- [Journalists and source protection](journalists-protect-sources-metadata.html)
+
+=== can-removed-metadata-be-recovered
+title: Can Removed Metadata Be Recovered?
+cat: Technical
+kw: recover removed metadata, restore deleted exif, is metadata removal permanent, undo metadata removal, metadata recovery
+desc: Once metadata is removed from a file, can it be recovered? What's permanent, where copies of the original may still exist, and how to be thorough.
+---
+If you remove metadata from a file, can someone get it back? For the cleaned file itself, generally **no**, but there's more to consider.
+
+## The cleaned file
+
+When a tool removes metadata properly, the data is gone from that copy. There's nothing in the clean file to restore. That's why GetFileClean always gives you a new file and leaves your original unchanged.
+
+## Watch out for incomplete removal
+
+Some tools remove only part of the metadata:
+
+- Clearing the PDF author field but leaving the XMP copy
+- Removing EXIF but leaving XMP or IPTC
+- Hiding fields rather than deleting them
+- PDF edits saved as incremental updates, leaving old versions in the file
+
+In these cases, the "removed" data can still be found.
+
+## Where the original metadata may still exist
+
+- **The original file** on your device, backups and cloud storage
+- **Copies you've already shared**, by email or messaging
+- **Platforms** that received the original before processing it
+- **Thumbnails** and previews generated by apps
+
+## Being thorough
+
+1. Clean files before the first time you share them.
+2. Use a tool that removes all metadata types, not just EXIF.
+3. Keep originals somewhere private if you need them.
+4. Delete originals from shared folders after cleaning, if appropriate.
+
+GetFileClean removes EXIF, XMP, IPTC and app data from images, rewrites PDFs as single clean versions, and replaces document properties entirely.
+
+=== hidden-thumbnails-in-jpeg
+title: Hidden Thumbnails in JPEG Files: The Cropped Photo Problem
+cat: Technical
+kw: exif thumbnail, hidden thumbnail jpeg, cropped photo original visible, embedded preview image, exif thumbnail privacy
+desc: JPEG files can contain a hidden thumbnail of the photo in their EXIF data. Learn how thumbnails can reveal original uncropped images and how to remove them.
+---
+Inside many JPEG photos is a second, smaller image: an **EXIF thumbnail**. It's normally harmless. Sometimes it isn't.
+
+## What is an EXIF thumbnail?
+
+Cameras and phones often store a small preview image inside the EXIF data. File browsers and cameras use it to show previews quickly without decoding the full photo.
+
+## The cropped photo problem
+
+When an image is edited, some software updates the main image but not the embedded thumbnail. If someone crops out part of a photo, such as a face, a document or a background detail, the old thumbnail can still show the uncropped original. This has happened in real cases where people believed they'd removed something from a photo.
+
+Modern editing apps usually update or remove thumbnails, but older software and some workflows don't.
+
+## Other embedded images
+
+Some phones also add extra images to photos, such as depth maps, HDR data and multi-picture data, often after the main image data. These can contain their own metadata.
+
+## How GetFileClean handles thumbnails
+
+GetFileClean removes the whole EXIF block, including the thumbnail, and removes extra embedded images and multi-picture data from JPEGs. The clean file contains only the main image.
+
+## Tip
+
+If you've cropped something sensitive out of a photo, always clean the metadata before sharing, or take a screenshot of the cropped result and clean that.
