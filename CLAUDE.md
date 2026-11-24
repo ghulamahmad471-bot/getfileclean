@@ -27,6 +27,12 @@ GetFileClean (getfileclean.com, also "Get File Clean") is a free browser-based m
 7. After the push, verify the live page returns 200 at https://getfileclean.com/blog/<slug>.html (allow a few minutes for deploy).
 8. Report the title, URL and focus keyword.
 
+## Target keywords (owner's priority)
+The main keywords the whole site must rank for are **metadata remover** and **metadata cleaner** (also "meta data remover", "meta data cleaner", "remove metadata", plus the brand "Get File Clean").
+- Every article links to the home page (`../index.html`) once, in a natural sentence, using one of these as the link text: "metadata remover", "metadata cleaner", "free metadata remover", "online metadata cleaner".
+- Where it fits naturally, use "metadata remover" or "metadata cleaner" once in the body and once in the FAQ. Never stuff keywords or repeat them unnaturally.
+- Topics at the top of `posts/plan.md` target these keywords directly; do them first.
+
 ## Rules
 - Quality over volume: Google penalises scaled low-value content. If a topic would be thin or duplicate, pick another.
 - Don't change policy pages, the tool, or site structure in the daily run.

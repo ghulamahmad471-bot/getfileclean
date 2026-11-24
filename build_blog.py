@@ -60,7 +60,7 @@ def md(src):
 def words(t): return len(re.findall(r"\w+", t))
 
 NAV = '''<nav><a class="logo" href="../index.html" aria-label="GetFileClean home"><svg viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="7" fill="var(--teal)"/><path d="M9 5h9.5l4.5 4.5V24a1.6 1.6 0 0 1-1.6 1.6H9A1.6 1.6 0 0 1 7.4 24V6.6A1.6 1.6 0 0 1 9 5z" fill="#fff"/><path d="M18.5 5v4.5H23" fill="none" stroke="var(--teal)" stroke-width="1.3"/><path d="m10.6 17 2.9 2.9 5.6-6.1" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="wm">GetFile<em>Clean</em></span></a>
-<div class="links"><a href="../index.html">Remove metadata</a><a href="index.html">Blog</a><a href="../index.html#formats">Formats</a><a href="../index.html#faq">FAQ</a></div></nav>'''
+<div class="links"><a href="../index.html">Metadata remover</a><a href="index.html">Blog</a><a href="../index.html#formats">Formats</a><a href="../index.html#faq">FAQ</a></div></nav>'''
 FOOT = '''<footer><div class="wrap"><b>GetFileClean</b><span>Free metadata remover. Files never leave your device.</span><span class="sp"></span><a href="../index.html">Remove metadata</a><a href="index.html">Blog</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../cookie-policy.html">Cookies</a><a href="../disclaimer.html">Disclaimer</a><span>© 2026 GetFileClean, owned by AR ECOM SERVICE LLC</span></div></footer>'''
 PAGES = ["about", "contact", "privacy-policy", "terms", "cookie-policy", "disclaimer"]
 
@@ -134,7 +134,7 @@ def build():
 <h1>{html.escape(p["title"])}</h1>
 <p class="by">{html.escape(p["cat"])} · {mins} min read · Updated {DATE}</p>
 <div class="body">{body}</div>
-<aside class="cta"><div><h2>Remove metadata from your files now</h2><p>Free metadata remover for photos, documents, PDFs, videos and audio. No upload, no limits.</p></div><a class="btn" href="../index.html">Clean my files</a></aside>
+<aside class="cta"><div><h2>Free metadata remover &amp; cleaner</h2><p>Remove metadata from photos, documents, PDFs, videos and audio with Get File Clean. No upload, no limits.</p></div><a class="btn" href="../index.html">Clean my files</a></aside>
 <section class="kw"><h2>Topics in this guide</h2><ul>{tags}</ul></section>
 <section class="rel"><h2>Related metadata guides</h2><div class="rg">{rel}</div></section>
 </article></main>

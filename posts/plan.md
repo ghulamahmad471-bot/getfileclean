@@ -1,5 +1,18 @@
 # Daily article plan (mark [x] when published)
 
+## Priority: metadata remover / metadata cleaner keywords
+- [ ] best-metadata-remover – Best metadata remover tools compared (free and paid, honest pros and cons)
+- [ ] metadata-cleaner-online – Metadata cleaner online: how to clean files safely without uploading
+- [ ] free-metadata-remover-no-upload – Free metadata remover with no upload: why it matters
+- [ ] metadata-remover-for-photos – Metadata remover for photos: remove EXIF and GPS in seconds
+- [ ] metadata-cleaner-for-pdf – Metadata cleaner for PDF files
+- [ ] metadata-remover-for-word-documents – Metadata remover for Word, Excel and PowerPoint
+- [ ] metadata-remover-for-videos – Metadata remover for videos (MP4, MOV)
+- [ ] metadata-remover-app-vs-online – Metadata remover app vs online metadata cleaner
+- [ ] metadata-cleaner-for-business – Metadata cleaner for businesses and teams
+- [ ] bulk-metadata-cleaner – Bulk metadata cleaner: clean hundreds of files at once
+
+## More topics
 - [ ] remove-metadata-from-video-on-iphone – How to remove metadata from a video on iPhone
 - [ ] remove-location-from-photos-before-posting – Remove location from photos before posting online
 - [ ] what-is-xmp-metadata – What is XMP metadata?
