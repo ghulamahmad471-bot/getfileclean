@@ -1,0 +1,32 @@
+# Daily article plan (mark [x] when published)
+
+- [ ] remove-metadata-from-video-on-iphone – How to remove metadata from a video on iPhone
+- [ ] remove-location-from-photos-before-posting – Remove location from photos before posting online
+- [ ] what-is-xmp-metadata – What is XMP metadata?
+- [ ] what-is-iptc-metadata – What is IPTC metadata?
+- [ ] remove-metadata-from-jpg-online – Remove metadata from JPG online (free, no upload)
+- [ ] see-exif-data-online – How to view EXIF data online without uploading
+- [ ] remove-metadata-pdf-windows – How to remove metadata from PDF on Windows
+- [ ] remove-author-from-pdf – How to remove the author from a PDF
+- [ ] remove-metadata-from-docx-without-word – Remove metadata from DOCX without Microsoft Word
+- [ ] samsung-photo-metadata – Samsung photo metadata: what it stores and how to remove it
+- [ ] google-pixel-photo-metadata – Google Pixel photo metadata and location
+- [ ] discord-image-metadata – Does Discord remove image metadata?
+- [ ] reddit-image-metadata – Does Reddit strip photo metadata?
+- [ ] twitter-x-image-metadata – Does X (Twitter) remove photo metadata?
+- [ ] tiktok-video-metadata – TikTok videos and metadata
+- [ ] linkedin-image-metadata – Does LinkedIn remove metadata from images and documents?
+- [ ] signal-photo-metadata – Signal and photo metadata
+- [ ] imessage-photo-location – Does iMessage send photo location?
+- [ ] gmail-photo-metadata – Does Gmail remove metadata from attached photos?
+- [ ] etsy-listing-photos-metadata – Etsy listing photos and metadata
+- [ ] shopify-product-image-metadata – Shopify product images and metadata
+- [ ] amazon-seller-images-exif – Amazon seller images: EXIF and file size tips
+- [ ] canva-export-metadata – Does Canva add metadata to exports?
+- [ ] photoshop-export-without-metadata – Export from Photoshop without metadata
+- [ ] lightroom-export-remove-gps – Lightroom: export photos without GPS
+- [ ] gimp-remove-exif – Remove EXIF in GIMP
+- [ ] python-remove-exif – Remove EXIF data with Python (Pillow)
+- [ ] metadata-in-ai-images-chatgpt – Do AI images from popular generators contain metadata?
+- [ ] remove-metadata-mkv-avi – Video metadata in MKV and AVI files
+- [ ] metadata-scrubbing-for-businesses – Metadata scrubbing checklist for small businesses
