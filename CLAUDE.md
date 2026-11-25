@@ -15,6 +15,7 @@ GetFileClean (getfileclean.com, also "Get File Clean") is a free browser-based m
   Markdown body (## headings, - lists, 1. lists, **bold**, `code`, [links](other-slug.html))
   ```
 - `pages.txt` – About/Contact/Privacy/Terms/Cookie/Disclaimer source.
+- `merge-pdf.html`, `rotate-pdf.html`, `pdf-editor.html` – free PDF tools (hand-written, not generated). They share `tools.css` and `pdftools.js` and use `pdf-lib.min.js` (editing) and `pdf.min.js` + `pdf.worker.min.js` (PDF.js 3.2 viewer, always opened with `isEvalSupported: false`). Everything runs in the browser; never add uploads. Blog articles may link to them (e.g. `../merge-pdf.html`).
 - `build_blog.py` – builds `blog/*.html`, the policy pages, `sitemap.xml`, `robots.txt`. It fails on broken internal links, unknown categories, wrong description length or duplicate slugs. Never hand-edit generated HTML; edit the source and rebuild.
 
 ## Daily article routine
@@ -35,5 +36,5 @@ The main keywords the whole site must rank for are **metadata remover** and **me
 
 ## Rules
 - Quality over volume: Google penalises scaled low-value content. If a topic would be thin or duplicate, pick another.
-- Don't change policy pages, the tool, or site structure in the daily run.
+- Don't change policy pages, the tools, or site structure in the daily run.
 - Keep "owned by AR ECOM SERVICE LLC" in footers.

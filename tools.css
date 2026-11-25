@@ -1,0 +1,118 @@
+/* Shared styles for the GetFileClean PDF tool pages (merge, rotate, editor). Same look as the home page. */
+:root{color-scheme:light dark;--bg:light-dark(#f4f7f8,#0f1619);--card:light-dark(#ffffff,#162024);--paper:light-dark(#ffffff,#1c282d);--line:light-dark(#dbe4e7,#2b3a40);--ink:light-dark(#14212a,#e8f0f2);--mute:light-dark(#52626b,#9fb0b6);--teal:light-dark(#0d7680,#3fb5bf);--claret:light-dark(#990f3d,#ff7aa2);--clbg:light-dark(#fbe4e8,#3a1f27);--tlbg:light-dark(#d2eef0,#163a3d)}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Libre Franklin",system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+.band{padding:clamp(28px,4.5vw,64px) max(5vw,16px)}
+.wrap{max-width:1140px;margin:0 auto}
+h1,h2,h3{font-weight:800;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,4.8vw,48px);line-height:1.06}
+h2{font-size:clamp(26px,3.2vw,34px);line-height:1.12;margin-bottom:10px}
+h3{font-size:18px;line-height:1.3;margin-bottom:6px}
+.sub{color:var(--mute);max-width:68ch;margin:12px 0 0}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding:14px max(5vw,16px);border-bottom:1px solid var(--line);background:var(--bg)}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:20px;text-decoration:none;margin-right:auto}
+.logo svg{width:34px;height:34px;flex:none}.logo em{font-style:normal;color:var(--teal)}
+nav .links{display:flex;flex-wrap:wrap;gap:4px 20px}
+nav .links a{text-decoration:none;font-weight:500;padding:8px 0}
+nav .links a:hover,nav .links a[aria-current]{color:var(--teal)}
+nav .links a[aria-current]{font-weight:700}
+.drop{position:relative;display:grid;place-items:center;text-align:center;min-height:230px;border:2px dashed var(--teal);border-radius:20px;background:var(--paper);padding:28px 20px;cursor:pointer;transition:background .2s}
+.drop:hover,.drop.on{background:var(--tlbg)}
+.drop:focus-within{outline:3px solid var(--teal);outline-offset:3px}
+.drop svg{width:80px;height:80px;margin-bottom:6px}
+.drop b{display:block;font-size:22px;font-weight:800;margin-bottom:4px}
+.drop .small{color:var(--mute);font-size:15px;display:block;max-width:58ch;margin:0 auto}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.drop.compact{min-height:0;padding:14px;border-width:2px}
+.drop.compact b{font-size:16px;margin:0}.drop.compact svg,.drop.compact .small{display:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:11px 24px;border-radius:999px;background:var(--teal);color:#fff;font:600 16px "Libre Franklin",sans-serif;border:0;cursor:pointer;margin-top:14px}
+.checks{display:flex;flex-wrap:wrap;gap:6px 22px;margin:14px 0 0;padding:0;list-style:none;font-size:15px;color:var(--mute)}
+.checks li::before{content:"✓";color:var(--teal);font-weight:800;margin-right:6px}
+button.ghost,button.main,.tb button,.tb label.tbtn{font:600 15px "Libre Franklin",sans-serif;min-height:42px;padding:9px 16px;border-radius:10px;cursor:pointer;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+button.main{background:var(--teal);color:#fff;border-color:var(--teal)}
+button.ghost:hover,.tb button:hover{border-color:var(--teal)}
+button:disabled{opacity:.45;cursor:not-allowed}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:18px 0}
+.bar .sp{flex:1}
+.bar label{display:flex;align-items:center;gap:8px;font-size:15px;color:var(--mute)}
+.note{font-size:14px;color:var(--mute)}
+.hidden{display:none!important}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card .fmt{font-weight:800;color:var(--teal);font-size:14px;margin-bottom:8px}
+.card p{margin:0;color:var(--mute);font-size:15px}
+a.card{text-decoration:none;color:var(--ink);transition:border-color .2s}a.card:hover{border-color:var(--teal)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:24px;margin-top:24px}
+.steps div{counter-increment:s}
+.steps div::before{content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--bg);font-weight:800;font-size:18px;margin-bottom:12px}
+.steps p{margin:0;color:var(--mute)}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:17px}
+details p{margin:10px 0 0;color:var(--mute);max-width:72ch}
+.prose p{max-width:72ch;color:var(--mute)}
+footer{border-top:1px solid var(--line);padding:28px max(5vw,16px);font-size:14px;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center}
+footer .sp{flex:1}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:10px;font-size:15px;max-width:min(92vw,520px);opacity:0;pointer-events:none;transition:opacity .25s;z-index:50}
+.toast.show{opacity:1}
+.busy{position:fixed;inset:0;display:grid;place-items:center;background:color-mix(in srgb,var(--bg) 70%,transparent);z-index:40;font-weight:700}
+.busy span{background:var(--paper);border:1px solid var(--line);padding:16px 22px;border-radius:12px}
+
+/* Merge list */
+.flist{display:grid;gap:10px}
+.frow{display:grid;grid-template-columns:28px 56px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 12px;border-radius:14px;background:var(--paper);border:1px solid var(--line)}
+.frow.drag{opacity:.4}.frow.over{border-color:var(--teal);box-shadow:0 0 0 2px var(--tlbg)}
+.grip{cursor:grab;color:var(--mute);font-size:20px;text-align:center;user-select:none}
+.thumb{width:56px;height:72px;border-radius:6px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;font-size:11px;font-weight:800;color:var(--teal)}
+.thumb canvas,.thumb img{max-width:100%;max-height:100%}
+.fname{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fmeta{font-size:13px;color:var(--mute)}
+.ract{display:flex;gap:6px}
+.ract button{min-height:38px;min-width:38px;padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;font:600 15px "Libre Franklin",sans-serif}
+.ract button:hover{border-color:var(--teal)}
+
+/* Page grid (rotate) */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:16px}
+.pcell{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px;display:grid;gap:8px;justify-items:center}
+.pcell .pv{width:150px;height:150px;display:grid;place-items:center}
+.pcell canvas{max-width:140px;max-height:140px;box-shadow:0 1px 4px rgba(0,0,0,.18);transition:transform .25s;background:#fff}
+.pcell .pn{font-size:13px;color:var(--mute)}
+.pcell .ract button{min-width:42px}
+.pcell.changed{border-color:var(--teal)}
+
+/* Editor */
+.ed{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.tb{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.tb button[aria-pressed=true]{background:var(--teal);color:#fff;border-color:var(--teal)}
+.tb .sep{width:1px;align-self:stretch;background:var(--line);margin:0 2px}
+.tb select,.tb input[type=number]{font:500 15px "Libre Franklin",sans-serif;min-height:42px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:6px 8px}
+.tb input[type=number]{width:70px}
+.tb input[type=color]{width:42px;height:42px;padding:2px;border-radius:10px;border:1px solid var(--line);background:var(--paper)}
+.tb .sp{flex:1}
+.pages{display:grid;gap:22px;justify-items:center;padding:10px 0 30px}
+.page{position:relative;width:min(100%,var(--pw,820px));box-shadow:0 2px 10px rgba(0,0,0,.18);background:#fff}
+.page canvas{display:block;width:100%;height:auto}
+.page .ov{position:absolute;inset:0;overflow:hidden}
+.page .ov.draw,.page .ov.place{cursor:crosshair;touch-action:none}
+.page .phead{position:absolute;top:-34px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--mute)}
+.page .phead button{font:600 13px "Libre Franklin",sans-serif;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer}
+.page.gone{opacity:.25}
+.pwrap{padding-top:34px;width:100%;display:grid;justify-items:center}
+.obj{position:absolute;touch-action:none}
+.obj.sel{outline:2px solid var(--teal);outline-offset:1px}
+.obj.txt{min-width:1em;white-space:pre;line-height:1.2;padding:0;cursor:move;color:#000}
+.obj.txt[contenteditable=true]{cursor:text;outline:2px dashed var(--teal)}
+.obj.box{cursor:move}
+.obj img{width:100%;height:100%;display:block;pointer-events:none;user-select:none}
+.obj .rs{position:absolute;right:-7px;bottom:-7px;width:14px;height:14px;border-radius:50%;background:var(--teal);border:2px solid #fff;cursor:nwse-resize;display:none}
+.obj.sel .rs{display:block}
+.ov svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.modal{position:fixed;inset:0;z-index:60;display:grid;place-items:center;background:rgba(0,0,0,.45);padding:16px}
+.modal .box{background:var(--paper);border-radius:16px;padding:18px;width:min(560px,100%);display:grid;gap:12px}
+.modal canvas{width:100%;height:200px;background:#fff;border:1px solid var(--line);border-radius:10px;touch-action:none;cursor:crosshair}
+@media(max-width:600px){nav .links{width:100%;gap:2px 16px}.frow{grid-template-columns:22px 46px minmax(0,1fr)}.frow .ract{grid-column:1/-1;justify-content:flex-end}.thumb{width:46px;height:60px}.tb{position:static}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.tb button,.tb label.tbtn{padding:8px 11px;font-size:14px}.tb{gap:6px}

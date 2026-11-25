@@ -65,8 +65,8 @@ def clean(h):
 def words(t): return len(re.findall(r"\w+", t))
 
 NAV = '''<nav><a class="logo" href="../index.html" aria-label="GetFileClean home"><svg viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="7" fill="var(--teal)"/><path d="M9 5h9.5l4.5 4.5V24a1.6 1.6 0 0 1-1.6 1.6H9A1.6 1.6 0 0 1 7.4 24V6.6A1.6 1.6 0 0 1 9 5z" fill="#fff"/><path d="M18.5 5v4.5H23" fill="none" stroke="var(--teal)" stroke-width="1.3"/><path d="m10.6 17 2.9 2.9 5.6-6.1" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="wm">GetFile<em>Clean</em></span></a>
-<div class="links"><a href="../index.html">Metadata remover</a><a href="index.html">Blog</a><a href="../index.html#formats">Formats</a><a href="../index.html#faq">FAQ</a></div></nav>'''
-FOOT = '''<footer><div class="wrap"><b>GetFileClean</b><span>Free metadata remover. Files never leave your device.</span><span class="sp"></span><a href="../index.html">Remove metadata</a><a href="index.html">Blog</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../cookie-policy.html">Cookies</a><a href="../disclaimer.html">Disclaimer</a><span>© 2026 GetFileClean, owned by AR ECOM SERVICE LLC</span></div></footer>'''
+<div class="links"><a href="../index.html">Metadata remover</a><a href="../merge-pdf.html">Merge PDF</a><a href="../pdf-editor.html">PDF Editor</a><a href="index.html">Blog</a><a href="../index.html#faq">FAQ</a></div></nav>'''
+FOOT = '''<footer><div class="wrap"><b>GetFileClean</b><span>Free metadata remover. Files never leave your device.</span><span class="sp"></span><a href="../index.html">Remove metadata</a><a href="../merge-pdf.html">Merge PDF</a><a href="../rotate-pdf.html">Rotate PDF</a><a href="../pdf-editor.html">PDF Editor</a><a href="index.html">Blog</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../cookie-policy.html">Cookies</a><a href="../disclaimer.html">Disclaimer</a><span>© 2026 GetFileClean, owned by AR ECOM SERVICE LLC</span></div></footer>'''
 PAGES = ["about", "contact", "privacy-policy", "terms", "cookie-policy", "disclaimer"]
 
 def build_pages():
@@ -194,7 +194,7 @@ run();}</script></body></html>
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(clean(idx))
 
     build_pages()
-    urls = [SITE + "/", SITE + "/blog/"] + [f"{SITE}/{s}" for s in PAGES] + [f"{SITE}/blog/{s}" for s in slugs]
+    urls = [SITE + "/", SITE + "/merge-pdf", SITE + "/rotate-pdf", SITE + "/pdf-editor", SITE + "/blog/"] + [f"{SITE}/{s}" for s in PAGES] + [f"{SITE}/blog/{s}" for s in slugs]
     open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{u}</loc><lastmod>{DATE}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
