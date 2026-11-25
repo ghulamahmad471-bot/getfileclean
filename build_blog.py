@@ -135,7 +135,7 @@ def build():
         ld = {"@context": "https://schema.org", "@graph": [
             {"@type": "BlogPosting", "headline": p["title"], "description": p["desc"], "keywords": ", ".join(p["kws"]),
              "datePublished": DATE, "dateModified": DATE, "mainEntityOfPage": canon, "articleSection": p["cat"],
-             "author": {"@type": "Organization", "name": "GetFileClean"}, "publisher": {"@type": "Organization", "name": "GetFileClean", "url": SITE}},
+             "author": {"@type": "Organization", "name": "GetFileClean Team", "url": SITE + "/about", "logo": SITE + "/logo.png"}, "publisher": {"@type": "Organization", "name": "GetFileClean", "url": SITE}},
             {"@type": "BreadcrumbList", "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
                 {"@type": "ListItem", "position": 2, "name": "Blog", "item": SITE + "/blog/"},
@@ -147,7 +147,7 @@ def build():
 <main class="band"><article class="post">
 <p class="crumb"><a href="../index.html">Home</a> › <a href="index.html">Blog</a> › <a href="index.html#{re.sub('[^a-z0-9]+','-',p['cat'].lower())}">{html.escape(p["cat"])}</a></p>
 <h1>{html.escape(p["title"])}</h1>
-<p class="by">{html.escape(p["cat"])} · {mins} min read · Updated {DATE}</p>
+<div class="author"><img class="av" src="../favicon.svg" width="40" height="40" alt="GetFileClean Team avatar"><div><a class="an" href="../about.html" rel="author">GetFileClean Team</a><span class="am">{html.escape(p["cat"])} · {mins} min read · Updated {DATE}</span></div></div>
 <div class="body">{body}</div>
 <aside class="cta"><div><h2>Free metadata remover &amp; cleaner</h2><p>Remove metadata from photos, documents, PDFs, videos and audio with Get File Clean. No upload, no limits.</p></div><a class="btn" href="../index.html">Clean my files</a></aside>
 <section class="kw"><h2>Topics in this guide</h2><ul>{tags}</ul></section>
