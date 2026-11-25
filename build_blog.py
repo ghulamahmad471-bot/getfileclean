@@ -57,6 +57,11 @@ def md(src):
     flush()
     return "\n".join(out)
 
+def clean(h):
+    """Pretty URLs: drop .html from internal links (the server maps /page to page.html)."""
+    h = re.sub(r'href="((?:\.\./)?(?:blog/)?)index\.html', lambda m: 'href="' + (m.group(1) or './'), h)
+    return re.sub(r'href="(?!https?:|//|mailto:|#)([^"#?]+)\.html', r'href="\1', h)
+
 def words(t): return len(re.findall(r"\w+", t))
 
 NAV = '''<nav><a class="logo" href="../index.html" aria-label="GetFileClean home"><svg viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="7" fill="var(--teal)"/><path d="M9 5h9.5l4.5 4.5V24a1.6 1.6 0 0 1-1.6 1.6H9A1.6 1.6 0 0 1 7.4 24V6.6A1.6 1.6 0 0 1 9 5z" fill="#fff"/><path d="M18.5 5v4.5H23" fill="none" stroke="var(--teal)" stroke-width="1.3"/><path d="m10.6 17 2.9 2.9 5.6-6.1" fill="none" stroke="var(--teal)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="wm">GetFile<em>Clean</em></span></a>
@@ -72,10 +77,10 @@ def build_pages():
         head_, body = chunk.split("\n---\n", 1)
         lines = head_.strip().split("\n"); slug = lines[0].strip()
         meta = dict(l.split(":", 1) for l in lines[1:]); title = meta["title"].strip(); desc = meta["desc"].strip()
-        canon = f"{SITE}/{slug}.html"
+        canon = f"{SITE}/{slug}"
         page = head(title + " | GetFileClean", desc, ["getfileclean", title.lower(), "metadata remover"], canon).replace('href="blog.css"', 'href="blog/blog.css"').replace('content="article"', 'content="website"')
         page += nav + f'<main class="band"><article class="post"><p class="crumb"><a href="index.html">Home</a> › {html.escape(title)}</p><h1>{html.escape(title)}</h1><div class="body" style="margin-top:24px">{md(body.strip())}</div></article></main>' + foot + "</body></html>\n"
-        open(os.path.join(ROOT, slug + ".html"), "w", encoding="utf-8").write(page)
+        open(os.path.join(ROOT, slug + ".html"), "w", encoding="utf-8").write(clean(page))
 
 def head(title, desc, kws, canon, extra=""):
     return f'''<!DOCTYPE html>
@@ -126,7 +131,7 @@ def build():
     os.makedirs(OUT, exist_ok=True)
     for p in posts:
         body = md(p["body"]); mins = max(2, round(words(p["body"]) / 200))
-        canon = f"{SITE}/blog/{p['slug']}.html"
+        canon = f"{SITE}/blog/{p['slug']}"
         ld = {"@context": "https://schema.org", "@graph": [
             {"@type": "BlogPosting", "headline": p["title"], "description": p["desc"], "keywords": ", ".join(p["kws"]),
              "datePublished": DATE, "dateModified": DATE, "mainEntityOfPage": canon, "articleSection": p["cat"],
@@ -149,7 +154,7 @@ def build():
 <section class="rel"><h2>Related metadata guides</h2><div class="rg">{rel}</div></section>
 </article></main>
 ''' + FOOT + "</body></html>\n"
-        open(os.path.join(OUT, p["slug"] + ".html"), "w", encoding="utf-8").write(page)
+        open(os.path.join(OUT, p["slug"] + ".html"), "w", encoding="utf-8").write(clean(page))
 
     # blog index
     cats = [c for c in CAT_ORDER if any(p["cat"] == c for p in posts)]
@@ -161,7 +166,7 @@ def build():
         sections += f'<section class="grp" id="{re.sub("[^a-z0-9]+","-",c.lower())}" data-c="{html.escape(c)}"><h2>{html.escape(c)}</h2><div class="grid">{cards}</div></section>'
     ld = {"@context": "https://schema.org", "@type": "Blog", "name": "GetFileClean Blog", "url": SITE + "/blog/",
           "description": "Guides on how to remove metadata from photos, documents, PDFs, videos and audio.",
-          "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": f"{SITE}/blog/{p['slug']}.html"} for p in posts]}
+          "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": f"{SITE}/blog/{p['slug']}"} for p in posts]}
     idx = head("Metadata Blog: Guides to Remove Metadata from Any File | GetFileClean",
                "Free guides on how to remove metadata from photos, PDFs, Word files, videos and audio, plus EXIF, GPS and document privacy explained simply.",
                ["metadata blog", "remove metadata guide", "exif data", "metadata privacy", "metadata remover"], SITE + "/blog/",
@@ -186,10 +191,10 @@ q.addEventListener('input',run);
 chips.forEach(c=>c.addEventListener('click',()=>{cat=c.dataset.c;chips.forEach(x=>x.classList.toggle('on',x===c));run()}));
 run();}</script></body></html>
 '''
-    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(idx)
+    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(clean(idx))
 
     build_pages()
-    urls = [SITE + "/", SITE + "/blog/"] + [f"{SITE}/{s}.html" for s in PAGES] + [f"{SITE}/blog/{s}.html" for s in slugs]
+    urls = [SITE + "/", SITE + "/blog/"] + [f"{SITE}/{s}" for s in PAGES] + [f"{SITE}/blog/{s}" for s in slugs]
     open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{u}</loc><lastmod>{DATE}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
