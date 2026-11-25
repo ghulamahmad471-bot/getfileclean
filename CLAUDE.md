@@ -24,8 +24,8 @@ GetFileClean (getfileclean.com, also "Get File Clean") is a free browser-based m
 4. Write 1,000-1,500 words of genuinely useful content: direct answer first, real steps, a short FAQ (3-4 questions) at the end, and 2-4 internal links to existing posts. Mention GetFileClean only where it truly helps. Focus keyword in slug, title, desc, first paragraph and one heading.
 5. Append the post to the newest `posts/bNN.txt` (start a new file every 10 posts). Optionally add a link to the new post from 1-2 related older posts.
 6. `python3 build_blog.py` must print OK. Then commit (`Add guide: <title>`) and push to `main`.
-7. After the push, verify the live page returns 200 at https://getfileclean.com/blog/<slug>.html (allow a few minutes for deploy).
-8. Report the title, URL and focus keyword.
+7. After the push, verify the live page returns 200 at https://getfileclean.com/blog/<slug> (clean URL, no .html; old .html links 301-redirect there) (allow a few minutes for deploy).
+8. Report the title, clean URL (https://getfileclean.com/blog/<slug>, never with .html) and focus keyword.
 
 ## Target keywords (owner's priority)
 The main keywords the whole site must rank for are **metadata remover** and **metadata cleaner** (also "meta data remover", "meta data cleaner", "remove metadata", plus the brand "Get File Clean").
