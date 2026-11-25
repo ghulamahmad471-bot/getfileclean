@@ -237,3 +237,102 @@ Both spellings are seen and mean exactly the same thing. "Metadata" as one word 
 ### How do I remove metadata from my files?
 
 Many apps and operating systems can remove some metadata, such as photo location. For several file types at once, a metadata cleaner that runs in your browser removes hidden fields like author, device and GPS without changing what the file looks like.
+
+=== metadata-cleaner-online
+title: Metadata Cleaner Online: How to Clean Files Safely Without Uploading
+cat: Privacy & Security
+kw: metadata cleaner online, online metadata cleaner, clean metadata online, remove metadata online without uploading, safe metadata cleaner
+desc: How to use a metadata cleaner online safely: check that files stay on your device, clean photos, PDFs and documents, and confirm the hidden data is really gone.
+---
+A **metadata cleaner online** lets you strip hidden details such as GPS location, author name and device model from a file without installing anything. The safe way to do it is simple: use a cleaner that processes files in your browser instead of uploading them, check that it really works that way, clean your files, then confirm the hidden data is gone before you share them.
+
+This guide walks through each of those steps, so you can clean files online without handing them to a stranger's server.
+
+## What an online metadata cleaner actually removes
+
+Metadata is the information stored inside a file that describes it, rather than the content you see. A good metadata cleaner removes it while leaving the picture, text or video untouched. Typical examples:
+
+- **Photos:** GPS coordinates, date and time taken, camera or phone model, serial numbers, editing software, and hidden preview thumbnails.
+- **PDFs:** author, creator and producer fields, title and subject, creation dates and the XMP metadata copy many tools forget.
+- **Word, Excel and PowerPoint files:** author, last modified by, company name, template path and revision count.
+- **Videos and audio:** recording location, device details and creation dates, plus ID3 tags in MP3 files.
+
+What a cleaner does **not** remove is anything that is part of the visible content: a name typed in the text, a street sign in a photo, or tracked changes and comments in a Word file. Those need to be handled separately (see [why tracked changes and comments are a bigger risk](track-changes-and-comments-risk.html)).
+
+## Step 1: Choose a cleaner that doesn't upload your files
+
+There are two kinds of online metadata cleaner:
+
+1. **Upload-based tools** send your file to a server, clean it there and send it back. Your file passes through someone else's computer, may be stored for a while, and is often subject to size or daily limits.
+2. **Browser-based tools** download a small program into the web page and clean the file on your own device. The file never leaves your computer or phone.
+
+For anything personal or confidential (ID scans, contracts, client documents, family photos) a browser-based cleaner is the safer choice. We explain the difference in more detail in [why a browser-based metadata remover is safer than uploading](browser-based-metadata-removal.html).
+
+## Step 2: Check that it really works on your device
+
+Don't rely on a website's claim alone. You can check it yourself in under a minute.
+
+**The offline test (easiest):**
+
+1. Open the cleaner's page and let it load fully.
+2. Turn off Wi-Fi, or switch your phone to airplane mode.
+3. Add a file and clean it.
+
+If cleaning still works with no internet connection, the file can't have been uploaded. (Some tools load extra components the first time you use a certain file type, so you may need to clean one file of that type while online first.)
+
+**The network check (on a computer):**
+
+1. Open the page in Chrome, Edge or Firefox and press **F12** to open the developer tools.
+2. Go to the **Network** tab.
+3. Clean a file and watch the list of requests. A browser-based tool won't send a large request that matches your file's size. An upload-based tool will.
+
+## Step 3: Clean your files
+
+With a browser-based tool the process is usually the same:
+
+1. Open the cleaner and drag your files onto the page, or tap to choose them. Many tools accept several at once.
+2. Let it scan the files. Better tools show a report of what they found, for example "GPS location" or "Author: J. Smith".
+3. Download the cleaned copies. Keep the originals if you need the metadata for yourself, such as photo dates for your own albums.
+
+GetFileClean works exactly this way: it is a free [online metadata cleaner](../index.html) that cleans photos, PDFs, Office documents, videos, audio and ZIP files inside your browser, with no file size limit and no sign-up. It also [works offline](getfileclean-works-offline.html) once the page has loaded.
+
+## Step 4: Confirm the metadata is gone
+
+It's worth checking a cleaned file the first few times you use any tool, especially before sending something sensitive.
+
+- **Windows:** right-click the file, choose **Properties**, then open the **Details** tab. Look for empty author, GPS and camera fields.
+- **Mac:** open the file in Preview and choose **Tools > Show Inspector**. For photos, check that the GPS tab is gone.
+- **iPhone:** open the photo in Photos and swipe up. If the location is removed, no map will appear.
+- **Android:** open the photo in your gallery app and view its details; the location should be missing.
+
+For step-by-step instructions for each file type, see [how to check the metadata of any file](how-to-check-file-metadata.html).
+
+## Tips for cleaning files online safely
+
+- **Clean a copy, not your only original.** Cleaning is meant to be permanent, so keep originals you may need later.
+- **Clean right before you share.** Editing a cleaned file in another app can add new metadata, such as a new author name or software tag.
+- **Check the visible content too.** A clean file can still show your address on an envelope in the background or a name in a document header.
+- **Watch out for screenshots of documents.** They carry less metadata, but they can still include device details and, on some phones, location.
+- **Be careful with "free" upload tools.** If a service has to upload your file, read its privacy policy to see how long it keeps files and who can access them.
+
+## Online metadata cleaner vs installed software
+
+An online metadata cleaner is the quickest option for most people: nothing to install, it works on any device with a browser, and a browser-based one keeps files private. Installed tools such as ExifTool are powerful and scriptable, but they take more setup and are aimed at technical users. For a side-by-side look at the options, read our comparison of the [best metadata remover tools](best-metadata-remover.html).
+
+## FAQ
+
+### Is it safe to use a metadata cleaner online?
+
+It is safe when the cleaner processes files in your browser and never uploads them. You can confirm this by cleaning a file while offline. Upload-based tools can also be legitimate, but your file passes through their servers, so read their privacy policy before using one for sensitive files.
+
+### Does cleaning metadata change the quality of my photo or document?
+
+A good metadata cleaner only removes the hidden fields and keeps the visible content the same. Some tools re-save images and can slightly change quality, so check the result if image quality matters to you.
+
+### Can I clean many files at once online?
+
+Yes, many online cleaners accept batches of files and let you download the cleaned copies one by one or together as a ZIP file.
+
+### What's the difference between a metadata remover and a metadata cleaner?
+
+There's no real difference. "Metadata remover" and "metadata cleaner" are two names for the same kind of tool: one that strips hidden information from files before you share them.
