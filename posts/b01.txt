@@ -197,7 +197,7 @@ Anyone who gets the original file. Reading location metadata needs no special sk
 
 **Stop it at the source:** turn off location for your camera on [iPhone](turn-off-location-iphone-camera.html) or [Android](turn-off-location-android-camera.html).
 
-**Clean existing photos:** use a metadata remover before sharing. GetFileClean shows you whether a photo contains GPS coordinates, displays them so you can see what would have been shared, and then removes all location and other metadata in your browser.
+**Clean existing photos:** use a metadata remover before sharing. GetFileClean shows you whether a photo contains GPS coordinates, displays them so you can see what would have been shared, and then removes all location and other metadata in your browser. For every option on phones and computers, see our guide to choosing a [metadata remover for photos](metadata-remover-for-photos.html).
 
 ## Check before you share
 

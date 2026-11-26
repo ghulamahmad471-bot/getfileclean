@@ -4,8 +4,8 @@
 - [x] metadata-meaning – Metadata meaning: what does "meta data" mean? (owner request 2026-11-25; must differ from what-is-metadata: focus on the word's meaning, origin of "meta", and simple everyday examples)
 - [x] best-metadata-remover – Best metadata remover tools compared (free and paid, honest pros and cons)
 - [x] metadata-cleaner-online – Metadata cleaner online: how to clean files safely without uploading
-- [ ] free-metadata-remover-no-upload – Free metadata remover with no upload: why it matters
-- [ ] metadata-remover-for-photos – Metadata remover for photos: remove EXIF and GPS in seconds
+- [x] free-metadata-remover-no-upload – Free metadata remover with no upload: why it matters (skipped 2026-11-26: already covered by browser-based-metadata-removal, metadata-cleaner-online and getfileclean-works-offline)
+- [x] metadata-remover-for-photos – Metadata remover for photos: remove EXIF and GPS in seconds
 - [ ] metadata-cleaner-for-pdf – Metadata cleaner for PDF files
 - [ ] metadata-remover-for-word-documents – Metadata remover for Word, Excel and PowerPoint
 - [ ] metadata-remover-for-videos – Metadata remover for videos (MP4, MOV)

@@ -336,3 +336,123 @@ Yes, many online cleaners accept batches of files and let you download the clean
 ### What's the difference between a metadata remover and a metadata cleaner?
 
 There's no real difference. "Metadata remover" and "metadata cleaner" are two names for the same kind of tool: one that strips hidden information from files before you share them.
+
+=== metadata-remover-for-photos
+title: Metadata Remover for Photos: Remove EXIF and GPS in Seconds
+cat: Photo Privacy
+kw: metadata remover for photos, remove exif data from photos, remove gps from photos, photo metadata cleaner, strip photo metadata
+desc: A metadata remover for photos strips EXIF, GPS location and device details before you share. How it works, which photos need it, and quick steps for any device.
+---
+A **metadata remover for photos** deletes the hidden information stored inside an image file, such as the GPS coordinates of where it was taken, the date and time, and the phone or camera model, while leaving the picture itself untouched. The fastest way to use one: open a cleaner that works in your browser, drop in your photos, check what it found, and download the clean copies. The whole job takes a few seconds per batch.
+
+Below you'll find what a photo metadata remover actually removes, when you need one (and when your phone already does it for you), and step-by-step options for iPhone, Android, Windows and Mac.
+
+## What's hidden in a photo
+
+Most photos carry a block of EXIF data written by the camera, and sometimes XMP or IPTC data added by editing apps. Depending on the device and settings, that can include:
+
+- **GPS location:** latitude, longitude and often altitude, precise enough to point to a single house.
+- **Date and time:** when the photo was taken, sometimes down to the second, and sometimes the time zone.
+- **Device details:** make and model, lens, and on some cameras a serial number.
+- **Camera settings:** exposure, ISO, focal length, flash.
+- **Software and edit history:** the app used to edit or export the image.
+- **A small preview thumbnail:** which, in some files, can still show the original before cropping.
+
+Some of this is harmless. The location is the part that causes real problems, because a few photos taken at home are enough to reveal your address.
+
+## When you actually need to remove photo metadata
+
+You don't need to clean every picture. A photo metadata cleaner matters most when the file leaves your control **as an original file**, for example:
+
+- Sending photos by email, or as a "document" or "file" in a messaging app.
+- Uploading to marketplaces, forums, cloud shares or personal websites.
+- Sharing pictures of your home, car, children or anything you're selling.
+- Sending files to clients, journalists or anyone you don't know well.
+
+Many big social networks strip most metadata from the copy they show the public, but the platform itself still receives your original upload. Messaging apps vary too: a photo sent as a normal image is often recompressed, while one sent as a file usually keeps everything. If you're not sure what a service does, clean the photo first. It costs you nothing.
+
+## Option 1: Use a browser-based metadata remover (any device)
+
+This is the quickest way to strip photo metadata from many images at once, on a phone or a computer, with nothing to install.
+
+1. Open GetFileClean, a free [metadata remover](../index.html) that cleans files inside your browser instead of uploading them.
+2. Drag your photos onto the page, or tap to choose them from your gallery. You can add several at once.
+3. Look at the report for each file: it shows the location, device and date details it found.
+4. Download the cleaned photos one by one, or all together in a single ZIP.
+
+For JPG, PNG, WebP and GIF files the metadata is removed without re-encoding, so the image pixels stay exactly the same. HEIC photos (the default format on many iPhones) are converted to JPG or PNG as part of cleaning, which is worth knowing if you need to keep the HEIC format.
+
+To confirm nothing is uploaded, load the page, switch off Wi-Fi or mobile data, and clean a photo. If it still works, the processing is happening on your device.
+
+## Option 2: Built-in options on your phone
+
+Phones now offer some location controls when you share, but they mostly cover **location only**, not the date or device details.
+
+### iPhone and iPad
+
+Apple's own guidance (current for recent iOS versions) is:
+
+1. In Photos, select the pictures and tap the Share button.
+2. Tap **Options** near the top of the share sheet.
+3. Turn off **Location**, then tap Done. "Location Not Included" appears above Options.
+
+To remove the location from one photo permanently, open it, tap the More button, then **Adjust Info > Adjust Location > No Location** (exact labels can differ slightly between iOS versions). To stop new photos recording a location at all, go to **Settings > Privacy & Security > Location Services > Camera** and choose **Never**. Our [iPhone photo metadata guide](remove-metadata-iphone-photos.html) covers each method in more detail.
+
+### Android
+
+Android behaviour depends on the manufacturer and the app:
+
+- **Google Photos** says locations are private by default and aren't included when you share a new album, link or conversation unless you choose to include them. That applies to sharing inside Google Photos, not to the file you send through another app.
+- **The Android photo picker** (introduced in Android 13) removes location from photos that apps receive through it.
+- **Some Samsung phones** remove location from images shared in Samsung Messages when Auto Blocker's "Maximum restrictions" setting is on.
+
+Because these rules overlap and change, the safest habit is to test once: share a photo to yourself and check its details. See [how to remove metadata from Android photos](remove-metadata-android-photos.html) for device-specific steps.
+
+## Option 3: Built-in options on a computer
+
+**Windows:** right-click the photo, choose **Properties > Details**, then click **Remove Properties and Personal Information**. Choose "Create a copy with all possible properties removed". It's free and works well for JPGs, but it doesn't reach every field in every format.
+
+**Mac:** in the Photos app, select the photos and choose **Image > Location > Hide Location**. In Preview, open the photo, choose **Tools > Show Inspector**, open the info (i) tab, and click **Remove Location Info** if the photo has a GPS tab. Both only deal with location; other EXIF fields stay.
+
+**Technical users:** ExifTool is free and very thorough. `exiftool -all= photo.jpg` removes most metadata from a file. It keeps a backup ending in `_original` by default, so delete that copy if the point was to get rid of the data.
+
+## Which option should you choose?
+
+- **Just hiding location on a phone photo:** the built-in share options are enough.
+- **Removing everything (location, dates, device) or cleaning many photos:** use a dedicated metadata remover for photos, either in your browser or ExifTool.
+- **Photos you're selling, posting publicly or sending to strangers:** clean them fully, then check one result.
+
+## Check that it worked
+
+Don't assume. After cleaning, open the photo's details:
+
+- **iPhone:** swipe up on the photo. There should be no map.
+- **Windows:** Properties > Details should show no GPS section, camera model or date taken.
+- **Mac:** Preview's Inspector should have no GPS tab.
+
+You can also drop the cleaned file back into a metadata viewer. Our guide on [how to check file metadata](how-to-check-file-metadata.html) lists several free ways.
+
+## Common mistakes
+
+- **Cleaning the copy, sharing the original.** Make sure you attach the downloaded clean file, not the one still in your gallery.
+- **Forgetting screenshots and edited copies.** Edited exports can keep the original metadata unless the editor removes it.
+- **Relying on the platform.** A service that strips metadata today may change its processing later, and you can't check what it keeps on its servers.
+- **Ignoring what's in the picture.** Removing EXIF won't hide a street sign, house number or reflection in a window.
+
+## FAQ
+
+### Does a metadata remover for photos reduce image quality?
+
+Not if it removes metadata without re-encoding. JPG, PNG and WebP files can be cleaned losslessly, so the pixels are identical. Tools that convert or recompress images can reduce quality slightly; we explain the difference in [does removing metadata reduce quality](does-removing-metadata-reduce-quality.html).
+
+### Can I remove GPS from photos but keep the date?
+
+Yes. The phone share options above remove only location, and ExifTool can delete GPS fields alone with `exiftool -gps:all= photo.jpg`. A full metadata cleaner removes everything, which is the safer choice when you don't need the date.
+
+### Is it safe to use an online photo metadata cleaner?
+
+It depends on where the cleaning happens. A metadata cleaner that runs in your browser keeps photos on your device. Upload-based sites send the original, including the GPS data, to their server, so avoid them for personal photos.
+
+### Can removed photo metadata be recovered?
+
+Not from the cleaned file. Once the EXIF block is gone it isn't hidden anywhere in that copy. Your original photo still has it, so keep or delete the original as you see fit.
