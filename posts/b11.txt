@@ -456,3 +456,112 @@ It depends on where the cleaning happens. A metadata cleaner that runs in your b
 ### Can removed photo metadata be recovered?
 
 Not from the cleaned file. Once the EXIF block is gone it isn't hidden anywhere in that copy. Your original photo still has it, so keep or delete the original as you see fit.
+
+=== metadata-cleaner-for-pdf
+title: Metadata Cleaner for PDF: What It Must Remove and How to Check
+cat: PDF
+kw: metadata cleaner for pdf, pdf metadata cleaner, clean pdf metadata, remove pdf metadata permanently, pdf hidden data
+desc: What a good metadata cleaner for PDF files must remove, which leftovers most tools miss, and how to check a cleaned PDF yourself before you send it.
+---
+A **metadata cleaner for PDF** files should do more than blank the Author box. A properly cleaned PDF has no document properties, no XMP metadata stream and no older saved versions hidden at the end of the file, while the pages look exactly the same. This guide explains what a PDF metadata cleaner needs to remove, where common methods fall short, and how to check the result yourself in a couple of minutes.
+
+If you only want the quick steps, see [how to remove metadata from PDF files](remove-metadata-from-pdf.html). This article is about doing it thoroughly and knowing that it worked.
+
+## Why PDFs are harder to clean than photos
+
+A JPEG keeps most of its metadata in one or two blocks near the start of the file. A PDF is a collection of objects (pages, fonts, images, annotations, metadata) linked together, and personal information can sit in several of them at once:
+
+- **The document information dictionary:** Title, Author, Subject, Keywords, Creator, Producer, CreationDate and ModDate. This is what most viewers show under Document Properties.
+- **The XMP metadata stream:** a separate XML copy of many of the same fields, often with document and instance IDs and sometimes editing history. Read more in [PDF XMP metadata](pdf-xmp-metadata.html).
+- **Page-level and object-level metadata:** XMP or private application data (often called PieceInfo) attached to individual pages, images or other objects by design and layout programs.
+- **Incremental updates:** many programs save edits by appending changes to the end of the file instead of rewriting it. The old values, including old metadata, can still be inside.
+- **Content that isn't metadata but still identifies you:** comments and annotations with author names, form field values, file attachments, hidden layers, and photos embedded in the pages that carry their own EXIF data.
+
+A cleaner that handles only the first item can leave a PDF that looks clean in one viewer and still shows your name in another.
+
+## What a good metadata cleaner for PDF should do
+
+Use this as a checklist when choosing a tool:
+
+1. **Remove the document information dictionary**, not just empty the visible fields.
+2. **Remove the document-level XMP stream** and XMP or private app data on pages and objects.
+3. **Rewrite the file as a single version**, so earlier revisions from incremental saves are gone rather than hidden.
+4. **Leave the visible pages unchanged:** same text, images, fonts and layout, with no re-rendering or rasterising.
+5. **Tell you what it found**, so you know which fields were in the file.
+6. **Warn you about digital signatures.** Any change to a signed PDF breaks the signature. See [signed PDFs and metadata](signed-pdf-metadata.html).
+7. **Not upload your document** if it's confidential. A contract or medical letter sent to a stranger's server to remove your name defeats the purpose.
+
+No automatic metadata tool should be trusted to deal with annotations, attachments or form data without you looking. Those are part of the document's content, and removing them silently could break a file someone needs.
+
+## Method 1: a browser-based PDF metadata cleaner (free)
+
+GetFileClean is a free [metadata cleaner](../index.html) that runs in your browser, so the PDF stays on your device. For PDFs it:
+
+- removes the document information dictionary (author, title, creator app, producer, dates, keywords)
+- removes the document-level XMP stream and XMP or private app data attached to pages and objects
+- saves a freshly written PDF, so revisions left behind by earlier incremental saves aren't carried over
+- shows what it found and warns you if the PDF was digitally signed
+
+Steps:
+
+1. Open GetFileClean and drop in one or more PDFs.
+2. Check the list of what was found in each file.
+3. Download the cleaned copies.
+
+Honest limits: it doesn't open password-protected PDFs, and it doesn't remove comments, form field values, attachments or EXIF data inside images embedded in the pages. Check those yourself, as described below. We make GetFileClean, so test it against the checks in this article rather than taking our word for it.
+
+## Method 2: Adobe Acrobat Pro's Sanitize (paid)
+
+Acrobat Pro includes a **Sanitize document** option in its redaction tools. In the current version, Adobe's help describes opening **All tools > Redact a PDF**, then choosing **Sanitize document**. You can remove all hidden information at once or choose items selectively, then save the result as a new file. Adobe describes hidden information as including metadata, comments, hidden layers and other sensitive content. Menu names have changed between Acrobat versions, so if you don't see these labels, search Acrobat's tools for "Sanitize" or "Remove hidden information". Our [Acrobat Remove Hidden Information guide](acrobat-remove-hidden-information.html) covers the older layout.
+
+Acrobat is the right choice when you also need real redaction, because it can remove visible text and the hidden content in one pass. Remember that drawing black boxes isn't redaction; see [redaction vs metadata removal](pdf-redaction-vs-metadata-removal.html).
+
+## Method 3: ExifTool plus qpdf (free, command line)
+
+ExifTool can clear PDF metadata with a command such as `exiftool -all:all= file.pdf`, but there's an important catch that its own documentation spells out. ExifTool edits PDFs using an incremental update, which is fast and reversible, and its documentation states that all PDF metadata edits are reversible because the old information isn't actually deleted from the file. In other words, the original metadata can be recovered.
+
+To make the removal permanent, ExifTool's documentation recommends rewriting the file afterwards with qpdf:
+
+`qpdf --linearize in.pdf out.pdf`
+
+Keep the output file and delete the intermediate ones, including ExifTool's `_original` backup. More ExifTool commands are in our [ExifTool guide](exiftool-remove-metadata.html).
+
+## Methods that look clean but often aren't
+
+- **Typing over the fields in Document Properties.** This usually changes the classic fields but may leave the XMP copy, and some programs save the edit incrementally.
+- **Print to PDF.** It creates a new file, but that file gets new metadata (often the title and the producer), and it can flatten forms and links or change text quality.
+- **Re-saving in another app.** The new app may simply add itself as the Producer while keeping the rest.
+
+## How to check a cleaned PDF yourself
+
+Run at least two of these checks on the cleaned copy before you send it.
+
+**1. Look at Document Properties in two viewers.** In Acrobat Reader, use File > Properties. On a Mac, open the file in Preview and choose Tools > Show Inspector. Chrome's built-in PDF viewer also has a Document properties option in its menu. The Author, Title, Creator and Producer fields should be empty or missing. Checking two viewers matters because some read the classic fields and others read XMP first.
+
+**2. Search the raw file.** Open a copy of the PDF in a plain text editor and search for your name, `/Author` and `xmpmeta`. If your name appears in plain text, something was left behind. This check can miss text stored in compressed streams, so treat a clean result as a good sign, not proof.
+
+**3. Use ExifTool to list everything.** The command `exiftool -a -G1 file.pdf` lists every metadata tag it can find, grouped by where it came from. On a well-cleaned PDF the list should be short and contain mainly technical details such as the page count and PDF version.
+
+**4. Look at the content.** Open the comments panel and the attachments panel in your viewer, click through any form fields, and zoom into embedded photos. If a photo matters, clean it before you put it into the document.
+
+## Clean the source file first
+
+The easiest PDF to clean is one that never picked up your details in the first place. If the PDF comes from a Word file, remove the Word document's metadata before exporting, then run the PDF through a PDF metadata cleaner as a final step. That way the Title and Author fields aren't copied over from the start.
+
+## FAQ
+
+### Does a metadata cleaner for PDF change how the document looks?
+
+It shouldn't. Removing the document properties and XMP doesn't touch the page content, so text, images and layout stay the same. If a tool re-renders pages as images or noticeably changes the file's appearance, it's doing more than metadata cleaning.
+
+### Is removing metadata from a PDF the same as redacting it?
+
+No. A metadata remover clears hidden properties such as the author and creation dates. Redaction removes visible content such as names or account details from the pages. For legal or confidential documents you may need both.
+
+### Why does my PDF still show an author after cleaning?
+
+Usually because only one copy of the metadata was removed. The classic properties and the XMP stream are separate, and some viewers read one or the other. An old incremental save can also keep earlier values. Use a cleaner that removes both and rewrites the file, then check in two viewers.
+
+### Can I clean a signed or password-protected PDF?
+
+Cleaning a signed PDF invalidates the signature, so clean the document before it's signed. For password-protected PDFs, remove the password first with the owner's permission, then clean the file and protect it again if needed.

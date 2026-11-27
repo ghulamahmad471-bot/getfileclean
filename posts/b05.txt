@@ -12,7 +12,7 @@ PDFs are the standard format for sharing finished documents, and almost every PD
 - **XMP metadata:** a second, more detailed copy of these fields, sometimes with extra history.
 - **Private app data:** some design programs store their own data inside PDFs.
 
-Read more in [PDF metadata explained](pdf-metadata-explained.html).
+Read more in [PDF metadata explained](pdf-metadata-explained.html). For a full checklist and ways to verify the result, see [what a metadata cleaner for PDF must remove](metadata-cleaner-for-pdf.html).
 
 ## Method 1: GetFileClean (free, in your browser)
 
