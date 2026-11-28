@@ -7,7 +7,7 @@
 - [x] free-metadata-remover-no-upload – Free metadata remover with no upload: why it matters (skipped 2026-11-26: already covered by browser-based-metadata-removal, metadata-cleaner-online and getfileclean-works-offline)
 - [x] metadata-remover-for-photos – Metadata remover for photos: remove EXIF and GPS in seconds
 - [x] metadata-cleaner-for-pdf – Metadata cleaner for PDF files
-- [ ] metadata-remover-for-word-documents – Metadata remover for Word, Excel and PowerPoint
+- [x] metadata-remover-for-word-documents – Metadata remover for Word, Excel and PowerPoint
 - [ ] metadata-remover-for-videos – Metadata remover for videos (MP4, MOV)
 - [ ] metadata-remover-app-vs-online – Metadata remover app vs online metadata cleaner
 - [ ] metadata-cleaner-for-business – Metadata cleaner for businesses and teams
